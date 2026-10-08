@@ -23,4 +23,10 @@
 #import <ImageKit/IKScannerDeviceView.h>
 #import <ImageKit/IKFilterBrowserPanel.h>
 
+#import <ImageKit/IKFilterUI.h>
+
+#import <ImageKit/IKFilterUIView.h>
+
+#import <ImageKit/IKImageBrowserCell.h>
+
 #endif /* ImageKit_h */
