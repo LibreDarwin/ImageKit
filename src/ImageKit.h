@@ -19,3 +19,7 @@
 #import <ImageKit/IKCacheManager.h>
 
 #endif /* ImageKit_h */
+#import <ImageKit/IKCameraDeviceView.h>
+#import <ImageKit/IKDeviceBrowserView.h>
+#import <ImageKit/IKScannerDeviceView.h>
+#import <ImageKit/IKFilterBrowserPanel.h>
