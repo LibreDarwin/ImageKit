@@ -20,7 +20,7 @@ FW_DYLIB  := $(FW_ID)/Versions/A/ImageKit
 FW_HDRS   := IKImageView.h IKPrivateGraphics.h ImageKit.h ImageKitBase.h IKPictureTaker.h IKSlideshow.h IKImageBrowserView.h IKImageEditPanel.h IKFilterBrowserView.h IKFilterPanel.h IKSaveOptions.h IKPageLayout.h IKCacheManager.h IKFilterBrowserPanel.h IKScannerDeviceView.h IKCameraDeviceView.h IKDeviceBrowserView.h IKImageBrowserCell.h IKFilterUIView.h IKFilterUI.h
 FW_HDR_DEPS := src/IKImageView.h src/IKPrivateGraphics.h src/ImageKit.h src/ImageKitBase.h src/IKPictureTaker.h src/IKSlideshow.h src/IKImageBrowserView.h src/IKImageEditPanel.h src/IKFilterBrowserView.h src/IKFilterPanel.h src/IKSaveOptions.h src/IKPageLayout.h src/IKCacheManager.h src/IKFilterBrowserPanel.h src/IKScannerDeviceView.h src/IKCameraDeviceView.h src/IKDeviceBrowserView.h src/IKImageBrowserCell.h src/IKFilterUIView.h src/IKFilterUI.h
 
-OBJS := $(OBJDIR)/IKCacheManager.o $(OBJDIR)/IKFilterBrowserView.o $(OBJDIR)/IKFilterPanel.o $(OBJDIR)/IKImageBrowserView.o $(OBJDIR)/IKImageEditPanel.o $(OBJDIR)/IKImageView.o $(OBJDIR)/IKPageLayout.o $(OBJDIR)/IKPictureTaker.o $(OBJDIR)/IKPrivateGraphics.o $(OBJDIR)/IKSaveOptions.o $(OBJDIR)/IKSlideshow.o $(OBJDIR)/IKFilterBrowserPanel.o $(OBJDIR)/IKScannerDeviceView.o $(OBJDIR)/IKCameraDeviceView.o $(OBJDIR)/IKDeviceBrowserView.o $(OBJDIR)/IKImageBrowserCell.o $(OBJDIR)/IKFilterUIView.o $(OBJDIR)/IKFilterUI.o
+OBJS := $(OBJDIR)/IK2PartVertical.o $(OBJDIR)/IK3PartHorizontal.o $(OBJDIR)/IKAccessoryView.o $(OBJDIR)/IKAccessoryViewController.o $(OBJDIR)/IKAdjustSlider.o $(OBJDIR)/IKAnimationData.o $(OBJDIR)/IKAnimationGroup.o $(OBJDIR)/IKAnimationManager.o $(OBJDIR)/IKAnnotation.o $(OBJDIR)/IKAnnotationLayer.o $(OBJDIR)/IKAnnotationPanel.o $(OBJDIR)/IKAppKitTextDriver.o $(OBJDIR)/IKArrowAnnotation.o $(OBJDIR)/IKAutoDetection.o $(OBJDIR)/IKAutodetectedItem.o $(OBJDIR)/IKAutolayoutImageView.o $(OBJDIR)/IKBookletCell.o $(OBJDIR)/IKBookletPlasticCover.o $(OBJDIR)/IKBorderedView.o $(OBJDIR)/IKBox.o $(OBJDIR)/IKCacheManager.o $(OBJDIR)/IKCameraDeviceView.o $(OBJDIR)/IKDeviceBrowserView.o $(OBJDIR)/IKFilterBrowserPanel.o $(OBJDIR)/IKFilterBrowserView.o $(OBJDIR)/IKFilterPanel.o $(OBJDIR)/IKFilterUI.o $(OBJDIR)/IKFilterUIView.o $(OBJDIR)/IKImageBrowserCell.o $(OBJDIR)/IKImageBrowserView.o $(OBJDIR)/IKImageEditPanel.o $(OBJDIR)/IKImageView.o $(OBJDIR)/IKPageLayout.o $(OBJDIR)/IKPictureTaker.o $(OBJDIR)/IKPrivateGraphics.o $(OBJDIR)/IKSaveOptions.o $(OBJDIR)/IKScannerDeviceView.o $(OBJDIR)/IKSlideshow.o
 
 PREFIX  ?= /usr/local
 DESTDIR ?=
@@ -102,6 +102,121 @@ $(OBJDIR)/IKFilterUIView.o: src/IKFilterUIView.m src/IKFilterUIView.h
 $(OBJDIR)/IKImageBrowserCell.o: src/IKImageBrowserCell.m src/IKImageBrowserCell.h
 	@mkdir -p $(OBJDIR)
 	$(CC) $(MFLAGS) -c -o $@ src/IKImageBrowserCell.m
+
+$(OBJDIR)/IK2PartVertical.o: src/IK2PartVertical.m src/IK2PartVertical.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IK2PartVertical.m
+$(OBJDIR)/IK3PartHorizontal.o: src/IK3PartHorizontal.m src/IK3PartHorizontal.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IK3PartHorizontal.m
+$(OBJDIR)/IKAccessoryView.o: src/IKAccessoryView.m src/IKAccessoryView.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKAccessoryView.m
+$(OBJDIR)/IKAccessoryViewController.o: src/IKAccessoryViewController.m src/IKAccessoryViewController.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKAccessoryViewController.m
+$(OBJDIR)/IKAdjustSlider.o: src/IKAdjustSlider.m src/IKAdjustSlider.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKAdjustSlider.m
+$(OBJDIR)/IKAnimationData.o: src/IKAnimationData.m src/IKAnimationData.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKAnimationData.m
+$(OBJDIR)/IKAnimationGroup.o: src/IKAnimationGroup.m src/IKAnimationGroup.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKAnimationGroup.m
+$(OBJDIR)/IKAnimationManager.o: src/IKAnimationManager.m src/IKAnimationManager.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKAnimationManager.m
+$(OBJDIR)/IKAnnotation.o: src/IKAnnotation.m src/IKAnnotation.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKAnnotation.m
+$(OBJDIR)/IKAnnotationLayer.o: src/IKAnnotationLayer.m src/IKAnnotationLayer.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKAnnotationLayer.m
+$(OBJDIR)/IKAnnotationPanel.o: src/IKAnnotationPanel.m src/IKAnnotationPanel.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKAnnotationPanel.m
+$(OBJDIR)/IKAppKitTextDriver.o: src/IKAppKitTextDriver.m src/IKAppKitTextDriver.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKAppKitTextDriver.m
+$(OBJDIR)/IKArrowAnnotation.o: src/IKArrowAnnotation.m src/IKArrowAnnotation.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKArrowAnnotation.m
+$(OBJDIR)/IKAutoDetection.o: src/IKAutoDetection.m src/IKAutoDetection.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKAutoDetection.m
+$(OBJDIR)/IKAutodetectedItem.o: src/IKAutodetectedItem.m src/IKAutodetectedItem.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKAutodetectedItem.m
+$(OBJDIR)/IKAutolayoutImageView.o: src/IKAutolayoutImageView.m src/IKAutolayoutImageView.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKAutolayoutImageView.m
+$(OBJDIR)/IKBookletCell.o: src/IKBookletCell.m src/IKBookletCell.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKBookletCell.m
+$(OBJDIR)/IKBookletPlasticCover.o: src/IKBookletPlasticCover.m src/IKBookletPlasticCover.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKBookletPlasticCover.m
+$(OBJDIR)/IKBorderedView.o: src/IKBorderedView.m src/IKBorderedView.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKBorderedView.m
+$(OBJDIR)/IKBox.o: src/IKBox.m src/IKBox.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKBox.m
+$(OBJDIR)/IKCacheManager.o: src/IKCacheManager.m src/IKCacheManager.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKCacheManager.m
+$(OBJDIR)/IKCameraDeviceView.o: src/IKCameraDeviceView.m src/IKCameraDeviceView.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKCameraDeviceView.m
+$(OBJDIR)/IKDeviceBrowserView.o: src/IKDeviceBrowserView.m src/IKDeviceBrowserView.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKDeviceBrowserView.m
+$(OBJDIR)/IKFilterBrowserPanel.o: src/IKFilterBrowserPanel.m src/IKFilterBrowserPanel.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKFilterBrowserPanel.m
+$(OBJDIR)/IKFilterBrowserView.o: src/IKFilterBrowserView.m src/IKFilterBrowserView.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKFilterBrowserView.m
+$(OBJDIR)/IKFilterPanel.o: src/IKFilterPanel.m src/IKFilterPanel.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKFilterPanel.m
+$(OBJDIR)/IKFilterUI.o: src/IKFilterUI.m src/IKFilterUI.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKFilterUI.m
+$(OBJDIR)/IKFilterUIView.o: src/IKFilterUIView.m src/IKFilterUIView.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKFilterUIView.m
+$(OBJDIR)/IKImageBrowserCell.o: src/IKImageBrowserCell.m src/IKImageBrowserCell.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKImageBrowserCell.m
+$(OBJDIR)/IKImageBrowserView.o: src/IKImageBrowserView.m src/IKImageBrowserView.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKImageBrowserView.m
+$(OBJDIR)/IKImageEditPanel.o: src/IKImageEditPanel.m src/IKImageEditPanel.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKImageEditPanel.m
+$(OBJDIR)/IKImageView.o: src/IKImageView.m src/IKImageView.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKImageView.m
+$(OBJDIR)/IKPageLayout.o: src/IKPageLayout.m src/IKPageLayout.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKPageLayout.m
+$(OBJDIR)/IKPictureTaker.o: src/IKPictureTaker.m src/IKPictureTaker.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKPictureTaker.m
+$(OBJDIR)/IKPrivateGraphics.o: src/IKPrivateGraphics.m src/IKPrivateGraphics.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKPrivateGraphics.m
+$(OBJDIR)/IKSaveOptions.o: src/IKSaveOptions.m src/IKSaveOptions.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKSaveOptions.m
+$(OBJDIR)/IKScannerDeviceView.o: src/IKScannerDeviceView.m src/IKScannerDeviceView.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKScannerDeviceView.m
+$(OBJDIR)/IKSlideshow.o: src/IKSlideshow.m src/IKSlideshow.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKSlideshow.m
 
 install: all
 	install -d $(DESTDIR)$(PREFIX)/Library/Frameworks
