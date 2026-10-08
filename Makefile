@@ -52,6 +52,34 @@ $(OBJDIR)/IKPrivateGraphics.o: src/IKPrivateGraphics.m src/IKPrivateGraphics.h
 	@mkdir -p $(OBJDIR)
 	$(CC) $(MFLAGS) -c -o $@ src/IKPrivateGraphics.m
 
+$(OBJDIR)/IKCacheManager.o: src/IKCacheManager.m src/IKCacheManager.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKCacheManager.m
+$(OBJDIR)/IKFilterBrowserView.o: src/IKFilterBrowserView.m src/IKFilterBrowserView.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKFilterBrowserView.m
+$(OBJDIR)/IKFilterPanel.o: src/IKFilterPanel.m src/IKFilterPanel.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKFilterPanel.m
+$(OBJDIR)/IKImageBrowserView.o: src/IKImageBrowserView.m src/IKImageBrowserView.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKImageBrowserView.m
+$(OBJDIR)/IKImageEditPanel.o: src/IKImageEditPanel.m src/IKImageEditPanel.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKImageEditPanel.m
+$(OBJDIR)/IKPageLayout.o: src/IKPageLayout.m src/IKPageLayout.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKPageLayout.m
+$(OBJDIR)/IKPictureTaker.o: src/IKPictureTaker.m src/IKPictureTaker.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKPictureTaker.m
+$(OBJDIR)/IKSaveOptions.o: src/IKSaveOptions.m src/IKSaveOptions.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKSaveOptions.m
+$(OBJDIR)/IKSlideshow.o: src/IKSlideshow.m src/IKSlideshow.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKSlideshow.m
+
 install: all
 	install -d $(DESTDIR)$(PREFIX)/Library/Frameworks
 	cp -R $(FW_ID) $(DESTDIR)$(PREFIX)/Library/Frameworks/
