@@ -17,10 +17,10 @@ MFLAGS := $(OPT) -fobjc-exceptions -fobjc-arc \
 
 FW_ID     := $(BUILD_DIR)/ImageKit.framework
 FW_DYLIB  := $(FW_ID)/Versions/A/ImageKit
-FW_HDRS   := IKImageView.h IKPrivateGraphics.h ImageKit.h ImageKitBase.h IKPictureTaker.h IKSlideshow.h IKImageBrowserView.h IKImageEditPanel.h IKFilterBrowserView.h IKFilterPanel.h IKSaveOptions.h IKPageLayout.h IKCacheManager.h IKFilterBrowserPanel.h IKScannerDeviceView.h IKCameraDeviceView.h IKDeviceBrowserView.h
-FW_HDR_DEPS := src/IKImageView.h src/IKPrivateGraphics.h src/ImageKit.h src/ImageKitBase.h src/IKPictureTaker.h src/IKSlideshow.h src/IKImageBrowserView.h src/IKImageEditPanel.h src/IKFilterBrowserView.h src/IKFilterPanel.h src/IKSaveOptions.h src/IKPageLayout.h src/IKCacheManager.h src/IKFilterBrowserPanel.h src/IKScannerDeviceView.h src/IKCameraDeviceView.h src/IKDeviceBrowserView.h
+FW_HDRS   := IKImageView.h IKPrivateGraphics.h ImageKit.h ImageKitBase.h IKPictureTaker.h IKSlideshow.h IKImageBrowserView.h IKImageEditPanel.h IKFilterBrowserView.h IKFilterPanel.h IKSaveOptions.h IKPageLayout.h IKCacheManager.h IKFilterBrowserPanel.h IKScannerDeviceView.h IKCameraDeviceView.h IKDeviceBrowserView.h IKImageBrowserCell.h IKFilterUIView.h IKFilterUI.h
+FW_HDR_DEPS := src/IKImageView.h src/IKPrivateGraphics.h src/ImageKit.h src/ImageKitBase.h src/IKPictureTaker.h src/IKSlideshow.h src/IKImageBrowserView.h src/IKImageEditPanel.h src/IKFilterBrowserView.h src/IKFilterPanel.h src/IKSaveOptions.h src/IKPageLayout.h src/IKCacheManager.h src/IKFilterBrowserPanel.h src/IKScannerDeviceView.h src/IKCameraDeviceView.h src/IKDeviceBrowserView.h src/IKImageBrowserCell.h src/IKFilterUIView.h src/IKFilterUI.h
 
-OBJS := $(OBJDIR)/IKCacheManager.o $(OBJDIR)/IKFilterBrowserView.o $(OBJDIR)/IKFilterPanel.o $(OBJDIR)/IKImageBrowserView.o $(OBJDIR)/IKImageEditPanel.o $(OBJDIR)/IKImageView.o $(OBJDIR)/IKPageLayout.o $(OBJDIR)/IKPictureTaker.o $(OBJDIR)/IKPrivateGraphics.o $(OBJDIR)/IKSaveOptions.o $(OBJDIR)/IKSlideshow.o $(OBJDIR)/IKFilterBrowserPanel.o $(OBJDIR)/IKScannerDeviceView.o $(OBJDIR)/IKCameraDeviceView.o $(OBJDIR)/IKDeviceBrowserView.o
+OBJS := $(OBJDIR)/IKCacheManager.o $(OBJDIR)/IKFilterBrowserView.o $(OBJDIR)/IKFilterPanel.o $(OBJDIR)/IKImageBrowserView.o $(OBJDIR)/IKImageEditPanel.o $(OBJDIR)/IKImageView.o $(OBJDIR)/IKPageLayout.o $(OBJDIR)/IKPictureTaker.o $(OBJDIR)/IKPrivateGraphics.o $(OBJDIR)/IKSaveOptions.o $(OBJDIR)/IKSlideshow.o $(OBJDIR)/IKFilterBrowserPanel.o $(OBJDIR)/IKScannerDeviceView.o $(OBJDIR)/IKCameraDeviceView.o $(OBJDIR)/IKDeviceBrowserView.o $(OBJDIR)/IKImageBrowserCell.o $(OBJDIR)/IKFilterUIView.o $(OBJDIR)/IKFilterUI.o
 
 PREFIX  ?= /usr/local
 DESTDIR ?=
@@ -92,6 +92,16 @@ $(OBJDIR)/IKScannerDeviceView.o: src/IKScannerDeviceView.m src/IKScannerDeviceVi
 $(OBJDIR)/IKFilterBrowserPanel.o: src/IKFilterBrowserPanel.m src/IKFilterBrowserPanel.h
 	@mkdir -p $(OBJDIR)
 	$(CC) $(MFLAGS) -c -o $@ src/IKFilterBrowserPanel.m
+
+$(OBJDIR)/IKFilterUI.o: src/IKFilterUI.m src/IKFilterUI.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKFilterUI.m
+$(OBJDIR)/IKFilterUIView.o: src/IKFilterUIView.m src/IKFilterUIView.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKFilterUIView.m
+$(OBJDIR)/IKImageBrowserCell.o: src/IKImageBrowserCell.m src/IKImageBrowserCell.h
+	@mkdir -p $(OBJDIR)
+	$(CC) $(MFLAGS) -c -o $@ src/IKImageBrowserCell.m
 
 install: all
 	install -d $(DESTDIR)$(PREFIX)/Library/Frameworks
