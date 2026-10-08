@@ -60,3 +60,6 @@ clean:
 	rm -rf build
 
 .PHONY: all install clean
+
+test: all
+	@echo "no tests defined yet"
