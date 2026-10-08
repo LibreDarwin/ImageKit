@@ -80,3 +80,6 @@ IK_CLASS_AVAILABLE(10.5)
 @end
 
 #endif /* IKImageView_h */
+
+extern NSString *const IKToolModePaste;
+extern NSString *const IKToolModeSelectRectImageCapture;
