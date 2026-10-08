@@ -57,7 +57,7 @@ static CGContextRef __createCGBitmapContextWithSize(CGSize size, CGFloat scale, 
     if (width == 0 || height == 0)
         return NULL;
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
-    CGContextRef ctx = CGBitmapContextCreate(NULL, width, height, 8, width * 4, colorSpace, alphaInfo);
+    CGContextRef ctx = CGBitmapContextCreate(NULL, width, height, 8, width * 4, colorSpace, (CGBitmapInfo)alphaInfo);
     CGColorSpaceRelease(colorSpace);
     if (ctx)
     {
@@ -73,7 +73,7 @@ CGContextRef __CreateCGContextRefFromCGImageRef(CGImageRef image)
     size_t width = CGImageGetWidth(image);
     size_t height = CGImageGetHeight(image);
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
-    CGContextRef ctx = CGBitmapContextCreate(NULL, width, height, 8, width * 4, colorSpace, kCGImageAlphaPremultipliedLast);
+    CGContextRef ctx = CGBitmapContextCreate(NULL, width, height, 8, width * 4, colorSpace, (CGBitmapInfo)kCGImageAlphaPremultipliedLast);
     CGColorSpaceRelease(colorSpace);
     if (ctx)
     {
