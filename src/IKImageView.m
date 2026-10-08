@@ -229,3 +229,9 @@ NSString *const IKOverlayTypeImage = @"IKOverlayTypeImage";
 
 NSString *const IKToolModePaste = @"IKToolModePaste";
 NSString *const IKToolModeSelectRectImageCapture = @"IKToolModeSelectRectImageCapture";
+
+- (void)selectNone:(id)sender
+{
+}
+
+@end
