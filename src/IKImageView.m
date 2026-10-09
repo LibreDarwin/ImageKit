@@ -247,3 +247,5 @@ NSString *const IKToolModeSelectRectImageCapture = @"IKToolModeSelectRectImageCa
 {
     return nil;
 }
+
+@end
