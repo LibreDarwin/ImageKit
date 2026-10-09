@@ -26,3 +26,4 @@ extern BOOL IKIsValidSizeForToolMode(CGSize size, NSString *mode) { return YES; 
 extern BOOL IKSizeFitsInRect(CGSize size, CGRect rect) { return YES; }
 extern BOOL IKHasReturnValueForSelector(id obj, SEL sel) { return NO; }
 extern id IKUnretainedObjectForSelector(id obj, SEL sel) { return obj; }
+extern BOOL IKIsValidRectForToolMode(CGRect rect, NSString *mode) { return YES; }
