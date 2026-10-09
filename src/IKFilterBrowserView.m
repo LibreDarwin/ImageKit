@@ -6,5 +6,12 @@
 #import "IKFilterBrowserView.h"
 
 @implementation IKFilterBrowserView
+- (void)setDelegate:(id)delegate
+{
+}
 
+- (id)delegate
+{
+    return nil;
+}
 @end
