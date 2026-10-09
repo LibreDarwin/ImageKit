@@ -14,4 +14,12 @@
 {
     return nil;
 }
+- (void)setDataSource:(id)dataSource
+{
+}
+
+- (id)dataSource
+{
+    return nil;
+}
 @end
