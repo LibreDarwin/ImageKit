@@ -33,5 +33,40 @@
 - (void)setDataSource:(id)dataSource
 {
 }
+- (void)setDataSource:(id)dataSource
+{
+}
 
+- (id)dataSource
+{
+    return nil;
+}
+
+- (void)setDelegate:(id)delegate
+{
+}
+
+- (id)delegate
+{
+    return nil;
+}
 @end
+
+
+- (void)setDataSource:(id)dataSource
+{
+}
+
+- (id)dataSource
+{
+    return nil;
+}
+
+- (void)setDelegate:(id)delegate
+{
+}
+
+- (id)delegate
+{
+    return nil;
+}
