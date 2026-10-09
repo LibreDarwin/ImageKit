@@ -17,3 +17,6 @@ extern CGPoint IKCGPointMakeFromString(NSString *s) { return CGPointZero; }
 extern NSString *IKStringFromCGRect(CGRect r) { return nil; }
 extern NSString *IKStringFromCGSize(CGSize s) { return nil; }
 extern NSString *IKStringFromCGPoint(CGPoint p) { return nil; }
+extern CGImageRef IKCGImageFromBitmapContext(void *ctx) { return NULL; }
+extern CGContextRef IKCGContextFromBitmapContext(void *ctx) { return NULL; }
+extern CFTypeRef IKCreateIOImageFromCGImage(CGImageRef image) { return NULL; }
