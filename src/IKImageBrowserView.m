@@ -33,9 +33,6 @@
 {
     [super setNeedsDisplay:YES];
 }
-
-@end
-
 - (void)setDataSource:(id)dataSource
 {
 }
@@ -52,10 +49,6 @@
 - (id)delegate
 {
     return nil;
-}
-
-- (void)reloadData
-{
 }
 
 - (void)setAllowsMultipleSelection:(BOOL)flag
@@ -75,3 +68,6 @@
 {
     return [NSIndexSet indexSet];
 }
+@end
+
+
