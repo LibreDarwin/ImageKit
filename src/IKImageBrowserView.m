@@ -35,3 +35,43 @@
 }
 
 @end
+
+- (void)setDataSource:(id)dataSource
+{
+}
+
+- (id)dataSource
+{
+    return nil;
+}
+
+- (void)setDelegate:(id)delegate
+{
+}
+
+- (id)delegate
+{
+    return nil;
+}
+
+- (void)reloadData
+{
+}
+
+- (void)setAllowsMultipleSelection:(BOOL)flag
+{
+}
+
+- (BOOL)allowsMultipleSelection
+{
+    return NO;
+}
+
+- (void)setSelectionIndexes:(NSIndexSet *)indexes
+{
+}
+
+- (NSIndexSet *)selectionIndexes
+{
+    return [NSIndexSet indexSet];
+}
