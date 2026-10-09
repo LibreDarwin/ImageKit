@@ -22,3 +22,5 @@ extern CGContextRef IKCGContextFromBitmapContext(void *ctx) { return NULL; }
 extern CFTypeRef IKCreateIOImageFromCGImage(CGImageRef image) { return NULL; }
 extern CGColorRef IKCreateCGColorWithColor(NSColor *color) { return NULL; }
 extern NSColor *IKCreateColorWithCGColor(CGColorRef color) { return NULL; }
+extern BOOL IKIsValidSizeForToolMode(CGSize size, NSString *mode) { return YES; }
+extern BOOL IKSizeFitsInRect(CGSize size, CGRect rect) { return YES; }
