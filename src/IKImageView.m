@@ -225,6 +225,23 @@ NSString *const IKOverlayTypeImage = @"IKOverlayTypeImage";
 {
 }
 
+- (void)setImageWithImage:(id)image
+{
+}
+
+- (id)image
+{
+    return nil;
+}
+
+- (void)setImageName:(NSString *)name
+{
+}
+
+- (NSString *)imageName
+{
+    return nil;
+}
 @end
 
 NSString *const IKToolModePaste = @"IKToolModePaste";
