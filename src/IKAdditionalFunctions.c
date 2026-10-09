@@ -27,3 +27,6 @@ extern BOOL IKSizeFitsInRect(CGSize size, CGRect rect) { return YES; }
 extern BOOL IKHasReturnValueForSelector(id obj, SEL sel) { return NO; }
 extern id IKUnretainedObjectForSelector(id obj, SEL sel) { return obj; }
 extern BOOL IKIsValidRectForToolMode(CGRect rect, NSString *mode) { return YES; }
+extern BOOL IKImageBrowserAllowsEmptySelection(id browser) { return YES; }
+extern id IKImageBrowserCellForItemAtIndex(id browser, NSUInteger idx) { return nil; }
+extern CGRect IKImageBrowserFrameForItemAtIndex(id browser, NSUInteger idx) { return CGRectZero; }
