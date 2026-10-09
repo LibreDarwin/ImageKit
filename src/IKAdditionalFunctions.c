@@ -32,3 +32,5 @@ extern id IKImageBrowserCellForItemAtIndex(id browser, NSUInteger idx) { return 
 extern CGRect IKImageBrowserFrameForItemAtIndex(id browser, NSUInteger idx) { return CGRectZero; }
 extern BOOL IKImageViewCanHandleImageType(NSString *type) { return YES; }
 extern id IKImageViewImageWithSize(NSImage *image, NSSize size) { return image; }
+extern id IKFilterBrowserViewSelectionIndexes(id view) { return [NSIndexSet indexSet]; }
+extern void IKFilterBrowserViewSetSelectionIndexes(id view, id indexes) { }
