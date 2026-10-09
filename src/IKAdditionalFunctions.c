@@ -30,3 +30,5 @@ extern BOOL IKIsValidRectForToolMode(CGRect rect, NSString *mode) { return YES; 
 extern BOOL IKImageBrowserAllowsEmptySelection(id browser) { return YES; }
 extern id IKImageBrowserCellForItemAtIndex(id browser, NSUInteger idx) { return nil; }
 extern CGRect IKImageBrowserFrameForItemAtIndex(id browser, NSUInteger idx) { return CGRectZero; }
+extern BOOL IKImageViewCanHandleImageType(NSString *type) { return YES; }
+extern id IKImageViewImageWithSize(NSImage *image, NSSize size) { return image; }
