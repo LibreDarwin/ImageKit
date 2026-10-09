@@ -24,3 +24,5 @@ extern CGColorRef IKCreateCGColorWithColor(NSColor *color) { return NULL; }
 extern NSColor *IKCreateColorWithCGColor(CGColorRef color) { return NULL; }
 extern BOOL IKIsValidSizeForToolMode(CGSize size, NSString *mode) { return YES; }
 extern BOOL IKSizeFitsInRect(CGSize size, CGRect rect) { return YES; }
+extern BOOL IKHasReturnValueForSelector(id obj, SEL sel) { return NO; }
+extern id IKUnretainedObjectForSelector(id obj, SEL sel) { return obj; }
