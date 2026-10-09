@@ -14,3 +14,6 @@ extern BOOL IKCGImageHasAlphaChannel(CGImageRef image) { return YES; }
 extern CGRect IKCGRectMakeFromString(NSString *s) { return CGRectZero; }
 extern CGSize IKCGSizeMakeFromString(NSString *s) { return CGSizeZero; }
 extern CGPoint IKCGPointMakeFromString(NSString *s) { return CGPointZero; }
+extern NSString *IKStringFromCGRect(CGRect r) { return nil; }
+extern NSString *IKStringFromCGSize(CGSize s) { return nil; }
+extern NSString *IKStringFromCGPoint(CGPoint p) { return nil; }
