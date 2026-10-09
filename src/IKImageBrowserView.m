@@ -68,6 +68,12 @@
 {
     return [NSIndexSet indexSet];
 }
+- (void)setZoomValue:(double)zoom
+{
+}
+
+- (double)zoomValue
+{
+    return 1.0;
+}
 @end
-
-
