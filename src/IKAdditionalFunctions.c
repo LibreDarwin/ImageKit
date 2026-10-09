@@ -20,3 +20,5 @@ extern NSString *IKStringFromCGPoint(CGPoint p) { return nil; }
 extern CGImageRef IKCGImageFromBitmapContext(void *ctx) { return NULL; }
 extern CGContextRef IKCGContextFromBitmapContext(void *ctx) { return NULL; }
 extern CFTypeRef IKCreateIOImageFromCGImage(CGImageRef image) { return NULL; }
+extern CGColorRef IKCreateCGColorWithColor(NSColor *color) { return NULL; }
+extern NSColor *IKCreateColorWithCGColor(CGColorRef color) { return NULL; }
