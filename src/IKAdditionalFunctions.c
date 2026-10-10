@@ -68,3 +68,4 @@ extern CGColorSpaceRef IKColorSpaceForImage(NSImage *image) { return NULL; }
 extern NSArray *IKSupportedImageTypes(void) { return [NSArray array]; }
 extern NSArray *IKImageTypesWithData(NSData *data) { return [NSArray array]; }
 extern NSArray *IKImageTypesWithURL(NSURL *url) { return [NSArray array]; }
+extern void IKSetFileTypeForImage(NSImage *image, NSString *type) { }
