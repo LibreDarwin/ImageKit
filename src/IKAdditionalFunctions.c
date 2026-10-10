@@ -76,3 +76,4 @@ extern NSURL *IKSaveImage(NSImage *image, NSURL *url, NSString *type, NSDictiona
 extern NSString *IKCopyMetadataOfImageAtURL(NSURL *url, NSDictionary *opts) { return nil; }
 extern void IKSetMetadataForImage(NSImage *image, NSString *data) { }
 extern NSString *IKMetadataForImage(NSImage *image) { return nil; }
+extern NSImage *IKCreateThumbnailForImage(NSImage *image, NSSize size) { return image ? [image copy] : nil; }
