@@ -59,3 +59,4 @@ extern void IKSetImageWithUTType(NSImage *image, NSString *uttype) { }
 extern BOOL IKIsHDRImage(NSImage *image) { return NO; }
 extern BOOL IKIsWideGamutImage(NSImage *image) { return NO; }
 extern BOOL IKHasDepthData(NSImage *image) { return NO; }
+extern BOOL IKIsImageURLSupported(NSURL *url) { return YES; }
