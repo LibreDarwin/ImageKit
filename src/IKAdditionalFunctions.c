@@ -44,3 +44,4 @@ extern id IKCreateCGBitmapContextWithSize(CGSize size, BOOL opaque) { return NUL
 extern void IKRegisterDrawingLayerClass(id layerClass) { }
 extern void IKUnregisterDrawingLayerClass(id layerClass) { }
 extern NSBundle *IKImageKitBundle(void) { return [NSBundle bundleWithIdentifier:@"com.apple.imagekit"]; }
+extern CGImageRef IKThumbnailImageFromCGImage(CGImageRef image, CGSize size, CGFloat scale) { return image; }
