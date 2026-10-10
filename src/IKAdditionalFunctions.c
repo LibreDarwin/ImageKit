@@ -65,3 +65,4 @@ extern BOOL IKCanUseIconForFile(NSString *path) { return NO; }
 extern BOOL IKIsImageAtPathSupported(NSString *path) { return YES; }
 extern void IKSetColorSpaceForImage(NSImage *image, CGColorSpaceRef space) { }
 extern CGColorSpaceRef IKColorSpaceForImage(NSImage *image) { return NULL; }
+extern NSArray *IKSupportedImageTypes(void) { return [NSArray array]; }
