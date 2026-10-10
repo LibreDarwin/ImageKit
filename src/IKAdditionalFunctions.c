@@ -55,3 +55,4 @@ extern void IKImageCaptureDisableScreenFlash(void) { }
 extern void IKImageCaptureEnableScreenFlash(void) { }
 extern NSString *IKMediaTypeFromCGImageSource(CGImageSourceRef source) { return nil; }
 extern NSDictionary *IKPropertiesFromCGImageSource(CGImageSourceRef source) { return nil; }
+extern void IKSetImageWithUTType(NSImage *image, NSString *uttype) { }
