@@ -47,3 +47,4 @@ extern NSBundle *IKImageKitBundle(void) { return [NSBundle bundleWithIdentifier:
 extern CGImageRef IKThumbnailImageFromCGImage(CGImageRef image, CGSize size, CGFloat scale) { return image; }
 extern NSString *IKImageTypeIdentifierFromUTType(NSString *uttype) { return uttype; }
 extern NSString *IKUTTypeFromImageTypeIdentifier(NSString *ident) { return ident; }
+extern CGImageSourceRef IKCGImageSourceCreateFromImage(NSImage *image) { return NULL; }
