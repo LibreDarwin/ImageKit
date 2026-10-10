@@ -57,3 +57,4 @@ extern NSString *IKMediaTypeFromCGImageSource(CGImageSourceRef source) { return 
 extern NSDictionary *IKPropertiesFromCGImageSource(CGImageSourceRef source) { return nil; }
 extern void IKSetImageWithUTType(NSImage *image, NSString *uttype) { }
 extern BOOL IKIsHDRImage(NSImage *image) { return NO; }
+extern BOOL IKIsWideGamutImage(NSImage *image) { return NO; }
