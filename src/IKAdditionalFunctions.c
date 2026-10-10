@@ -63,3 +63,4 @@ extern BOOL IKIsImageURLSupported(NSURL *url) { return YES; }
 extern BOOL IKIsImageDataSupported(NSData *data) { return YES; }
 extern BOOL IKCanUseIconForFile(NSString *path) { return NO; }
 extern BOOL IKIsImageAtPathSupported(NSString *path) { return YES; }
+extern void IKSetColorSpaceForImage(NSImage *image, CGColorSpaceRef space) { }
