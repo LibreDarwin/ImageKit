@@ -38,3 +38,5 @@ extern id IKPictureTakerOutputImage(id pt) { return nil; }
 extern void IKPictureTakerSetOutputImage(id pt, id image) { }
 extern NSSize IKImageViewZoomToFitSize(id view) { return NSMakeSize(100,100); }
 extern double IKImageViewZoomFactor(id view) { return 1.0; }
+extern void IKApplyColorToContext(CGContextRef ctx, CGColorRef color) { }
+extern CGAffineTransform IKTransformFromRectToRect(CGRect from, CGRect to) { return CGAffineTransformIdentity; }
