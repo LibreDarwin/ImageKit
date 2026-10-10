@@ -70,3 +70,4 @@ extern NSArray *IKImageTypesWithData(NSData *data) { return [NSArray array]; }
 extern NSArray *IKImageTypesWithURL(NSURL *url) { return [NSArray array]; }
 extern void IKSetFileTypeForImage(NSImage *image, NSString *type) { }
 extern NSString *IKFileTypeForImage(NSImage *image) { return @"public.jpeg"; }
+extern NSData *IKBitmapDataFromImage(NSImage *image) { return nil; }
