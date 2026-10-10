@@ -53,3 +53,4 @@ extern CGImageRef IKCGImageFromNSImage(NSImage *image) { return NULL; }
 extern NSImage *IKNSImageFromCGImage(CGImageRef image) { return nil; }
 extern void IKImageCaptureDisableScreenFlash(void) { }
 extern void IKImageCaptureEnableScreenFlash(void) { }
+extern NSString *IKMediaTypeFromCGImageSource(CGImageSourceRef source) { return nil; }
