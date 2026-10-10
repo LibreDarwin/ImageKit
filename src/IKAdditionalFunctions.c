@@ -41,3 +41,5 @@ extern double IKImageViewZoomFactor(id view) { return 1.0; }
 extern void IKApplyColorToContext(CGContextRef ctx, CGColorRef color) { }
 extern CGAffineTransform IKTransformFromRectToRect(CGRect from, CGRect to) { return CGAffineTransformIdentity; }
 extern id IKCreateCGBitmapContextWithSize(CGSize size, BOOL opaque) { return NULL; }
+extern void IKRegisterDrawingLayerClass(id layerClass) { }
+extern void IKUnregisterDrawingLayerClass(id layerClass) { }
