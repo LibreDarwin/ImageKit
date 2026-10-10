@@ -34,3 +34,5 @@ extern BOOL IKImageViewCanHandleImageType(NSString *type) { return YES; }
 extern id IKImageViewImageWithSize(NSImage *image, NSSize size) { return image; }
 extern id IKFilterBrowserViewSelectionIndexes(id view) { return [NSIndexSet indexSet]; }
 extern void IKFilterBrowserViewSetSelectionIndexes(id view, id indexes) { }
+extern id IKPictureTakerOutputImage(id pt) { return nil; }
+extern void IKPictureTakerSetOutputImage(id pt, id image) { }
