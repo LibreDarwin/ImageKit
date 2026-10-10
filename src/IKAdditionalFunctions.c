@@ -49,3 +49,5 @@ extern NSString *IKImageTypeIdentifierFromUTType(NSString *uttype) { return utty
 extern NSString *IKUTTypeFromImageTypeIdentifier(NSString *ident) { return ident; }
 extern CGImageSourceRef IKCGImageSourceCreateFromImage(NSImage *image) { return NULL; }
 extern NSImage *IKImageFromCGImageSource(CGImageSourceRef source, NSDictionary *options) { return nil; }
+extern CGImageRef IKCGImageFromNSImage(NSImage *image) { return NULL; }
+extern NSImage *IKNSImageFromCGImage(CGImageRef image) { return nil; }
