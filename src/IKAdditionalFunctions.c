@@ -48,3 +48,4 @@ extern CGImageRef IKThumbnailImageFromCGImage(CGImageRef image, CGSize size, CGF
 extern NSString *IKImageTypeIdentifierFromUTType(NSString *uttype) { return uttype; }
 extern NSString *IKUTTypeFromImageTypeIdentifier(NSString *ident) { return ident; }
 extern CGImageSourceRef IKCGImageSourceCreateFromImage(NSImage *image) { return NULL; }
+extern NSImage *IKImageFromCGImageSource(CGImageSourceRef source, NSDictionary *options) { return nil; }
