@@ -51,3 +51,5 @@ extern CGImageSourceRef IKCGImageSourceCreateFromImage(NSImage *image) { return 
 extern NSImage *IKImageFromCGImageSource(CGImageSourceRef source, NSDictionary *options) { return nil; }
 extern CGImageRef IKCGImageFromNSImage(NSImage *image) { return NULL; }
 extern NSImage *IKNSImageFromCGImage(CGImageRef image) { return nil; }
+extern void IKImageCaptureDisableScreenFlash(void) { }
+extern void IKImageCaptureEnableScreenFlash(void) { }
