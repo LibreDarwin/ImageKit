@@ -72,3 +72,4 @@ extern void IKSetFileTypeForImage(NSImage *image, NSString *type) { }
 extern NSString *IKFileTypeForImage(NSImage *image) { return @"public.jpeg"; }
 extern NSData *IKBitmapDataFromImage(NSImage *image) { return nil; }
 extern NSArray *IKCreatePDFDocumentDataWithImage(NSImage *image) { return nil; }
+extern NSURL *IKSaveImage(NSImage *image, NSURL *url, NSString *type, NSDictionary *props) { return url; }
