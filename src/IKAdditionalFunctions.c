@@ -36,3 +36,5 @@ extern id IKFilterBrowserViewSelectionIndexes(id view) { return [NSIndexSet inde
 extern void IKFilterBrowserViewSetSelectionIndexes(id view, id indexes) { }
 extern id IKPictureTakerOutputImage(id pt) { return nil; }
 extern void IKPictureTakerSetOutputImage(id pt, id image) { }
+extern NSSize IKImageViewZoomToFitSize(id view) { return NSMakeSize(100,100); }
+extern double IKImageViewZoomFactor(id view) { return 1.0; }
