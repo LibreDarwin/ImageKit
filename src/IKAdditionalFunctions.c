@@ -79,3 +79,4 @@ extern NSString *IKMetadataForImage(NSImage *image) { return nil; }
 extern NSImage *IKCreateThumbnailForImage(NSImage *image, NSSize size) { return image ? [image copy] : nil; }
 extern CGImageRef IKCGImageFromNSImage(NSImage *image) { return NULL; }
 extern BOOL IKIsHDRImage(NSImage *image) { return NO; }
+extern BOOL IKIsImageRectSuitableForFaceCore(CGRect r) { return YES; }
