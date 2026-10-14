@@ -93,3 +93,4 @@ extern CGSize IKSizeOfImage(NSImage *image) { return image ? [image size] : NSZe
 extern BOOL IKIsVectorImage(NSImage *image) { return NO; }
 extern BOOL IKIsGrayscaleImage(NSImage *image) { return NO; }
 extern BOOL IKIsBitmapImage(NSImage *image) { return YES; }
+extern void IKApplyFilter(NSImage *image, NSString *filterName, NSDictionary *params) { }
