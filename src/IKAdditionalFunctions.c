@@ -95,3 +95,4 @@ extern BOOL IKIsGrayscaleImage(NSImage *image) { return NO; }
 extern BOOL IKIsBitmapImage(NSImage *image) { return YES; }
 extern void IKApplyFilter(NSImage *image, NSString *filterName, NSDictionary *params) { }
 extern NSArray *IKFilterNames(void) { return [NSArray array]; }
+extern NSDictionary *IKFilterParameters(NSString *filterName) { return [NSDictionary dictionary]; }
