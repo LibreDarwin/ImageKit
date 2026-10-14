@@ -97,3 +97,4 @@ extern void IKApplyFilter(NSImage *image, NSString *filterName, NSDictionary *pa
 extern NSArray *IKFilterNames(void) { return [NSArray array]; }
 extern NSDictionary *IKFilterParameters(NSString *filterName) { return [NSDictionary dictionary]; }
 extern NSRect IKFitRect(NSRect rect, NSRect inRect) { return rect; }
+extern NSRect IKCenterRect(NSRect rect, NSRect inRect) { return rect; }
