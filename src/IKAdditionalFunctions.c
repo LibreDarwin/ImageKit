@@ -89,3 +89,4 @@ extern NSString *IKImageSourceUTTypeIdentifierFromFileName(NSString *name) { ret
 extern NSString *IKUTTypeStringForURL(NSURL *url) { return @"public.image"; }
 extern CGColorRef IKCreateCGColorFromNSColor(NSColor *color) { return NULL; }
 extern NSData *IKDataFromCGImage(CGImageRef img) { return nil; }
+extern CGSize IKSizeOfImage(NSImage *image) { return image ? [image size] : NSZeroSize; }
