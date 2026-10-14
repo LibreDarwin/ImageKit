@@ -85,3 +85,4 @@ extern void IKDebugLog(NSString *msg) { }
 extern BOOL IKIsCMYKImage(NSImage *image) { return NO; }
 extern CGImageRef IKCreateCGImageFromBitmapData(NSData *data) { return NULL; }
 extern NSImage *IKCreateImageFromBitmapData(NSData *data) { return nil; }
+extern NSString *IKImageSourceUTTypeIdentifierFromFileName(NSString *name) { return @"public.image"; }
