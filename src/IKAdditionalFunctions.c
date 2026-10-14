@@ -99,3 +99,4 @@ extern NSDictionary *IKFilterParameters(NSString *filterName) { return [NSDictio
 extern NSRect IKFitRect(NSRect rect, NSRect inRect) { return rect; }
 extern NSRect IKCenterRect(NSRect rect, NSRect inRect) { return rect; }
 extern NSRect IKRectWithSize(NSSize size) { return NSMakeRect(0,0,size.width,size.height); }
+extern NSRect IKIntegralRect(NSRect rect) { return rect; }
