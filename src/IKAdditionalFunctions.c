@@ -102,3 +102,4 @@ extern NSRect IKRectWithSize(NSSize size) { return NSMakeRect(0,0,size.width,siz
 extern NSRect IKIntegralRect(NSRect rect) { return rect; }
 extern NSRect IKOutsetRect(NSRect rect, CGFloat dx, CGFloat dy) { return rect; }
 extern NSRect IKInsetRect(NSRect rect, CGFloat dx, CGFloat dy) { return rect; }
+extern NSRect IKIntersectRect(NSRect r1, NSRect r2) { return NSIntersectionRect(r1,r2); }
