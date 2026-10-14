@@ -80,3 +80,4 @@ extern NSImage *IKCreateThumbnailForImage(NSImage *image, NSSize size) { return 
 extern CGImageRef IKCGImageFromNSImage(NSImage *image) { return NULL; }
 extern BOOL IKIsHDRImage(NSImage *image) { return NO; }
 extern BOOL IKIsImageRectSuitableForFaceCore(CGRect r) { return YES; }
+extern BOOL IKHasAlpha(NSImage *image) { return YES; }
