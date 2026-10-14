@@ -101,3 +101,4 @@ extern NSRect IKCenterRect(NSRect rect, NSRect inRect) { return rect; }
 extern NSRect IKRectWithSize(NSSize size) { return NSMakeRect(0,0,size.width,size.height); }
 extern NSRect IKIntegralRect(NSRect rect) { return rect; }
 extern NSRect IKOutsetRect(NSRect rect, CGFloat dx, CGFloat dy) { return rect; }
+extern NSRect IKInsetRect(NSRect rect, CGFloat dx, CGFloat dy) { return rect; }
