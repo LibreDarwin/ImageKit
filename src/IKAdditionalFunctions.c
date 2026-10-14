@@ -88,3 +88,4 @@ extern NSImage *IKCreateImageFromBitmapData(NSData *data) { return nil; }
 extern NSString *IKImageSourceUTTypeIdentifierFromFileName(NSString *name) { return @"public.image"; }
 extern NSString *IKUTTypeStringForURL(NSURL *url) { return @"public.image"; }
 extern CGColorRef IKCreateCGColorFromNSColor(NSColor *color) { return NULL; }
+extern NSData *IKDataFromCGImage(CGImageRef img) { return nil; }
