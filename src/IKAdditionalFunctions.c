@@ -91,3 +91,4 @@ extern CGColorRef IKCreateCGColorFromNSColor(NSColor *color) { return NULL; }
 extern NSData *IKDataFromCGImage(CGImageRef img) { return nil; }
 extern CGSize IKSizeOfImage(NSImage *image) { return image ? [image size] : NSZeroSize; }
 extern BOOL IKIsVectorImage(NSImage *image) { return NO; }
+extern BOOL IKIsGrayscaleImage(NSImage *image) { return NO; }
