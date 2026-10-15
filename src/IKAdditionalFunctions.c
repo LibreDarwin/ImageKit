@@ -108,3 +108,4 @@ extern NSImage *IKImageFromCGImage(CGImageRef img) { return nil; }
 extern NSDictionary *IKProfileFromImage(NSImage *image) { return [NSDictionary dictionary]; }
 extern NSString *IKDescriptionForImage(NSImage *image) { return nil; }
 extern NSArray *IKProfilesForImage(NSImage *image) { return [NSArray array]; }
+extern BOOL IKIsRAWImage(NSImage *image) { return NO; }
