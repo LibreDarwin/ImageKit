@@ -2828,7 +2828,7 @@ $(OBJDIR)/IKiOSStyleGroupCell.o: src/IKiOSStyleGroupCell.m src/IKiOSStyleGroupCe
 
 $(OBJDIR)/IKAdditionalFunctions.o: src/IKAdditionalFunctions.c
 	@mkdir -p $(OBJDIR)
-	$(CC) $(MFLAGS) -c -o $@ src/IKAdditionalFunctions.c
+	$(CC) $(MFLAGS) -x objective-c -c -o $@ src/IKAdditionalFunctions.c
 
 install: all
 	install -d $(DESTDIR)$(PREFIX)/Library/Frameworks

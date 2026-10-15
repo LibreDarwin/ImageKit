@@ -75,57 +75,5 @@ NSString *const IKPictureTakerShowTitleKey = @"IKPictureTakerShowTitleKey";
 {
     return nil;
 }
-- (void)setValue:(id)value forKey:(NSString *)key
-{
-}
-
-- (id)valueForKey:(NSString *)key
-{
-    return nil;
-}
-
-- (void)setInputImage:(NSImage *)image
-{
-}
-
-- (NSImage *)inputImage
-{
-    return nil;
-}
-
-- (void)setOutputImage:(NSImage *)image
-{
-}
-
-- (NSImage *)outputImage
-{
-    return nil;
-}
-- (void)setValue:(id)value forKey:(NSString *)key
-{
-}
-
-- (id)valueForKey:(NSString *)key
-{
-    return nil;
-}
-
-- (void)setInputImage:(NSImage *)image
-{
-}
-
-- (NSImage *)inputImage
-{
-    return nil;
-}
-
-- (void)setOutputImage:(NSImage *)image
-{
-}
-
-- (NSImage *)outputImage
-{
-    return nil;
-}
 @end
 

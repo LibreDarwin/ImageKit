@@ -4,6 +4,8 @@
  */
 
 #include <CoreGraphics/CoreGraphics.h>
+#import <AppKit/AppKit.h>
+#import <ImageIO/ImageIO.h>
 
 extern void IK1600Driver(void) { }
 extern CFAbsoluteTime IKAccelerateTime(CFAbsoluteTime t) { return t; }
@@ -44,7 +46,6 @@ extern id IKCreateCGBitmapContextWithSize(CGSize size, BOOL opaque) { return NUL
 extern void IKRegisterDrawingLayerClass(id layerClass) { }
 extern void IKUnregisterDrawingLayerClass(id layerClass) { }
 extern NSBundle *IKImageKitBundle(void) { return [NSBundle bundleWithIdentifier:@"com.apple.imagekit"]; }
-extern CGImageRef IKThumbnailImageFromCGImage(CGImageRef image, CGSize size, CGFloat scale) { return image; }
 extern NSString *IKImageTypeIdentifierFromUTType(NSString *uttype) { return uttype; }
 extern NSString *IKUTTypeFromImageTypeIdentifier(NSString *ident) { return ident; }
 extern CGImageSourceRef IKCGImageSourceCreateFromImage(NSImage *image) { return NULL; }
@@ -77,8 +78,6 @@ extern NSString *IKCopyMetadataOfImageAtURL(NSURL *url, NSDictionary *opts) { re
 extern void IKSetMetadataForImage(NSImage *image, NSString *data) { }
 extern NSString *IKMetadataForImage(NSImage *image) { return nil; }
 extern NSImage *IKCreateThumbnailForImage(NSImage *image, NSSize size) { return image ? [image copy] : nil; }
-extern CGImageRef IKCGImageFromNSImage(NSImage *image) { return NULL; }
-extern BOOL IKIsHDRImage(NSImage *image) { return NO; }
 extern BOOL IKIsImageRectSuitableForFaceCore(CGRect r) { return YES; }
 extern BOOL IKHasAlpha(NSImage *image) { return YES; }
 extern void IKDebugLog(NSString *msg) { }
