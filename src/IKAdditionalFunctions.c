@@ -109,3 +109,4 @@ extern NSDictionary *IKProfileFromImage(NSImage *image) { return [NSDictionary d
 extern NSString *IKDescriptionForImage(NSImage *image) { return nil; }
 extern NSArray *IKProfilesForImage(NSImage *image) { return [NSArray array]; }
 extern BOOL IKIsRAWImage(NSImage *image) { return NO; }
+extern BOOL IKIsAnimatedImage(NSImage *image) { return NO; }
