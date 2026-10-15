@@ -116,3 +116,4 @@ extern NSImage *IKImageForFrame(NSImage *image, NSUInteger frame) { return image
 extern BOOL IKIsRotationEnabledForImage(NSImage *image) { return YES; }
 extern BOOL IKIsCroppingEnabledForImage(NSImage *image) { return YES; }
 extern BOOL IKIsResizingEnabledForImage(NSImage *image) { return YES; }
+extern BOOL IKIsZoomingEnabledForImage(NSImage *image) { return YES; }
