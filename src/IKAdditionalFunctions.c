@@ -114,3 +114,4 @@ extern NSTimeInterval IKAnimationDurationForImage(NSImage *image) { return 0.0; 
 extern NSUInteger IKAnimationFrameCountForImage(NSImage *image) { return 0; }
 extern NSImage *IKImageForFrame(NSImage *image, NSUInteger frame) { return image ? [image copy] : nil; }
 extern BOOL IKIsRotationEnabledForImage(NSImage *image) { return YES; }
+extern BOOL IKIsCroppingEnabledForImage(NSImage *image) { return YES; }
