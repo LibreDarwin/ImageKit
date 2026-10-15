@@ -105,3 +105,4 @@ extern NSRect IKInsetRect(NSRect rect, CGFloat dx, CGFloat dy) { return rect; }
 extern NSRect IKIntersectRect(NSRect r1, NSRect r2) { return NSIntersectionRect(r1,r2); }
 extern NSRect IKCropRect(NSRect rect, CGFloat dw, CGFloat dh) { return rect; }
 extern NSImage *IKImageFromCGImage(CGImageRef img) { return nil; }
+extern NSDictionary *IKProfileFromImage(NSImage *image) { return [NSDictionary dictionary]; }
