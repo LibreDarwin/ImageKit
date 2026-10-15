@@ -122,3 +122,4 @@ extern BOOL IKIsAnnotationsEnabledForImage(NSImage *image) { return YES; }
 extern BOOL IKIsAdjustmentsEnabledForImage(NSImage *image) { return YES; }
 extern BOOL IKIsEffectsEnabledForImage(NSImage *image) { return YES; }
 extern BOOL IKIsOptionsEnabledForImage(NSImage *image) { return YES; }
+extern BOOL IKIsInspectorEnabledForImage(NSImage *image) { return YES; }
