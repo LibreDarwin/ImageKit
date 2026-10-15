@@ -112,3 +112,4 @@ extern BOOL IKIsRAWImage(NSImage *image) { return NO; }
 extern BOOL IKIsAnimatedImage(NSImage *image) { return NO; }
 extern NSTimeInterval IKAnimationDurationForImage(NSImage *image) { return 0.0; }
 extern NSUInteger IKAnimationFrameCountForImage(NSImage *image) { return 0; }
+extern NSImage *IKImageForFrame(NSImage *image, NSUInteger frame) { return image ? [image copy] : nil; }
