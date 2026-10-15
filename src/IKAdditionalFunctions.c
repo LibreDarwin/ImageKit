@@ -103,3 +103,4 @@ extern NSRect IKIntegralRect(NSRect rect) { return rect; }
 extern NSRect IKOutsetRect(NSRect rect, CGFloat dx, CGFloat dy) { return rect; }
 extern NSRect IKInsetRect(NSRect rect, CGFloat dx, CGFloat dy) { return rect; }
 extern NSRect IKIntersectRect(NSRect r1, NSRect r2) { return NSIntersectionRect(r1,r2); }
+extern NSRect IKCropRect(NSRect rect, CGFloat dw, CGFloat dh) { return rect; }
