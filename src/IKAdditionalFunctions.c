@@ -118,3 +118,4 @@ extern BOOL IKIsCroppingEnabledForImage(NSImage *image) { return YES; }
 extern BOOL IKIsResizingEnabledForImage(NSImage *image) { return YES; }
 extern BOOL IKIsZoomingEnabledForImage(NSImage *image) { return YES; }
 extern BOOL IKIsFilteringEnabledForImage(NSImage *image) { return YES; }
+extern BOOL IKIsAnnotationsEnabledForImage(NSImage *image) { return YES; }
