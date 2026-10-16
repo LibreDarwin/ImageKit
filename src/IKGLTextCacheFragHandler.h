@@ -5,8 +5,14 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import "IKCacheFragHandler.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKGLTextCacheFragHandler : NSObject
+@interface IKGLTextCacheFragHandler : NSObject {
+    IKCacheFragHandler *_fragHandler;
+    int _maxLineHeight;
+    CGSize _currentSize;
+    CGRect _usedSpace;
+}
 
 @end
