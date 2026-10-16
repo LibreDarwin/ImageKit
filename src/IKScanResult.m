@@ -23,4 +23,14 @@
 {
     return nil;
 }
+
+- (void)setUrl:(id)arg1
+{
+
+}
+
+- (id)url
+{
+    return nil;
+}
 @end

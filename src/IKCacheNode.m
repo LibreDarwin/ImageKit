@@ -19,6 +19,11 @@
     return nil;
 }
 
+- (id)parent
+{
+    return nil;
+}
+
 - (id)removeObjectForCacheKey:(id)arg1
 {
     return nil;
@@ -29,9 +34,24 @@
     return nil;
 }
 
+- (void)setParent:(id)arg1
+{
+
+}
+
+- (void)setSize:(id)arg1
+{
+
+}
+
 - (void)setThumbnail:(id)arg1
 {
 
+}
+
+- (CGSize)size
+{
+    return (CGSize){0};
 }
 
 - (id)thumbnail

@@ -29,7 +29,17 @@
     return nil;
 }
 
+- (id)colorSpace
+{
+    return nil;
+}
+
 - (id)completionHandler
+{
+    return nil;
+}
+
+- (id)copyWithZone:(id)arg1
 {
     return nil;
 }
@@ -99,6 +109,11 @@
     return nil;
 }
 
+- (id)index
+{
+    return nil;
+}
+
 - (id)isRaw
 {
     return nil;
@@ -134,6 +149,16 @@
     return nil;
 }
 
+- (id)model
+{
+    return nil;
+}
+
+- (id)name
+{
+    return nil;
+}
+
 - (id)prepareForDelete
 {
     return nil;
@@ -150,6 +175,11 @@
 }
 
 - (void)setCameraFile:(id)arg1
+{
+
+}
+
+- (void)setColorSpace:(id)arg1
 {
 
 }
@@ -194,6 +224,16 @@
 
 }
 
+- (void)setIndex:(id)arg1
+{
+
+}
+
+- (void)setItem:(id)arg1
+{
+
+}
+
 - (void)setLatitude:(id)arg1
 {
 
@@ -220,6 +260,11 @@
 }
 
 - (void)setMetadataState:(id)arg1
+{
+
+}
+
+- (void)setModel:(id)arg1
 {
 
 }

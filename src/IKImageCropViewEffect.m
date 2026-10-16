@@ -9,11 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)resourceImageNamed:(id)arg1
-{
-    return nil;
-}
-
 - (id)SFElement
 {
     return nil;
@@ -34,7 +29,27 @@
     return nil;
 }
 
+- (id)hitTest:(NSPoint)arg1
+{
+    return nil;
+}
+
+- (id)name
+{
+    return nil;
+}
+
+- (id)position
+{
+    return nil;
+}
+
 - (void)setComposition:(id)arg1
+{
+
+}
+
+- (void)setPosition:(id)arg1
 {
 
 }
@@ -42,5 +57,10 @@
 - (void)setSFElement:(id)arg1
 {
 
+}
+
+- (id)type
+{
+    return nil;
 }
 @end

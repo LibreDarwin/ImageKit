@@ -9,9 +9,9 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)sharedTempDirectoryHandler
+- (void)applicationWillTerminate:(id)arg1
 {
-    return nil;
+
 }
 
 - (id)tempDirectoryPathForKey:(id)arg1

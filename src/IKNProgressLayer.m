@@ -9,6 +9,16 @@
 
 
 /* --- generated selector-parity stubs --- */
+- (id)progress
+{
+    return nil;
+}
+
+- (void)setProgress:(id)arg1
+{
+
+}
+
 - (id)setup
 {
     return nil;

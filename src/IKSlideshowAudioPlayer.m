@@ -9,6 +9,26 @@
 
 
 /* --- generated selector-parity stubs --- */
+- (BOOL)play
+{
+    return (BOOL){0};
+}
+
+- (void)setURL:(id)arg1
+{
+
+}
+
+- (void)setURLs:(id)arg1
+{
+
+}
+
+- (void)sound:(id)arg1 didFinishPlaying:(BOOL)arg2
+{
+
+}
+
 - (id)startPlaying
 {
     return nil;

@@ -54,11 +54,6 @@
     return nil;
 }
 
-- (id)cropElementDidLiveUpdate:(id)arg1
-{
-    return nil;
-}
-
 - (id)directTakePicture
 {
     return nil;
@@ -95,11 +90,6 @@
 }
 
 - (id)isIrisClosed
-{
-    return nil;
-}
-
-- (id)isLiveCapturing
 {
     return nil;
 }

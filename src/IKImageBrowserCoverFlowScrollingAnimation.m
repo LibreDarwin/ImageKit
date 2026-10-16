@@ -9,11 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-- (id)animationManager:(id)arg1 processStep:(id)arg2
-{
-    return nil;
-}
-
 - (id)grid
 {
     return nil;
@@ -24,17 +19,22 @@
     return nil;
 }
 
-- (id)handleChannel:(id)arg1
-{
-    return nil;
-}
-
 - (id)initialOffset
 {
     return nil;
 }
 
 - (id)overflowMode
+{
+    return nil;
+}
+
+- (void)reset
+{
+
+}
+
+- (id)scrollVelocity
 {
     return nil;
 }
@@ -55,6 +55,11 @@
 }
 
 - (void)setOverflowMode:(id)arg1
+{
+
+}
+
+- (void)setScrollVelocity:(id)arg1
 {
 
 }

@@ -9,12 +9,7 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)itemWithImage:(id)arg1
-{
-    return nil;
-}
-
-+ (id)itemWithPath:(id)arg1
+- (id)image
 {
     return nil;
 }
@@ -29,12 +24,22 @@
     return nil;
 }
 
-- (id)imageTitle
+- (id)imageUID
 {
     return nil;
 }
 
-- (id)imageUID
+- (id)initWithImage:(id)arg1
+{
+    return nil;
+}
+
+- (id)initWithPath:(id)arg1
+{
+    return nil;
+}
+
+- (id)path
 {
     return nil;
 }
@@ -44,7 +49,22 @@
     return nil;
 }
 
+- (void)setImage:(id)arg1
+{
+
+}
+
+- (BOOL)setPath:(id)arg1
+{
+    return (BOOL){0};
+}
+
 - (void)setScaleMode:(id)arg1
+{
+
+}
+
+- (void)setTitle:(id)arg1
 {
 
 }
@@ -52,6 +72,11 @@
 - (void)setUseQLCache:(id)arg1
 {
 
+}
+
+- (id)title
+{
+    return nil;
 }
 
 - (id)useQLCache

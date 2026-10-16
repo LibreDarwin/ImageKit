@@ -19,6 +19,11 @@
     return nil;
 }
 
+- (void)animationDidEnd:(id)arg1
+{
+
+}
+
 - (id)backButton
 {
     return nil;
@@ -242,5 +247,15 @@
 - (id)updateWindowForProgress:(id)arg1
 {
     return nil;
+}
+
+- (void)windowDidMove:(id)arg1
+{
+
+}
+
+- (void)windowWillMove:(id)arg1
+{
+
 }
 @end

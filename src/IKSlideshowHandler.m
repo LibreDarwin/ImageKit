@@ -9,11 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)sharedSlideshowHandler
-{
-    return nil;
-}
-
 - (id)addSibling:(id)arg1 forItem:(id)arg2
 {
     return nil;
@@ -37,6 +32,11 @@
 - (id)appWillUnhide:(id)arg1
 {
     return nil;
+}
+
+- (void)applicationDidChangeScreenParameters:(id)arg1
+{
+
 }
 
 - (id)audioFile
@@ -75,6 +75,11 @@
 }
 
 - (id)currentIndex
+{
+    return nil;
+}
+
+- (id)currentItem
 {
     return nil;
 }
@@ -164,6 +169,16 @@
     return nil;
 }
 
+- (id)itemAtIndex:(NSUInteger)arg1
+{
+    return nil;
+}
+
+- (id)itemCount
+{
+    return nil;
+}
+
 - (id)itemCountChanged
 {
     return nil;
@@ -194,12 +209,22 @@
     return nil;
 }
 
+- (void)magnifyWithEvent:(id)arg1
+{
+
+}
+
 - (id)makeCurrentItem:(id)arg1
 {
     return nil;
 }
 
 - (id)makePanelFadeOut
+{
+    return nil;
+}
+
+- (id)panel
 {
     return nil;
 }
@@ -237,6 +262,11 @@
 - (id)releaseFadeReservation
 {
     return nil;
+}
+
+- (void)reloadData
+{
+
 }
 
 - (id)reloadSlideshowItemAtIndex:(id)arg1
@@ -290,6 +320,11 @@
 }
 
 - (void)setItemArraySize:(id)arg1
+{
+
+}
+
+- (void)setItemCount:(id)arg1
 {
 
 }
@@ -359,6 +394,11 @@
     return nil;
 }
 
+- (void)swipeWithEvent:(id)arg1
+{
+
+}
+
 - (id)switchToActualSize
 {
     return nil;
@@ -407,5 +447,10 @@
 - (id)updateItemCount
 {
     return nil;
+}
+
+- (CGFloat)userSpaceScaleFactor
+{
+    return (CGFloat){0};
 }
 @end

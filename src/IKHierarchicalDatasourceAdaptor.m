@@ -39,6 +39,11 @@
     return nil;
 }
 
+- (id)dataSource
+{
+    return nil;
+}
+
 - (id)dataSourceRestrictsAddAndRemove
 {
     return nil;
@@ -74,6 +79,11 @@
     return nil;
 }
 
+- (void)invalidate
+{
+
+}
+
 - (id)itemAtCellIndexAllowsChildAddAndRemove:(id)arg1
 {
     return nil;
@@ -89,6 +99,11 @@
     return nil;
 }
 
+- (id)namesOfPromisedFilesDroppedAtDestination:(id)arg1
+{
+    return nil;
+}
+
 - (id)numberOfGroupsInImageBrowser:(id)arg1
 {
     return nil;
@@ -97,6 +112,16 @@
 - (id)numberOfItemsInImageBrowser:(id)arg1
 {
     return nil;
+}
+
+- (void)reloadData
+{
+
+}
+
+- (void)setDataSource:(id)arg1
+{
+
 }
 
 - (void)setImageBrowser:(id)arg1

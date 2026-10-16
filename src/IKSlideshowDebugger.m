@@ -19,7 +19,17 @@
     return nil;
 }
 
+- (id)itemCount
+{
+    return nil;
+}
+
 - (void)setCurrentIndex:(id)arg1
+{
+
+}
+
+- (void)setItemCount:(id)arg1
 {
 
 }
@@ -32,5 +42,10 @@
 - (id)stopDebugging
 {
     return nil;
+}
+
+- (void)windowDidChangeScreen:(id)arg1
+{
+
 }
 @end

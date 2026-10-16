@@ -7,20 +7,4 @@
 
 @implementation IKIMGPreviewCell
 
-
-/* --- generated selector-parity stubs --- */
-- (id)drawSelection
-{
-    return nil;
-}
-
-- (id)drawTitle
-{
-    return nil;
-}
-
-- (id)selectionFrame
-{
-    return nil;
-}
 @end

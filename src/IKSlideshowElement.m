@@ -9,16 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)questionMarkThumbnail
-{
-    return nil;
-}
-
-+ (id)questionMarkURL
-{
-    return nil;
-}
-
 - (id)cachedURL
 {
     return nil;
@@ -64,6 +54,11 @@
     return nil;
 }
 
+- (BOOL)load:(void *)arg1
+{
+    return (BOOL){0};
+}
+
 - (id)loadDidFail
 {
     return nil;
@@ -75,6 +70,11 @@
 }
 
 - (id)markedForExport
+{
+    return nil;
+}
+
+- (id)name
 {
     return nil;
 }
@@ -134,6 +134,11 @@
 
 }
 
+- (BOOL)setName:(id)arg1
+{
+    return (BOOL){0};
+}
+
 - (void)setNext:(id)arg1
 {
 
@@ -160,6 +165,11 @@
 }
 
 - (void)setThumbnailLoaded:(id)arg1
+{
+
+}
+
+- (void)setThumbnailSize:(id)arg1
 {
 
 }
@@ -194,9 +204,19 @@
     return nil;
 }
 
+- (id)thumbnailSize
+{
+    return nil;
+}
+
 - (id)transitionTime
 {
     return nil;
+}
+
+- (BOOL)unload
+{
+    return (BOOL){0};
 }
 
 - (id)utType

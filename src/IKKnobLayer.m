@@ -14,11 +14,6 @@
     return nil;
 }
 
-- (id)adjustPosition
-{
-    return nil;
-}
-
 - (id)cleanup
 {
     return nil;
@@ -30,11 +25,6 @@
 }
 
 - (id)constrainedPosition:(id)arg1 forLayer:(id)arg2
-{
-    return nil;
-}
-
-- (id)ikMouseDown:(id)arg1
 {
     return nil;
 }

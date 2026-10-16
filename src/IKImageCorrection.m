@@ -9,6 +9,11 @@
 
 
 /* --- generated selector-parity stubs --- */
+- (id)attributes
+{
+    return nil;
+}
+
 - (id)correctionEnabled
 {
     return nil;
@@ -44,12 +49,27 @@
     return nil;
 }
 
+- (id)name
+{
+    return nil;
+}
+
 - (id)processedImage:(id)arg1 ciContext:(id)arg2 cgContext:(id)arg3
 {
     return nil;
 }
 
+- (void)setClassName:(id)arg1
+{
+
+}
+
 - (void)setCorrectionEnabled:(id)arg1
+{
+
+}
+
+- (void)setDefaults
 {
 
 }

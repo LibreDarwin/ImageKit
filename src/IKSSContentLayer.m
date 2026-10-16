@@ -24,12 +24,22 @@
     return nil;
 }
 
+- (id)numberOfRows
+{
+    return nil;
+}
+
 - (id)rowsPerScreen
 {
     return nil;
 }
 
 - (void)setItemsPerRow:(id)arg1
+{
+
+}
+
+- (void)setNumberOfRows:(id)arg1
 {
 
 }
@@ -44,7 +54,17 @@
 
 }
 
+- (void)setThumbnailSize:(id)arg1
+{
+
+}
+
 - (id)thumbnailCount
+{
+    return nil;
+}
+
+- (id)thumbnailSize
 {
     return nil;
 }

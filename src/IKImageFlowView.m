@@ -9,16 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)flowViewIsSupportedByCurrentHardware
-{
-    return nil;
-}
-
-+ (void)setImportAnimationStyle:(id)arg1
-{
-
-}
-
 - (id)__copyGLToCurrentFocusedView
 {
     return nil;
@@ -369,7 +359,17 @@
     return nil;
 }
 
+- (id)cellBackgroundColor
+{
+    return nil;
+}
+
 - (id)cellBorderColor
+{
+    return nil;
+}
+
+- (id)cellClass
 {
     return nil;
 }
@@ -390,6 +390,11 @@
 }
 
 - (id)cellMargin
+{
+    return nil;
+}
+
+- (id)cells
 {
     return nil;
 }
@@ -434,12 +439,22 @@
     return nil;
 }
 
+- (id)dataSource
+{
+    return nil;
+}
+
 - (id)dataSourceDidChange
 {
     return nil;
 }
 
 - (id)defaultDoubleClickAction:(id)arg1
+{
+    return nil;
+}
+
+- (id)delegate
 {
     return nil;
 }
@@ -479,9 +494,19 @@
     return nil;
 }
 
+- (void)draggedImage:(id)arg1 endedAt:(NSPoint)arg2 operation:(NSDragOperation)arg3
+{
+
+}
+
 - (id)draggingDestinationDelegate
 {
     return nil;
+}
+
+- (void)draggingEnded:(id)arg1
+{
+
 }
 
 - (id)drawBackground
@@ -724,6 +749,16 @@
     return nil;
 }
 
+- (void)invalidateLayout
+{
+
+}
+
+- (id)isAnimating
+{
+    return nil;
+}
+
 - (id)itemAtIndexIsLoaded:(id)arg1
 {
     return nil;
@@ -770,6 +805,11 @@
 }
 
 - (id)nicestRenderingProgress
+{
+    return nil;
+}
+
+- (id)offset
 {
     return nil;
 }
@@ -844,6 +884,11 @@
     return nil;
 }
 
+- (void)reloadData
+{
+
+}
+
 - (id)removeInlinePreview
 {
     return nil;
@@ -874,6 +919,11 @@
     return nil;
 }
 
+- (id)selectedIndex
+{
+    return nil;
+}
+
 - (void)setAnimationsMask:(id)arg1
 {
 
@@ -899,12 +949,32 @@
 
 }
 
+- (void)setCellBackgroundColor:(id)arg1
+{
+
+}
+
 - (void)setCellBorderColor:(id)arg1
 {
 
 }
 
+- (void)setCellClass:(Class)arg1
+{
+
+}
+
 - (void)setCellsAlignOnBaseline:(id)arg1
+{
+
+}
+
+- (void)setDataSource:(id)arg1
+{
+
+}
+
+- (void)setDelegate:(id)arg1
 {
 
 }
@@ -952,6 +1022,11 @@
 - (id)setScrollerValueFromSelection
 {
     return nil;
+}
+
+- (void)setSelectedIndex:(id)arg1
+{
+
 }
 
 - (void)setSharingPreviewPanel:(id)arg1

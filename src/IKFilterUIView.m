@@ -9,7 +9,7 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)viewWithFrame:(id)arg1 filter:(id)arg2
+- (id)filter
 {
     return nil;
 }

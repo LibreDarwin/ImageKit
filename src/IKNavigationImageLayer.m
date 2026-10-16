@@ -14,11 +14,6 @@
     return nil;
 }
 
-- (id)ikMouseDown:(id)arg1
-{
-    return nil;
-}
-
 - (id)navTransform
 {
     return nil;
@@ -29,8 +24,8 @@
     return nil;
 }
 
-- (void)setup:(id)arg1
+- (CGRect)updateBounds
 {
-
+    return (CGRect){0};
 }
 @end

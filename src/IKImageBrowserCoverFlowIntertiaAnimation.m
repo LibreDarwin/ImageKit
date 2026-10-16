@@ -9,11 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-- (id)animationManager:(id)arg1 processStep:(id)arg2
-{
-    return nil;
-}
-
 - (id)grid
 {
     return nil;
@@ -24,17 +19,22 @@
     return nil;
 }
 
-- (id)handleChannel:(id)arg1
-{
-    return nil;
-}
-
 - (id)initialPosition
 {
     return nil;
 }
 
+- (id)initialVelocity
+{
+    return nil;
+}
+
 - (id)scrollInitialTime
+{
+    return nil;
+}
+
+- (id)scrollVelocity
 {
     return nil;
 }
@@ -50,6 +50,11 @@
 }
 
 - (void)setInitialPosition:(id)arg1
+{
+
+}
+
+- (void)setInitialVelocity:(id)arg1
 {
 
 }

@@ -8,9 +8,34 @@
 @implementation NSMutableAffineTransform
 
 /* --- generated selector-parity stubs --- */
+- (CGAffineTransform)affineTransform
+{
+    return (CGAffineTransform){0};
+}
+
+- (id)angle
+{
+    return nil;
+}
+
 - (id)changeAffineTransform:(id)arg1
 {
     return nil;
+}
+
+- (short)scale
+{
+    return (short){0};
+}
+
+- (void)setAngle:(id)arg1
+{
+
+}
+
+- (void)setScale:(id)arg1
+{
+
 }
 
 - (void)setSkew:(id)arg1

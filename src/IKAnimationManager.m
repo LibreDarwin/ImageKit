@@ -104,6 +104,11 @@
     return nil;
 }
 
+- (id)groups
+{
+    return nil;
+}
+
 - (id)initialValueForKey:(id)arg1 forCell:(id)arg2
 {
     return nil;
@@ -115,6 +120,11 @@
 }
 
 - (id)isCellAnimated:(id)arg1
+{
+    return nil;
+}
+
+- (id)isEmpty
 {
     return nil;
 }
@@ -154,12 +164,22 @@
     return nil;
 }
 
+- (void)setView:(id)arg1
+{
+
+}
+
 - (id)updateAnimationTimes
 {
     return nil;
 }
 
 - (id)updateTime
+{
+    return nil;
+}
+
+- (id)view
 {
     return nil;
 }

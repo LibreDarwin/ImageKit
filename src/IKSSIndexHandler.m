@@ -9,6 +9,11 @@
 
 
 /* --- generated selector-parity stubs --- */
+- (void)applicationDidChangeScreenParameters:(id)arg1
+{
+
+}
+
 - (id)calcThumbnailSize
 {
     return nil;
@@ -39,6 +44,11 @@
     return nil;
 }
 
+- (id)itemCount
+{
+    return nil;
+}
+
 - (id)itemCountChanged:(id)arg1
 {
     return nil;
@@ -55,6 +65,11 @@
 }
 
 - (id)nextPage:(id)arg1
+{
+    return nil;
+}
+
+- (id)rows
 {
     return nil;
 }
@@ -84,12 +99,22 @@
 
 }
 
+- (void)setRows:(id)arg1
+{
+
+}
+
 - (void)setSelectedThumbnailIndex:(id)arg1
 {
 
 }
 
 - (void)setSwitchedToIndexMode:(id)arg1
+{
+
+}
+
+- (void)setThumbnailSize:(id)arg1
 {
 
 }
@@ -130,6 +155,11 @@
 }
 
 - (id)thumbnailDidRotate:(id)arg1 index:(id)arg2
+{
+    return nil;
+}
+
+- (id)thumbnailSize
 {
     return nil;
 }

@@ -9,11 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)rendererWithCGContext:(id)arg1
-{
-    return nil;
-}
-
 - (id)__heightOfSubtitle
 {
     return nil;
@@ -44,6 +39,11 @@
     return nil;
 }
 
+- (id)backgroundColor
+{
+    return nil;
+}
+
 - (id)backgroundComposition
 {
     return nil;
@@ -69,6 +69,11 @@
     return nil;
 }
 
+- (id)bounds
+{
+    return nil;
+}
+
 - (id)caRenderer
 {
     return nil;
@@ -79,7 +84,17 @@
     return nil;
 }
 
+- (NSSize)cellSize
+{
+    return (NSSize){0};
+}
+
 - (id)cellWillDrawPlaceHolder:(id)arg1
+{
+    return nil;
+}
+
+- (id)cells
 {
     return nil;
 }
@@ -105,6 +120,16 @@
 }
 
 - (id)constrainsToOriginalSize
+{
+    return nil;
+}
+
+- (id)context
+{
+    return nil;
+}
+
+- (id)delegate
 {
     return nil;
 }
@@ -184,7 +209,17 @@
     return nil;
 }
 
+- (id)isAnimating
+{
+    return nil;
+}
+
 - (id)labelsOnRight
+{
+    return nil;
+}
+
+- (id)layoutManager
 {
     return nil;
 }
@@ -219,6 +254,11 @@
     return nil;
 }
 
+- (id)selectionIndexes
+{
+    return nil;
+}
+
 - (id)selectionRed:(id)arg1 green:(id)arg2 blue:(id)arg3
 {
     return nil;
@@ -232,6 +272,11 @@
 - (id)setClickableArea:(id)arg1 target:(id)arg2 selector:(id)arg3 info:(id)arg4
 {
     return nil;
+}
+
+- (void)setContext:(id)arg1
+{
+
 }
 
 - (void)setGridSpacing:(id)arg1
@@ -320,6 +365,16 @@
 }
 
 - (id)validateCellLayoutAtIndex:(id)arg1
+{
+    return nil;
+}
+
+- (id)visibleRect
+{
+    return nil;
+}
+
+- (id)window
 {
     return nil;
 }

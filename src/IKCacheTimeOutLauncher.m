@@ -7,4 +7,15 @@
 
 @implementation IKCacheTimeOutLauncher
 
+
+/* --- generated selector-parity stubs --- */
+- (void)fire
+{
+
+}
+
+- (void)setOwner:(id)arg1
+{
+
+}
 @end

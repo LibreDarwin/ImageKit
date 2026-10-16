@@ -9,26 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)addImagePasteLayer:(id)arg1
-{
-    return nil;
-}
-
-+ (id)canPaste
-{
-    return nil;
-}
-
-+ (id)imageDataFromPasteboard
-{
-    return nil;
-}
-
-+ (id)registerLayerWithView:(id)arg1
-{
-    return nil;
-}
-
 - (id)addImageFromPasteboard:(id)arg1
 {
     return nil;
@@ -64,24 +44,9 @@
     return nil;
 }
 
-- (id)ikMouseDown:(id)arg1
-{
-    return nil;
-}
-
 - (id)mouseDownOutsideSelection:(id)arg1
 {
     return nil;
-}
-
-- (id)selectLayer:(id)arg1 extendSelection:(id)arg2
-{
-    return nil;
-}
-
-- (void)setup:(id)arg1
-{
-
 }
 
 - (id)willApply

@@ -49,6 +49,11 @@
     return nil;
 }
 
+- (id)delegate
+{
+    return nil;
+}
+
 - (id)limitAmountOfMemoryUsed
 {
     return nil;
@@ -95,6 +100,11 @@
 }
 
 - (void)setCacheData:(id)arg1
+{
+
+}
+
+- (void)setDelegate:(id)arg1
 {
 
 }

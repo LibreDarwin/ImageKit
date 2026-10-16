@@ -29,6 +29,11 @@
     return nil;
 }
 
+- (id)parent
+{
+    return nil;
+}
+
 - (id)prepareChildsToDie
 {
     return nil;
@@ -42,6 +47,11 @@
 - (id)removeObjectWithUID:(id)arg1 withSize:(id)arg2 withKey:(id)arg3
 {
     return nil;
+}
+
+- (void)setParent:(id)arg1
+{
+
 }
 
 - (id)storeImage:(id)arg1 withUID:(id)arg2 withSize:(id)arg3

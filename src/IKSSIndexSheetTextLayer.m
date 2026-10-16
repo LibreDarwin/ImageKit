@@ -19,9 +19,39 @@
     return nil;
 }
 
+- (id)animates
+{
+    return nil;
+}
+
+- (id)attributes
+{
+    return nil;
+}
+
+- (void)setAnimates:(id)arg1
+{
+
+}
+
+- (void)setAttributes:(id)arg1
+{
+
+}
+
+- (void)setText:(id)arg1
+{
+
+}
+
 - (void)setTextMargins:(id)arg1
 {
 
+}
+
+- (id)text
+{
+    return nil;
 }
 
 - (id)textMargins

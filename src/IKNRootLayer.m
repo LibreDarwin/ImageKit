@@ -7,4 +7,15 @@
 
 @implementation IKNRootLayer
 
+
+/* --- generated selector-parity stubs --- */
+- (void)setView:(id)arg1
+{
+
+}
+
+- (id)view
+{
+    return nil;
+}
 @end

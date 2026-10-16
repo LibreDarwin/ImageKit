@@ -9,17 +9,17 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)registerLayerWithView:(id)arg1
-{
-    return nil;
-}
-
 - (id)_updateLayer:(id)arg1
 {
     return nil;
 }
 
 - (id)animateTransition:(id)arg1
+{
+    return nil;
+}
+
+- (id)animates
 {
     return nil;
 }
@@ -179,6 +179,11 @@
     return nil;
 }
 
+- (void)invalidate
+{
+
+}
+
 - (id)invalidateCachedCTM
 {
     return nil;
@@ -299,7 +304,22 @@
     return nil;
 }
 
+- (void)scrollToPoint:(NSPoint)arg1
+{
+
+}
+
+- (void)scrollToRect:(CGRect)arg1
+{
+
+}
+
 - (void)setAnchorPointAndKeepFrame:(id)arg1
+{
+
+}
+
+- (void)setAnimates:(id)arg1
 {
 
 }
@@ -390,6 +410,11 @@
 }
 
 - (void)setOriginalImageSize:(id)arg1
+{
+
+}
+
+- (void)setRotation:(int)arg1
 {
 
 }
@@ -494,6 +519,11 @@
     return nil;
 }
 
+- (CGFloat)userSpaceScaleFactor
+{
+    return (CGFloat){0};
+}
+
 - (id)visibleCenterPoint
 {
     return nil;
@@ -512,5 +542,15 @@
 - (id)zoomImageToRect:(id)arg1
 {
     return nil;
+}
+
+- (void)zoomIn:(id)arg1
+{
+
+}
+
+- (void)zoomOut:(id)arg1
+{
+
 }
 @end

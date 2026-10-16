@@ -9,41 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)allowsIconSharingForThumbnailRequest:(id)arg1
-{
-    return nil;
-}
-
-+ (id)currentRequestingViewIdentifier
-{
-    return nil;
-}
-
-+ (id)delegatesImageManagementToDatasource
-{
-    return nil;
-}
-
-+ (void)setCurrentRequestingViewIdentifier:(id)arg1
-{
-
-}
-
-+ (void)setDelegatesImageManagementToDatasource:(id)arg1
-{
-
-}
-
-+ (void)setTrackingOfRequestingViewsEnabled:(id)arg1
-{
-
-}
-
-+ (id)trackingOfRequestingViewsEnabled
-{
-    return nil;
-}
-
 - (id)_createNewEntryInCache:(id)arg1
 {
     return nil;
@@ -69,6 +34,11 @@
     return nil;
 }
 
+- (id)alpha
+{
+    return nil;
+}
+
 - (id)bestImageSizeForRenderingSize:(id)arg1 renderLevel:(id)arg2 renderType:(id)arg3
 {
     return nil;
@@ -90,6 +60,11 @@
 }
 
 - (id)canDisplayInlinePreview
+{
+    return nil;
+}
+
+- (id)dataSource
 {
     return nil;
 }
@@ -129,6 +104,11 @@
     return nil;
 }
 
+- (id)image
+{
+    return nil;
+}
+
 - (id)imageDidChange
 {
     return nil;
@@ -164,12 +144,27 @@
     return nil;
 }
 
+- (void)invalidate
+{
+
+}
+
 - (id)isAnIcon
 {
     return nil;
 }
 
 - (id)lastRenderedSize
+{
+    return nil;
+}
+
+- (id)objectForKey:(id)arg1
+{
+    return nil;
+}
+
+- (id)parent
 {
     return nil;
 }
@@ -189,12 +184,32 @@
     return nil;
 }
 
+- (void)reloadData
+{
+
+}
+
+- (void)removeObjectForKey:(id)arg1
+{
+
+}
+
 - (id)representedItem
 {
     return nil;
 }
 
+- (void)setAlpha:(id)arg1
+{
+
+}
+
 - (void)setContentCanBePlayed:(id)arg1
+{
+
+}
+
+- (void)setDataSource:(id)arg1
 {
 
 }
@@ -205,6 +220,16 @@
 }
 
 - (void)setLastRenderedSize:(id)arg1
+{
+
+}
+
+- (void)setObject:(id)arg1 forKey:(id)arg2
+{
+
+}
+
+- (void)setParent:(id)arg1
 {
 
 }
@@ -240,6 +265,11 @@
 }
 
 - (id)validateDatasource
+{
+    return nil;
+}
+
+- (id)version
 {
     return nil;
 }

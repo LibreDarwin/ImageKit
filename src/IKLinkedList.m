@@ -29,6 +29,11 @@
     return nil;
 }
 
+- (id)count
+{
+    return nil;
+}
+
 - (id)first
 {
     return nil;
@@ -47,5 +52,15 @@
 - (id)moveLast:(id)arg1
 {
     return nil;
+}
+
+- (id)objectAtIndex:(NSUInteger)arg1
+{
+    return nil;
+}
+
+- (void)remove:(id)arg1
+{
+
 }
 @end

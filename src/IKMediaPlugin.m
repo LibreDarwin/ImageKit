@@ -9,21 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)pluginForType:(id)arg1
-{
-    return nil;
-}
-
-+ (id)registerPlugin:(id)arg1 forType:(id)arg2
-{
-    return nil;
-}
-
-+ (id)setup
-{
-    return nil;
-}
-
 - (id)imageForRepresentationInstance:(id)arg1 forCell:(id)arg2
 {
     return nil;

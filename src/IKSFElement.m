@@ -9,17 +9,17 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)elementFromDictionary:(id)arg1
-{
-    return nil;
-}
-
-+ (id)elementWithEffectName:(id)arg1
-{
-    return nil;
-}
-
 - (id)clearInput
+{
+    return nil;
+}
+
+- (id)dictionaryRepresentation
+{
+    return nil;
+}
+
+- (id)filter
 {
     return nil;
 }
@@ -49,6 +49,11 @@
     return nil;
 }
 
+- (id)name
+{
+    return nil;
+}
+
 - (id)origin
 {
     return nil;
@@ -59,7 +64,17 @@
     return nil;
 }
 
+- (id)parent
+{
+    return nil;
+}
+
 - (id)refresh
+{
+    return nil;
+}
+
+- (id)result
 {
     return nil;
 }
@@ -89,7 +104,22 @@
 
 }
 
+- (void)setInputImage:(id)arg1
+{
+
+}
+
+- (void)setOffset:(id)arg1
+{
+
+}
+
 - (void)setOrigin:(id)arg1
+{
+
+}
+
+- (void)setParent:(id)arg1
 {
 
 }

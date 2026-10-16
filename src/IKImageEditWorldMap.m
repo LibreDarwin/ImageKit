@@ -48,4 +48,14 @@
 {
     return nil;
 }
+
+- (id)subtitle
+{
+    return nil;
+}
+
+- (id)title
+{
+    return nil;
+}
 @end

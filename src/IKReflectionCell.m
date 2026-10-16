@@ -13,34 +13,4 @@
 {
     return nil;
 }
-
-- (id)drawImage:(id)arg1
-{
-    return nil;
-}
-
-- (id)drawSelection
-{
-    return nil;
-}
-
-- (id)drawSelectionOnTitle
-{
-    return nil;
-}
-
-- (id)reflectionFrame
-{
-    return nil;
-}
-
-- (id)subtitleFrame
-{
-    return nil;
-}
-
-- (id)titleFrame
-{
-    return nil;
-}
 @end

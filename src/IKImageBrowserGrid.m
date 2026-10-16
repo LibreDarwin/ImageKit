@@ -19,17 +19,7 @@
     return nil;
 }
 
-- (id)additionalHeightAtRow:(id)arg1
-{
-    return nil;
-}
-
 - (id)adjustedCellMargin
-{
-    return nil;
-}
-
-- (id)adjustedMargin
 {
     return nil;
 }
@@ -49,29 +39,14 @@
     return nil;
 }
 
-- (id)cellFrameAtIndex:(id)arg1
-{
-    return nil;
-}
-
-- (id)cellIndexAtColumn:(id)arg1 andRow:(id)arg2
-{
-    return nil;
-}
-
-- (id)cellIndexesAtLocation:(id)arg1
-{
-    return nil;
-}
-
-- (id)cellIndexesInRect:(id)arg1
-{
-    return nil;
-}
-
 - (id)cellMargin
 {
     return nil;
+}
+
+- (NSSize)cellSize
+{
+    return (NSSize){0};
 }
 
 - (id)checkAllocCellLayoutInfo
@@ -79,9 +54,9 @@
     return nil;
 }
 
-- (id)collapsedStateChanged:(id)arg1
+- (void)clear
 {
-    return nil;
+
 }
 
 - (id)columnAtX:(id)arg1
@@ -89,32 +64,7 @@
     return nil;
 }
 
-- (id)computeContentSize
-{
-    return nil;
-}
-
-- (id)computeRowsCount
-{
-    return nil;
-}
-
-- (id)headerOffset
-{
-    return nil;
-}
-
-- (id)initWithParameters:(id)arg1 parent:(id)arg2
-{
-    return nil;
-}
-
-- (id)invalidateCacheAtIndexes:(id)arg1
-{
-    return nil;
-}
-
-- (id)isGridBased
+- (id)columnCount
 {
     return nil;
 }
@@ -124,7 +74,7 @@
     return nil;
 }
 
-- (id)nearestCellOfPosition:(id)arg1
+- (id)rowAtIndex:(NSInteger)arg1
 {
     return nil;
 }
@@ -150,16 +100,6 @@
 }
 
 - (id)spaceOutSizeVertical:(id)arg1
-{
-    return nil;
-}
-
-- (id)spaceOutSubmanagerCellsForDropAtIndex:(id)arg1 nearestCell:(id)arg2 isMoreThanHalfwayAcrossCell:(id)arg3
-{
-    return nil;
-}
-
-- (id)tailOffset
 {
     return nil;
 }

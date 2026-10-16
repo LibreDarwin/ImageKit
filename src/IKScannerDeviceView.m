@@ -29,6 +29,11 @@
     return nil;
 }
 
+- (id)delegate
+{
+    return nil;
+}
+
 - (id)deviceBrowserView:(id)arg1 deviceDidChangeName:(id)arg2
 {
     return nil;
@@ -119,6 +124,11 @@
     return nil;
 }
 
+- (id)mode
+{
+    return nil;
+}
+
 - (id)overviewControlLabel
 {
     return nil;
@@ -150,6 +160,11 @@
 }
 
 - (void)setCompressionQuality:(id)arg1
+{
+
+}
+
+- (void)setDelegate:(id)arg1
 {
 
 }
@@ -215,6 +230,11 @@
 }
 
 - (void)setHasDisplayModeSimple:(id)arg1
+{
+
+}
+
+- (void)setMode:(NSColorPanelMode)arg1
 {
 
 }

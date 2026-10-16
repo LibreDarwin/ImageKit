@@ -9,26 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)cropPRSFromCropRegion:(id)arg1 cropSize:(id)arg2 originalImageSize:(id)arg3
-{
-    return nil;
-}
-
-+ (id)cropRegionBoundingRectForCropSize:(id)arg1 cropPRS:(id)arg2 originalImageSize:(id)arg3
-{
-    return nil;
-}
-
-+ (id)croppedImageFromOriginalImage:(id)arg1 cropInfo:(id)arg2 cropSize:(id)arg3 outputSize:(id)arg4 bgColor:(id)arg5
-{
-    return nil;
-}
-
-+ (id)imageFromContext:(id)arg1 withComposition:(id)arg2 fxCenter:(id)arg3 qcRenderer:(id)arg4
-{
-    return nil;
-}
-
 - (id)_mouseDragged:(id)arg1
 {
     return nil;
@@ -129,6 +109,21 @@
     return nil;
 }
 
+- (id)animates
+{
+    return nil;
+}
+
+- (id)borderColor
+{
+    return nil;
+}
+
+- (id)borderType
+{
+    return nil;
+}
+
 - (id)boundingRectOfOrientedRect:(id)arg1 rotation:(id)arg2 pivot:(id)arg3
 {
     return nil;
@@ -150,6 +145,11 @@
 }
 
 - (id)constrainMode
+{
+    return nil;
+}
+
+- (id)context
 {
     return nil;
 }
@@ -220,6 +220,11 @@
 }
 
 - (id)defaultCropIsZoomToFit
+{
+    return nil;
+}
+
+- (id)delegate
 {
     return nil;
 }
@@ -524,6 +529,21 @@
 
 }
 
+- (void)setAnimates:(id)arg1
+{
+
+}
+
+- (void)setBorderColor:(id)arg1
+{
+
+}
+
+- (void)setBorderType:(id)arg1
+{
+
+}
+
 - (void)setCenteredVerticalAlignment:(id)arg1
 {
 
@@ -564,12 +584,22 @@
 
 }
 
+- (void)setDelegate:(id)arg1
+{
+
+}
+
 - (void)setDimmedLayerColor:(id)arg1
 {
 
 }
 
 - (void)setDrawContent:(id)arg1
+{
+
+}
+
+- (void)setImage:(id)arg1
 {
 
 }
@@ -594,6 +624,11 @@
 
 }
 
+- (void)setRotation:(int)arg1
+{
+
+}
+
 - (void)setShowLoadingIndicator:(id)arg1
 {
 
@@ -610,6 +645,11 @@
 }
 
 - (void)setShowZoomSlider:(id)arg1
+{
+
+}
+
+- (void)setUndoManager:(id)arg1
 {
 
 }
@@ -664,6 +704,11 @@
     return nil;
 }
 
+- (void)stopCapture
+{
+
+}
+
 - (id)updateComponentState
 {
     return nil;
@@ -677,6 +722,11 @@
 - (id)usesCircularCrop
 {
     return nil;
+}
+
+- (void)windowDidMiniaturize:(id)arg1
+{
+
 }
 
 - (id)yTranslation

@@ -49,9 +49,19 @@
     return nil;
 }
 
+- (id)initWithSize:(NSSize)arg1
+{
+    return nil;
+}
+
 - (id)maxLineHeight
 {
     return nil;
+}
+
+- (void)reset
+{
+
 }
 
 - (id)resetCacheWithSize:(id)arg1

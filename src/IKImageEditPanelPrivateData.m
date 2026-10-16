@@ -9,7 +9,17 @@
 
 
 /* --- generated selector-parity stubs --- */
+- (id)backgroundView
+{
+    return nil;
+}
+
 - (id)currentTab
+{
+    return nil;
+}
+
+- (id)dataSource
 {
     return nil;
 }
@@ -39,6 +49,11 @@
     return nil;
 }
 
+- (id)imageView
+{
+    return nil;
+}
+
 - (id)mouseDownLocation
 {
     return nil;
@@ -49,7 +64,17 @@
     return nil;
 }
 
+- (void)setBackgroundView:(id)arg1
+{
+
+}
+
 - (void)setCurrentTab:(id)arg1
+{
+
+}
+
+- (void)setDataSource:(id)arg1
 {
 
 }
@@ -79,6 +104,11 @@
 
 }
 
+- (void)setImageView:(id)arg1
+{
+
+}
+
 - (void)setMouseDownLocation:(id)arg1
 {
 
@@ -87,5 +117,15 @@
 - (void)setMouseDownMovesWindow:(id)arg1
 {
 
+}
+
+- (void)setTabView:(id)arg1
+{
+
+}
+
+- (id)tabView
+{
+    return nil;
 }
 @end

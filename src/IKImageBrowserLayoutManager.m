@@ -64,6 +64,11 @@
     return nil;
 }
 
+- (NSTextAlignment)alignment
+{
+    return (NSTextAlignment){0};
+}
+
 - (id)automaticallyMinimizeRowMargin
 {
     return nil;
@@ -109,6 +114,11 @@
     return nil;
 }
 
+- (NSSize)cellSize
+{
+    return (NSSize){0};
+}
+
 - (id)cellsHaveACommonHeightOfInfoSpace
 {
     return nil;
@@ -129,7 +139,17 @@
     return nil;
 }
 
+- (id)columnAtIndex:(NSInteger)arg1
+{
+    return nil;
+}
+
 - (id)columnAtX:(id)arg1
+{
+    return nil;
+}
+
+- (id)columnCount
 {
     return nil;
 }
@@ -144,6 +164,16 @@
     return nil;
 }
 
+- (id)containerSize
+{
+    return nil;
+}
+
+- (id)content
+{
+    return nil;
+}
+
 - (id)contentDidChangeAtIndexes:(id)arg1
 {
     return nil;
@@ -154,7 +184,17 @@
     return nil;
 }
 
+- (id)contentSize
+{
+    return nil;
+}
+
 - (id)createGrids
+{
+    return nil;
+}
+
+- (id)delegate
 {
     return nil;
 }
@@ -189,6 +229,11 @@
     return nil;
 }
 
+- (id)groups
+{
+    return nil;
+}
+
 - (id)hasCoverflowSubLayout
 {
     return nil;
@@ -202,6 +247,11 @@
 - (id)indexToRenderForNonOrderedIndex:(id)arg1
 {
     return nil;
+}
+
+- (void)invalidate
+{
+
 }
 
 - (id)invalidateBSP
@@ -224,6 +274,11 @@
     return nil;
 }
 
+- (void)lock
+{
+
+}
+
 - (id)margin
 {
     return nil;
@@ -240,6 +295,11 @@
 }
 
 - (id)normalizedPositionAtIndex:(id)arg1
+{
+    return nil;
+}
+
+- (id)parent
 {
     return nil;
 }
@@ -279,6 +339,11 @@
     return nil;
 }
 
+- (id)rowAtIndex:(NSInteger)arg1
+{
+    return nil;
+}
+
 - (id)rowAtY:(id)arg1
 {
     return nil;
@@ -309,6 +374,11 @@
 
 }
 
+- (void)setAlignment:(NSTextAlignment)arg1
+{
+
+}
+
 - (void)setAnchorPointTranslation:(id)arg1
 {
 
@@ -324,12 +394,32 @@
 
 }
 
+- (void)setCellSize:(id)arg1
+{
+
+}
+
 - (void)setCellsHaveACommonHeightOfInfoSpace:(id)arg1
 {
 
 }
 
+- (void)setContainerSize:(id)arg1
+{
+
+}
+
+- (void)setContent:(id)arg1
+{
+
+}
+
 - (void)setContentResizingMask:(id)arg1
+{
+
+}
+
+- (void)setDelegate:(id)arg1
 {
 
 }
@@ -349,7 +439,17 @@
 
 }
 
+- (void)setGroups:(id)arg1
+{
+
+}
+
 - (void)setMargin:(id)arg1
+{
+
+}
+
+- (void)setParent:(id)arg1
 {
 
 }
@@ -412,6 +512,16 @@
 - (id)translateAllBy:(id)arg1
 {
     return nil;
+}
+
+- (void)unlock
+{
+
+}
+
+- (void)update
+{
+
 }
 
 - (id)updateGridFrames

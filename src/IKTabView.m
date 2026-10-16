@@ -14,6 +14,11 @@
     return nil;
 }
 
+- (id)delegate
+{
+    return nil;
+}
+
 - (id)drawTab:(id)arg1 title:(id)arg2 enabled:(id)arg3
 {
     return nil;
@@ -47,6 +52,11 @@
 - (id)selectionChanged:(id)arg1
 {
     return nil;
+}
+
+- (void)setDelegate:(id)arg1
+{
+
 }
 
 - (void)setSelectedTabTitle:(id)arg1

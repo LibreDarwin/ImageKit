@@ -94,6 +94,11 @@
     return nil;
 }
 
+- (id)container
+{
+    return nil;
+}
+
 - (id)defaultRectForIdentifier:(id)arg1
 {
     return nil;
@@ -245,6 +250,11 @@
 }
 
 - (void)setCameraViewHandler:(id)arg1
+{
+
+}
+
+- (void)setContainer:(id)arg1
 {
 
 }

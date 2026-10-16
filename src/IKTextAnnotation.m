@@ -14,6 +14,16 @@
     return nil;
 }
 
+- (void)changeColor:(id)arg1
+{
+
+}
+
+- (void)changeFont:(id)arg1
+{
+
+}
+
 - (id)changeForegroundColor:(id)arg1
 {
     return nil;
@@ -22,6 +32,11 @@
 - (id)cleanup
 {
     return nil;
+}
+
+- (BOOL)control:(id)arg1 textView:(id)arg2 doCommandBySelector:(SEL)arg3
+{
+    return (BOOL){0};
 }
 
 - (id)defaultKnob
@@ -69,6 +84,11 @@
 
 }
 
+- (void)setSelected:(id)arg1
+{
+
+}
+
 - (void)setSupportsUndo:(id)arg1
 {
 
@@ -107,5 +127,10 @@
 - (id)updateText:(id)arg1
 {
     return nil;
+}
+
+- (void)windowWillClose:(id)arg1
+{
+
 }
 @end

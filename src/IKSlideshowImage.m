@@ -19,16 +19,6 @@
     return nil;
 }
 
-- (id)cleanup
-{
-    return nil;
-}
-
-- (id)debugState
-{
-    return nil;
-}
-
 - (id)enter
 {
     return nil;
@@ -40,6 +30,11 @@
 }
 
 - (id)getImageInfoFromCGImage
+{
+    return nil;
+}
+
+- (id)image
 {
     return nil;
 }
@@ -69,22 +64,17 @@
     return nil;
 }
 
-- (id)initWithDataSourceHandler:(id)arg1 index:(id)arg2 subIndex:(id)arg3
-{
-    return nil;
-}
-
 - (id)leave
 {
     return nil;
 }
 
-- (id)loadThumbnail:(id)arg1 currentCount:(id)arg2
+- (id)loadThumbnailIfNeeded
 {
     return nil;
 }
 
-- (id)loadThumbnailIfNeeded
+- (id)orientation
 {
     return nil;
 }
@@ -109,6 +99,11 @@
     return nil;
 }
 
+- (void)setImage:(id)arg1
+{
+
+}
+
 - (void)setImageIsLargerThanScreen:(id)arg1
 {
 
@@ -124,7 +119,7 @@
 
 }
 
-- (void)setThumbnail:(id)arg1
+- (void)setOrientation:(id)arg1
 {
 
 }
@@ -135,11 +130,6 @@
 }
 
 - (id)setupImageSiblings
-{
-    return nil;
-}
-
-- (id)thumbnail
 {
     return nil;
 }

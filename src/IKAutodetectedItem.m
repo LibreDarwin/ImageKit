@@ -14,9 +14,34 @@
     return nil;
 }
 
+- (id)bottomLeft
+{
+    return nil;
+}
+
+- (id)bottomRight
+{
+    return nil;
+}
+
+- (BOOL)containsPoint:(NSPoint)arg1
+{
+    return (BOOL){0};
+}
+
 - (id)initWithScanArea:(id)arg1
 {
     return nil;
+}
+
+- (id)position
+{
+    return nil;
+}
+
+- (NSRect)rect
+{
+    return (NSRect){0};
 }
 
 - (id)rotationAngle
@@ -27,5 +52,15 @@
 - (void)setupWithScanArea:(id)arg1
 {
 
+}
+
+- (id)topLeft
+{
+    return nil;
+}
+
+- (id)topRight
+{
+    return nil;
 }
 @end

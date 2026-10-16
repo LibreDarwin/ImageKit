@@ -9,6 +9,11 @@
 
 
 /* --- generated selector-parity stubs --- */
+- (id)context
+{
+    return nil;
+}
+
 - (id)glID
 {
     return nil;

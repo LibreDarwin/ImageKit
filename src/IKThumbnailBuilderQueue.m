@@ -24,7 +24,27 @@
     return nil;
 }
 
+- (id)delegate
+{
+    return nil;
+}
+
 - (id)didEndSelector
+{
+    return nil;
+}
+
+- (id)isExecuting
+{
+    return nil;
+}
+
+- (void)lock
+{
+
+}
+
+- (id)progress
 {
     return nil;
 }
@@ -37,6 +57,11 @@
 - (id)runQLQueue
 {
     return nil;
+}
+
+- (void)setDelegate:(id)arg1
+{
+
 }
 
 - (void)setDidEndSelector:(id)arg1
@@ -62,5 +87,10 @@
 - (id)thumbnails
 {
     return nil;
+}
+
+- (void)unlock
+{
+
 }
 @end

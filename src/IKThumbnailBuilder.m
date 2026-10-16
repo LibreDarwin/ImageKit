@@ -9,16 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)splitBuilders:(id)arg1 intoSequentialList:(id)arg2 andConcurrentList:(id)arg3
-{
-    return nil;
-}
-
-+ (id)thumbnailBuilderQueueWithThumbnails:(id)arg1 withDelegate:(id)arg2 didEndSelector:(id)arg3
-{
-    return nil;
-}
-
 - (id)cache
 {
     return nil;
@@ -29,12 +19,27 @@
     return nil;
 }
 
+- (id)cell
+{
+    return nil;
+}
+
+- (void)clear
+{
+
+}
+
 - (id)completed
 {
     return nil;
 }
 
 - (id)computeThumbnail
+{
+    return nil;
+}
+
+- (id)image
 {
     return nil;
 }
@@ -74,6 +79,11 @@
     return nil;
 }
 
+- (void)setCell:(id)arg1
+{
+
+}
+
 - (void)setThumbnail:(id)arg1
 {
 
@@ -94,12 +104,22 @@
     return nil;
 }
 
+- (id)thumbnailSize
+{
+    return nil;
+}
+
 - (id)uid
 {
     return nil;
 }
 
 - (id)unlockCache
+{
+    return nil;
+}
+
+- (id)version
 {
     return nil;
 }

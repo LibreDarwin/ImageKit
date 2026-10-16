@@ -78,26 +78,6 @@
 }
 
 /* --- generated selector-parity stubs --- */
-+ (id)IKOpenGLDefaultPixelFormat
-{
-    return nil;
-}
-
-+ (id)IKStringFromSize:(id)arg1
-{
-    return nil;
-}
-
-+ (id)requiredOpenGLExtensions
-{
-    return nil;
-}
-
-+ (id)textHeightForAttributes:(id)arg1 clamp:(id)arg2
-{
-    return nil;
-}
-
 - (id)_IKOpenGLContextMayDie
 {
     return nil;
@@ -688,6 +668,11 @@
     return nil;
 }
 
+- (id)_performTypeSelect:(id)arg1
+{
+    return nil;
+}
+
 - (id)_postCleanDegradedRendering
 {
     return nil;
@@ -759,6 +744,11 @@
 }
 
 - (id)_scrollIndexToVisible:(id)arg1
+{
+    return nil;
+}
+
+- (id)_scrollPageInDirection:(id)arg1
 {
     return nil;
 }
@@ -873,6 +863,11 @@
     return nil;
 }
 
+- (id)_surfaceNeedsUpdate:(id)arg1
+{
+    return nil;
+}
+
 - (id)_systemColorsDidChange
 {
     return nil;
@@ -909,6 +904,21 @@
 }
 
 - (id)_toggleGroup:(id)arg1 expand:(id)arg2 animates:(id)arg3
+{
+    return nil;
+}
+
+- (id)_typeSelectEndCurrentSearch
+{
+    return nil;
+}
+
+- (id)_typeSelectInterpretKeyEvent:(id)arg1
+{
+    return nil;
+}
+
+- (id)_typeSelectUndoLastSearch
 {
     return nil;
 }
@@ -1053,12 +1063,22 @@
     return nil;
 }
 
+- (id)allowsEmptySelection
+{
+    return nil;
+}
+
 - (id)allowsInlinePreviews
 {
     return nil;
 }
 
 - (id)allowsReordering
+{
+    return nil;
+}
+
+- (id)allowsTypeSelect
 {
     return nil;
 }
@@ -1074,6 +1094,11 @@
 }
 
 - (id)anchorHorizontalSpacing
+{
+    return nil;
+}
+
+- (id)animates
 {
     return nil;
 }
@@ -1106,6 +1131,11 @@
 - (id)appearanceStyle
 {
     return nil;
+}
+
+- (void)applicationWillTerminate:(id)arg1
+{
+
 }
 
 - (id)arrowKeyDown:(id)arg1 withModifier:(id)arg2
@@ -1258,7 +1288,17 @@
     return nil;
 }
 
+- (id)cellAtIndex:(NSInteger)arg1
+{
+    return nil;
+}
+
 - (id)cellAtIndexIsCollapsed:(id)arg1
+{
+    return nil;
+}
+
+- (id)cellClass
 {
     return nil;
 }
@@ -1298,7 +1338,17 @@
     return nil;
 }
 
+- (NSSize)cellSize
+{
+    return (NSSize){0};
+}
+
 - (id)cellWillDrawPlaceHolder:(id)arg1
+{
+    return nil;
+}
+
+- (id)cells
 {
     return nil;
 }
@@ -1338,6 +1388,11 @@
     return nil;
 }
 
+- (void)clearGLContext
+{
+
+}
+
 - (id)clearPresentationDatasource
 {
     return nil;
@@ -1359,6 +1414,11 @@
 }
 
 - (id)collapseGroupAtIndex:(id)arg1
+{
+    return nil;
+}
+
+- (id)columnIndexesInRect:(NSRect)arg1
 {
     return nil;
 }
@@ -1408,6 +1468,11 @@
     return nil;
 }
 
+- (void)copy:(id)arg1
+{
+
+}
+
 - (id)copyDataToPasteboard:(id)arg1 indexes:(id)arg2
 {
     return nil;
@@ -1416,6 +1481,16 @@
 - (id)createGenieWindowForBoundingBox:(id)arg1
 {
     return nil;
+}
+
+- (id)currentEditor
+{
+    return nil;
+}
+
+- (void)cut:(id)arg1
+{
+
 }
 
 - (id)dataSourceRespondsToRequiredMethods:(id)arg1
@@ -1488,6 +1563,11 @@
     return nil;
 }
 
+- (id)documentVisibleRect
+{
+    return nil;
+}
+
 - (id)dragStartPoint
 {
     return nil;
@@ -1496,6 +1576,11 @@
 - (id)draggedImage
 {
     return nil;
+}
+
+- (void)draggedImage:(id)arg1 endedAt:(NSPoint)arg2 operation:(NSDragOperation)arg3
+{
+
 }
 
 - (id)draggedImageWithEvent:(id)arg1 countBadge:(id)arg2 hotPoint:(id)arg3
@@ -1513,7 +1598,22 @@
     return nil;
 }
 
+- (void)draggingEnded:(id)arg1
+{
+
+}
+
+- (NSDragOperation)draggingSession:(id)arg1 sourceOperationMaskForDraggingContext:(NSDraggingContext)arg2
+{
+    return (NSDragOperation){0};
+}
+
 - (id)drawBackground:(id)arg1
+{
+    return nil;
+}
+
+- (id)drawBackgroundOverhangInRect:(id)arg1
 {
     return nil;
 }
@@ -1983,6 +2083,11 @@
     return nil;
 }
 
+- (id)horizontalScroller
+{
+    return nil;
+}
+
 - (id)iconImportDisabled
 {
     return nil;
@@ -2223,6 +2328,11 @@
     return nil;
 }
 
+- (id)intercellSpacing
+{
+    return nil;
+}
+
 - (id)invalidateCellsLayout
 {
     return nil;
@@ -2244,6 +2354,11 @@
 }
 
 - (id)invalidateSyncTaskCache
+{
+    return nil;
+}
+
+- (id)isAnimating
 {
     return nil;
 }
@@ -2289,6 +2404,11 @@
 }
 
 - (id)lastDiff
+{
+    return nil;
+}
+
+- (id)layoutManager
 {
     return nil;
 }
@@ -2344,6 +2464,11 @@
 }
 
 - (id)mousePositionInView
+{
+    return nil;
+}
+
+- (id)namesOfPromisedFilesDroppedAtDestination:(id)arg1
 {
     return nil;
 }
@@ -2413,7 +2538,17 @@
     return nil;
 }
 
+- (id)numberOfColumns
+{
+    return nil;
+}
+
 - (id)numberOfPreviewItemsInPreviewPanel:(id)arg1
+{
+    return nil;
+}
+
+- (id)numberOfRows
 {
     return nil;
 }
@@ -2423,7 +2558,17 @@
     return nil;
 }
 
+- (id)openGLContext
+{
+    return nil;
+}
+
 - (id)openGLContextCreateIfNeeded:(id)arg1
+{
+    return nil;
+}
+
+- (id)openGLContextForPixelFormat:(id)arg1
 {
     return nil;
 }
@@ -2448,6 +2593,21 @@
     return nil;
 }
 
+- (void)pageDown:(id)arg1
+{
+
+}
+
+- (void)pageUp:(id)arg1
+{
+
+}
+
+- (void)paste:(id)arg1
+{
+
+}
+
 - (id)performRenderTimeLayoutModifiers:(id)arg1
 {
     return nil;
@@ -2458,9 +2618,19 @@
     return nil;
 }
 
+- (id)pixelFormat
+{
+    return nil;
+}
+
 - (id)prepareEditingAtIndex:(id)arg1
 {
     return nil;
+}
+
+- (void)prepareOpenGL
+{
+
 }
 
 - (id)prepareThumbnailBuilderForCell:(id)arg1 size:(id)arg2 quality:(id)arg3
@@ -2503,9 +2673,19 @@
     return nil;
 }
 
+- (NSRect)rectOfColumn:(NSInteger)arg1
+{
+    return (NSRect){0};
+}
+
 - (id)rectOfFloatingGroupHeader:(id)arg1
 {
     return nil;
+}
+
+- (NSRect)rectOfRow:(NSInteger)arg1
+{
+    return (NSRect){0};
 }
 
 - (id)redisplay
@@ -2546,6 +2726,11 @@
 - (id)rememberForPreviousSelectedItem
 {
     return nil;
+}
+
+- (void)remove:(id)arg1
+{
+
 }
 
 - (id)removeAllCells
@@ -2591,6 +2776,11 @@
 - (id)resetToDefaultRenderer
 {
     return nil;
+}
+
+- (void)reshape
+{
+
 }
 
 - (id)restartTasks
@@ -2688,6 +2878,11 @@
     return nil;
 }
 
+- (void)selectAll:(id)arg1
+{
+
+}
+
 - (id)selectAllItems
 {
     return nil;
@@ -2704,6 +2899,11 @@
 }
 
 - (id)selectionBoundingBox
+{
+    return nil;
+}
+
+- (id)selectionColor
 {
     return nil;
 }
@@ -2738,7 +2938,17 @@
 
 }
 
+- (void)setAllowsEmptySelection:(id)arg1
+{
+
+}
+
 - (void)setAllowsReordering:(id)arg1
+{
+
+}
+
+- (void)setAnimates:(id)arg1
 {
 
 }
@@ -2754,6 +2964,11 @@
 }
 
 - (void)setBackgroundComposition:(id)arg1
+{
+
+}
+
+- (void)setBackgroundImage:(id)arg1
 {
 
 }
@@ -2779,6 +2994,16 @@
 }
 
 - (void)setCanControlQuickLookPanel:(id)arg1
+{
+
+}
+
+- (void)setCellClass:(Class)arg1
+{
+
+}
+
+- (void)setCellSize:(id)arg1
 {
 
 }
@@ -2938,6 +3163,11 @@
 
 }
 
+- (void)setHorizontalScroller:(id)arg1
+{
+
+}
+
 - (void)setIconImportDisabled:(id)arg1
 {
 
@@ -2969,6 +3199,11 @@
 }
 
 - (void)setInlinePreviewEnabled:(id)arg1
+{
+
+}
+
+- (void)setIntercellSpacing:(id)arg1
 {
 
 }
@@ -3023,7 +3258,17 @@
 
 }
 
+- (void)setOpenGLContext:(id)arg1
+{
+
+}
+
 - (void)setOutlinesCells:(id)arg1
+{
+
+}
+
+- (void)setPixelFormat:(id)arg1
 {
 
 }
@@ -3049,6 +3294,11 @@
 }
 
 - (void)setSelectedItemsReordering:(id)arg1
+{
+
+}
+
+- (void)setSelectionColor:(id)arg1
 {
 
 }
@@ -3099,6 +3349,11 @@
 }
 
 - (void)setUpdatesCGSurfaceOnDrawRect:(id)arg1
+{
+
+}
+
+- (void)setVerticalScroller:(id)arg1
 {
 
 }
@@ -3156,6 +3411,11 @@
 - (id)showItemInfo
 {
     return nil;
+}
+
+- (void)sizeToFit
+{
+
 }
 
 - (id)sizeToFitWithGroups:(id)arg1 columns:(id)arg2
@@ -3368,12 +3628,32 @@
     return nil;
 }
 
+- (void)textDidEndEditing:(id)arg1
+{
+
+}
+
+- (BOOL)textShouldBeginEditing:(id)arg1
+{
+    return (BOOL){0};
+}
+
+- (BOOL)textShouldEndEditing:(id)arg1
+{
+    return (BOOL){0};
+}
+
 - (id)threadedExecScript:(id)arg1
 {
     return nil;
 }
 
 - (id)thumbnailImageAtIndex:(id)arg1
+{
+    return nil;
+}
+
+- (id)top
 {
     return nil;
 }
@@ -3413,9 +3693,19 @@
     return nil;
 }
 
+- (void)update
+{
+
+}
+
 - (id)updateCellSize
 {
     return nil;
+}
+
+- (void)updateDraggingItemsForDrag:(id)arg1
+{
+
 }
 
 - (id)updateFreeFormLayout
@@ -3544,6 +3834,21 @@
 }
 
 - (id)validateFocusedIndex
+{
+    return nil;
+}
+
+- (BOOL)validateMenuItem:(id)arg1
+{
+    return (BOOL){0};
+}
+
+- (id)verticalScroller
+{
+    return nil;
+}
+
+- (id)view:(id)arg1 stringForToolTip:(NSToolTipTag)arg2 point:(NSPoint)arg3 userData:(void *)arg4
 {
     return nil;
 }

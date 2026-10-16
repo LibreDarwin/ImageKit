@@ -29,6 +29,16 @@
     return nil;
 }
 
+- (id)delegate
+{
+    return nil;
+}
+
+- (void)drawLayer:(id)arg1 inContext:(CGContextRef)arg2
+{
+
+}
+
 - (id)enqueueLayerToDisplay:(id)arg1
 {
     return nil;
@@ -37,5 +47,10 @@
 - (id)enqueueSuccessHandler:(id)arg1
 {
     return nil;
+}
+
+- (void)setDelegate:(id)arg1
+{
+
 }
 @end

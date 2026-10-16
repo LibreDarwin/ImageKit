@@ -9,11 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)imagePicker
-{
-    return nil;
-}
-
 - (id)beginImagePickerSheetForWindow:(id)arg1 withDelegate:(id)arg2 didEndSelector:(id)arg3 contextInfo:(id)arg4
 {
     return nil;

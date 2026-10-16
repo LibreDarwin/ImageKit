@@ -39,6 +39,11 @@
     return nil;
 }
 
+- (void)flush
+{
+
+}
+
 - (id)generatedTextCount
 {
     return nil;

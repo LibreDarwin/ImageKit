@@ -19,6 +19,16 @@
     return nil;
 }
 
+- (void)controlTextDidEndEditing:(id)arg1
+{
+
+}
+
+- (void)endEditing
+{
+
+}
+
 - (id)initWithAnchorPoint:(id)arg1 titleSize:(id)arg2 delegate:(id)arg3
 {
     return nil;
@@ -27,6 +37,26 @@
 - (id)prepareEditorWithString:(id)arg1 attributes:(id)arg2
 {
     return nil;
+}
+
+- (id)resizingMask
+{
+    return nil;
+}
+
+- (void)setAnchorPoint:(id)arg1
+{
+
+}
+
+- (void)setMaxWidth:(id)arg1
+{
+
+}
+
+- (void)setResizingMask:(id)arg1
+{
+
 }
 
 - (void)setTextfieldClass:(id)arg1
@@ -40,6 +70,11 @@
 }
 
 - (id)textEditor
+{
+    return nil;
+}
+
+- (id)textField
 {
     return nil;
 }

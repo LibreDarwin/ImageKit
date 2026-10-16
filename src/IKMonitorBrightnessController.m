@@ -9,11 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)defaultController
-{
-    return nil;
-}
-
 - (id)revertBrightness
 {
     return nil;

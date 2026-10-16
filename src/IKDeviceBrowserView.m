@@ -19,6 +19,11 @@
     return nil;
 }
 
+- (id)delegate
+{
+    return nil;
+}
+
 - (id)deviceBrowser
 {
     return nil;
@@ -64,6 +69,11 @@
     return nil;
 }
 
+- (id)mode
+{
+    return nil;
+}
+
 - (id)resizeView
 {
     return nil;
@@ -72,6 +82,11 @@
 - (id)selectedDevice
 {
     return nil;
+}
+
+- (void)setDelegate:(id)arg1
+{
+
 }
 
 - (void)setDisplaysAccessoryView:(id)arg1
@@ -115,6 +130,11 @@
 }
 
 - (void)setIsInitialized:(id)arg1
+{
+
+}
+
+- (void)setMode:(NSColorPanelMode)arg1
 {
 
 }

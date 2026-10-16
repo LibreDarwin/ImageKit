@@ -29,6 +29,11 @@
     return nil;
 }
 
+- (id)cellAtIndex:(NSInteger)arg1
+{
+    return nil;
+}
+
 - (id)cellFrameAtIndex:(id)arg1
 {
     return nil;
@@ -55,6 +60,11 @@
 }
 
 - (id)collapsedStateChanged:(id)arg1
+{
+    return nil;
+}
+
+- (id)columnAtIndex:(NSInteger)arg1
 {
     return nil;
 }
@@ -114,6 +124,11 @@
     return nil;
 }
 
+- (id)groups
+{
+    return nil;
+}
+
 - (id)headerHeight
 {
     return nil;
@@ -137,6 +152,11 @@
 - (id)initWithParameters:(id)arg1 parent:(id)arg2
 {
     return nil;
+}
+
+- (void)invalidate
+{
+
 }
 
 - (id)invalidateCacheAtIndexes:(id)arg1
@@ -174,6 +194,11 @@
     return nil;
 }
 
+- (id)range
+{
+    return nil;
+}
+
 - (id)resetHorizontalOffset
 {
     return nil;
@@ -189,7 +214,17 @@
     return nil;
 }
 
+- (void)setContentSize:(NSSize)arg1
+{
+
+}
+
 - (void)setGridOrigin:(id)arg1
+{
+
+}
+
+- (void)setGroups:(id)arg1
 {
 
 }
@@ -200,6 +235,11 @@
 }
 
 - (void)setParentGroup:(id)arg1
+{
+
+}
+
+- (void)setRange:(id)arg1
 {
 
 }

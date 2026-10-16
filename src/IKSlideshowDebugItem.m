@@ -29,7 +29,17 @@
     return nil;
 }
 
+- (id)flags
+{
+    return nil;
+}
+
 - (id)imageLoaded
+{
+    return nil;
+}
+
+- (id)index
 {
     return nil;
 }
@@ -37,6 +47,11 @@
 - (id)initWithIndex:(id)arg1 slideshow:(id)arg2 col:(id)arg3 row:(id)arg4
 {
     return nil;
+}
+
+- (void)invalidate
+{
+
 }
 
 - (void)setAutoPlaying:(id)arg1
@@ -54,7 +69,17 @@
 
 }
 
+- (void)setFlags:(id)arg1
+{
+
+}
+
 - (void)setImageLoaded:(id)arg1
+{
+
+}
+
+- (void)setIndex:(id)arg1
 {
 
 }

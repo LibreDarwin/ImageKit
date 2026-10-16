@@ -9,37 +9,7 @@
 
 
 /* --- generated selector-parity stubs --- */
-- (id)drawImage:(id)arg1
-{
-    return nil;
-}
-
-- (id)drawImageOutline
-{
-    return nil;
-}
-
 - (id)drawPhotoBackground
-{
-    return nil;
-}
-
-- (id)drawPlaceHolder
-{
-    return nil;
-}
-
-- (id)drawSelection
-{
-    return nil;
-}
-
-- (id)drawSelectionOnTitle
-{
-    return nil;
-}
-
-- (id)drawShadow
 {
     return nil;
 }
@@ -55,16 +25,6 @@
 }
 
 - (id)pushTransform
-{
-    return nil;
-}
-
-- (id)selectionFrame
-{
-    return nil;
-}
-
-- (id)subtitleFrame
 {
     return nil;
 }

@@ -48,4 +48,9 @@
 {
 
 }
+
+- (void)setSelected:(id)arg1
+{
+
+}
 @end

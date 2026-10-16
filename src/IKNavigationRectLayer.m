@@ -13,14 +13,4 @@
 {
     return nil;
 }
-
-- (id)ikMouseDown:(id)arg1
-{
-    return nil;
-}
-
-- (void)setup:(id)arg1
-{
-
-}
 @end

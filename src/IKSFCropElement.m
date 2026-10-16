@@ -9,24 +9,19 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)cropElement
-{
-    return nil;
-}
-
 - (id)IKDVGrabberUpdated:(id)arg1
 {
     return nil;
 }
 
-- (id)initFromDictionary:(id)arg1
+- (id)delegate
 {
     return nil;
 }
 
-- (id)origin
+- (NSInteger)rotation
 {
-    return nil;
+    return (NSInteger){0};
 }
 
 - (id)scaling
@@ -34,7 +29,7 @@
     return nil;
 }
 
-- (void)setOrigin:(id)arg1
+- (void)setDelegate:(id)arg1
 {
 
 }
@@ -42,6 +37,11 @@
 - (id)setOrigin:(id)arg1 rotation:(id)arg2 scale:(id)arg3
 {
     return nil;
+}
+
+- (void)setRotation:(int)arg1
+{
+
 }
 
 - (void)setScaling:(id)arg1

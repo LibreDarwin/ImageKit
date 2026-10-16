@@ -19,27 +19,17 @@
     return nil;
 }
 
+- (void)changeColor:(id)arg1
+{
+
+}
+
+- (void)changeFont:(id)arg1
+{
+
+}
+
 - (id)cleanup
-{
-    return nil;
-}
-
-- (id)doDrawInContext:(id)arg1 rect:(id)arg2
-{
-    return nil;
-}
-
-- (id)ikMouseDown:(id)arg1
-{
-    return nil;
-}
-
-- (id)isAnnotationLayer
-{
-    return nil;
-}
-
-- (id)knobLayer
 {
     return nil;
 }
@@ -54,11 +44,6 @@
     return nil;
 }
 
-- (id)selected
-{
-    return nil;
-}
-
 - (id)setColorComponents:(id)arg1 withColor:(id)arg2
 {
     return nil;
@@ -67,26 +52,6 @@
 - (void)setNewBorderWidth:(id)arg1
 {
 
-}
-
-- (void)setSupportsUndo:(id)arg1
-{
-
-}
-
-- (void)setup:(id)arg1
-{
-
-}
-
-- (id)startEditing:(id)arg1
-{
-    return nil;
-}
-
-- (id)supportsUndo
-{
-    return nil;
 }
 
 - (id)toggleDash

@@ -77,16 +77,6 @@ NSString *const IKPictureTakerShowTitleKey = @"IKPictureTakerShowTitleKey";
 }
 
 /* --- generated selector-parity stubs --- */
-+ (id)defaultStyleMask
-{
-    return nil;
-}
-
-+ (id)newDefaultParameters
-{
-    return nil;
-}
-
 - (id)_defaultContentRect
 {
     return nil;
@@ -110,6 +100,11 @@ NSString *const IKPictureTakerShowTitleKey = @"IKPictureTakerShowTitleKey";
 - (id)controller:(id)arg1 terminatedWithError:(id)arg2
 {
     return nil;
+}
+
+- (void)copy:(id)arg1
+{
+
 }
 
 - (id)didEndShouldCloseSheet:(id)arg1 returnCode:(id)arg2 contextInfo:(id)arg3
@@ -150,6 +145,11 @@ NSString *const IKPictureTakerShowTitleKey = @"IKPictureTakerShowTitleKey";
 - (id)notifyDelegateWithResultCode:(id)arg1
 {
     return nil;
+}
+
+- (void)paste:(id)arg1
+{
+
 }
 
 - (id)pictureTakerCommonInit:(id)arg1
@@ -215,6 +215,21 @@ NSString *const IKPictureTakerShowTitleKey = @"IKPictureTakerShowTitleKey";
 - (id)tearDownRemoteViewController
 {
     return nil;
+}
+
+- (void)windowDidBecomeKey:(id)arg1
+{
+
+}
+
+- (BOOL)windowShouldClose:(id)arg1
+{
+    return (BOOL){0};
+}
+
+- (void)windowWillClose:(id)arg1
+{
+
 }
 
 - (id)withRemoteViewController:(id)arg1

@@ -9,7 +9,7 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)sharedImageEditView
+- (id)dataSource
 {
     return nil;
 }
@@ -27,6 +27,11 @@
 - (id)imageEditPanel
 {
     return nil;
+}
+
+- (void)setDataSource:(id)arg1
+{
+
 }
 
 - (id)setDataSource:(id)arg1 imageEditPanel:(id)arg2

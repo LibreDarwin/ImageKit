@@ -54,6 +54,11 @@
     return nil;
 }
 
+- (id)pageCount
+{
+    return nil;
+}
+
 - (id)purgeItemsOutOfDate
 {
     return nil;
@@ -67,6 +72,11 @@
 - (id)segmentHeightForFontSize:(id)arg1
 {
     return nil;
+}
+
+- (CGSize)size
+{
+    return (CGSize){0};
 }
 
 - (id)storeText:(id)arg1

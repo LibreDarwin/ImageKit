@@ -9,6 +9,11 @@
 
 
 /* --- generated selector-parity stubs --- */
+- (id)alpha
+{
+    return nil;
+}
+
 - (id)animating
 {
     return nil;
@@ -20,6 +25,11 @@
 }
 
 - (id)collapsedIndexesWithColumnCount:(id)arg1
+{
+    return nil;
+}
+
+- (id)copyWithZone:(id)arg1
 {
     return nil;
 }
@@ -59,6 +69,11 @@
     return nil;
 }
 
+- (id)hasHeader
+{
+    return nil;
+}
+
 - (id)hasSubLayout
 {
     return nil;
@@ -79,6 +94,16 @@
     return nil;
 }
 
+- (id)objectForKey:(id)arg1
+{
+    return nil;
+}
+
+- (id)range
+{
+    return nil;
+}
+
 - (id)rangeToParent
 {
     return nil;
@@ -89,7 +114,22 @@
     return nil;
 }
 
+- (void)setAlpha:(id)arg1
+{
+
+}
+
+- (void)setAnimating:(id)arg1
+{
+
+}
+
 - (void)setBgColor:(id)arg1
+{
+
+}
+
+- (void)setExpanded:(id)arg1
 {
 
 }
@@ -114,7 +154,27 @@
 
 }
 
+- (void)setHighlighted:(id)arg1
+{
+
+}
+
+- (void)setObject:(id)arg1 forKey:(id)arg2
+{
+
+}
+
+- (void)setRange:(id)arg1
+{
+
+}
+
 - (void)setRangeToParent:(id)arg1
+{
+
+}
+
+- (void)setSelected:(id)arg1
 {
 
 }
@@ -124,7 +184,17 @@
 
 }
 
+- (void)setStyle:(id)arg1
+{
+
+}
+
 - (void)setTailLayer:(id)arg1
+{
+
+}
+
+- (void)setTitle:(id)arg1
 {
 
 }
@@ -139,12 +209,22 @@
     return nil;
 }
 
+- (id)style
+{
+    return nil;
+}
+
 - (id)supportsHorizontalScrolling
 {
     return nil;
 }
 
 - (id)tailLayer
+{
+    return nil;
+}
+
+- (id)title
 {
     return nil;
 }

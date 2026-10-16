@@ -39,6 +39,11 @@
     return nil;
 }
 
+- (id)delegate
+{
+    return nil;
+}
+
 - (id)fake
 {
     return nil;
@@ -67,6 +72,11 @@
 - (id)releaseTexturePacker:(id)arg1 inContext:(id)arg2
 {
     return nil;
+}
+
+- (void)setDelegate:(id)arg1
+{
+
 }
 
 - (void)setFake:(id)arg1

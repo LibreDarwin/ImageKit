@@ -9,11 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)holeWithStart:(id)arg1 len:(id)arg2
-{
-    return nil;
-}
-
 - (id)initWithStart:(id)arg1 len:(id)arg2
 {
     return nil;
@@ -24,8 +19,23 @@
     return nil;
 }
 
+- (id)range
+{
+    return nil;
+}
+
+- (void)setRange:(id)arg1
+{
+
+}
+
 - (id)setStart:(id)arg1 len:(id)arg2
 {
     return nil;
+}
+
+- (void)start
+{
+
 }
 @end

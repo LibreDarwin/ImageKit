@@ -24,12 +24,22 @@
     return nil;
 }
 
+- (id)data
+{
+    return nil;
+}
+
 - (id)isInPriorityList
 {
     return nil;
 }
 
 - (id)isVectorial
+{
+    return nil;
+}
+
+- (id)parent
 {
     return nil;
 }
@@ -84,7 +94,17 @@
 
 }
 
+- (void)setData:(id)arg1
+{
+
+}
+
 - (void)setIsInPriorityList:(id)arg1
+{
+
+}
+
+- (void)setParent:(id)arg1
 {
 
 }

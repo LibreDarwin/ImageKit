@@ -84,6 +84,11 @@
     return nil;
 }
 
+- (void)fillRect:(NSRect)arg1
+{
+
+}
+
 - (id)fillRoundedRect:(id)arg1 radius:(id)arg2 cacheIt:(id)arg3
 {
     return nil;
@@ -117,6 +122,11 @@
 - (id)setColorRed:(id)arg1 Green:(id)arg2 Blue:(id)arg3 Alpha:(id)arg4
 {
     return nil;
+}
+
+- (void)setContext:(id)arg1
+{
+
 }
 
 - (void)setShouldSmoothFonts:(id)arg1

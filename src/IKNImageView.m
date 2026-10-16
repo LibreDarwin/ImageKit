@@ -9,21 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)copyImageFromURL:(id)arg1 index:(id)arg2
-{
-    return nil;
-}
-
-+ (id)copyImageFromURL:(id)arg1 index:(id)arg2 orientation:(id)arg3
-{
-    return nil;
-}
-
-+ (id)copyPDFImageFromURL:(id)arg1 index:(id)arg2 orientation:(id)arg3
-{
-    return nil;
-}
-
 - (id)addAutoDetectedItem:(id)arg1
 {
     return nil;
@@ -32,6 +17,11 @@
 - (id)addScanArea:(id)arg1 withOverlay:(id)arg2
 {
     return nil;
+}
+
+- (void)addSelection:(id)arg1
+{
+
 }
 
 - (id)adjustToViewFrame
@@ -69,6 +59,11 @@
     return nil;
 }
 
+- (id)delegate
+{
+    return nil;
+}
+
 - (id)deleteAllSelections
 {
     return nil;
@@ -95,6 +90,11 @@
 }
 
 - (id)dumpLayer:(id)arg1 prefix:(id)arg2 verbose:(id)arg3
+{
+    return nil;
+}
+
+- (id)enabled
 {
     return nil;
 }
@@ -149,6 +149,11 @@
     return nil;
 }
 
+- (id)progress
+{
+    return nil;
+}
+
 - (id)removeAllAutoDetectedItems
 {
     return nil;
@@ -189,6 +194,16 @@
     return nil;
 }
 
+- (NSInteger)rotation
+{
+    return (NSInteger){0};
+}
+
+- (void)selectAll:(id)arg1
+{
+
+}
+
 - (id)selectionRect
 {
     return nil;
@@ -212,6 +227,16 @@
 - (id)setCGImage:(id)arg1 properties:(id)arg2
 {
     return nil;
+}
+
+- (void)setDelegate:(id)arg1
+{
+
+}
+
+- (void)setEnabled:(id)arg1
+{
+
 }
 
 - (void)setForceSelectionInsideView:(id)arg1
@@ -249,7 +274,17 @@
     return nil;
 }
 
+- (void)setProgress:(id)arg1
+{
+
+}
+
 - (void)setResolution:(id)arg1
+{
+
+}
+
+- (void)setRotation:(int)arg1
 {
 
 }

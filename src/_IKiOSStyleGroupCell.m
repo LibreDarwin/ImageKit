@@ -8,16 +8,6 @@
 @implementation _IKiOSStyleGroupCell
 
 /* --- generated selector-parity stubs --- */
-+ (id)contentInsetForCellSize:(id)arg1
-{
-    return nil;
-}
-
-+ (id)subThumbSizeForCellSize:(id)arg1
-{
-    return nil;
-}
-
 - (id)_addClickableAreaWithFrame:(id)arg1 draggable:(id)arg2
 {
     return nil;
@@ -38,16 +28,6 @@
     return nil;
 }
 
-- (id)acceptsDrop
-{
-    return nil;
-}
-
-- (id)baseline
-{
-    return nil;
-}
-
 - (id)baselineForImage:(id)arg1 renderSize:(id)arg2 context:(id)arg3
 {
     return nil;
@@ -58,22 +38,7 @@
     return nil;
 }
 
-- (id)canBeDoubleClicked
-{
-    return nil;
-}
-
 - (id)canDisplayInlinePreview
-{
-    return nil;
-}
-
-- (id)dimFactor
-{
-    return nil;
-}
-
-- (id)drawBackground
 {
     return nil;
 }
@@ -84,46 +49,6 @@
 }
 
 - (id)drawHighlight
-{
-    return nil;
-}
-
-- (id)drawImage:(id)arg1
-{
-    return nil;
-}
-
-- (id)drawOverlays
-{
-    return nil;
-}
-
-- (id)drawPlaceHolder
-{
-    return nil;
-}
-
-- (id)drawSelection
-{
-    return nil;
-}
-
-- (id)drawShadow
-{
-    return nil;
-}
-
-- (id)drawSubtitle
-{
-    return nil;
-}
-
-- (id)drawTitle
-{
-    return nil;
-}
-
-- (id)drawWithComponentMask:(id)arg1
 {
     return nil;
 }
@@ -148,21 +73,6 @@
     return nil;
 }
 
-- (id)hitTestWithPoint:(id)arg1
-{
-    return nil;
-}
-
-- (id)imageBorderFrame
-{
-    return nil;
-}
-
-- (id)imageFrame
-{
-    return nil;
-}
-
 - (id)imageFrameNoScale
 {
     return nil;
@@ -178,11 +88,6 @@
     return nil;
 }
 
-- (id)selectionFrame
-{
-    return nil;
-}
-
 - (void)setDimFactor:(id)arg1
 {
 
@@ -193,12 +98,12 @@
 
 }
 
-- (void)setGroup:(id)arg1
+- (void)setHighlightFactor:(id)arg1
 {
 
 }
 
-- (void)setHighlightFactor:(id)arg1
+- (void)setHighlighted:(id)arg1
 {
 
 }
@@ -218,17 +123,7 @@
     return nil;
 }
 
-- (id)subtitleFrame
-{
-    return nil;
-}
-
 - (id)thumbnailImage
-{
-    return nil;
-}
-
-- (id)titleFrame
 {
     return nil;
 }

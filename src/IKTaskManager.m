@@ -44,6 +44,11 @@
     return nil;
 }
 
+- (id)delegate
+{
+    return nil;
+}
+
 - (id)finishOperationInQueue:(id)arg1
 {
     return nil;
@@ -57,6 +62,11 @@
 - (id)isAsynchronousTaskWithIdentifierRunning:(id)arg1
 {
     return nil;
+}
+
+- (void)lock
+{
+
 }
 
 - (id)lockDelegate
@@ -94,6 +104,11 @@
     return nil;
 }
 
+- (void)setDelegate:(id)arg1
+{
+
+}
+
 - (void)setRetainedObject:(id)arg1
 {
 
@@ -112,6 +127,11 @@
 - (id)taskLoop
 {
     return nil;
+}
+
+- (void)unlock
+{
+
 }
 
 - (id)unlockDelegate

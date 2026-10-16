@@ -9,16 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)autoShowUI
-{
-    return nil;
-}
-
-+ (id)sharedScannerResultsHandler
-{
-    return nil;
-}
-
 - (id)addScanInfo:(id)arg1
 {
     return nil;
@@ -42,6 +32,11 @@
 - (id)hideUI
 {
     return nil;
+}
+
+- (NSInteger)numberOfRowsInTableView:(id)arg1
+{
+    return (NSInteger){0};
 }
 
 - (id)redisplayScanInfo:(id)arg1
@@ -75,6 +70,11 @@
 }
 
 - (id)showUI
+{
+    return nil;
+}
+
+- (id)tableView:(id)arg1 viewForTableColumn:(id)arg2 row:(NSInteger)arg3
 {
     return nil;
 }

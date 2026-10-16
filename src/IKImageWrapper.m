@@ -9,72 +9,22 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)imageWithCGImageSource:(id)arg1
-{
-    return nil;
-}
-
-+ (id)imageWithDraggingItem:(id)arg1
-{
-    return nil;
-}
-
-+ (id)imageWithIconRef:(id)arg1
-{
-    return nil;
-}
-
-+ (id)imageWithImageProxy:(id)arg1
-{
-    return nil;
-}
-
-+ (id)imageWithNSBitmapImageRep:(id)arg1
-{
-    return nil;
-}
-
-+ (id)imageWithNSImage:(id)arg1
-{
-    return nil;
-}
-
-+ (id)imageWithObject:(id)arg1
-{
-    return nil;
-}
-
-+ (id)imageWithObject:(id)arg1 scaleFactor:(id)arg2
-{
-    return nil;
-}
-
-+ (id)imageWithPasteboard:(id)arg1
-{
-    return nil;
-}
-
-+ (id)imageWithPath:(id)arg1
-{
-    return nil;
-}
-
-+ (id)imageWithSize:(id)arg1
-{
-    return nil;
-}
-
-+ (id)imageWithURL:(id)arg1
-{
-    return nil;
-}
-
 - (id)GIFRepresentation
 {
     return nil;
 }
 
 - (id)IK_JPEGRepresentationWithCompressionFactor:(id)arg1
+{
+    return nil;
+}
+
+- (id)TIFFRepresentation
+{
+    return nil;
+}
+
+- (id)TIFFRepresentationUsingCompression:(NSTIFFCompression)arg1 factor:(float)arg2
 {
     return nil;
 }
@@ -164,6 +114,11 @@
     return nil;
 }
 
+- (id)bitmapRepresentation
+{
+    return nil;
+}
+
 - (id)cachedSize
 {
     return nil;
@@ -189,6 +144,11 @@
     return nil;
 }
 
+- (id)dataRepresentation
+{
+    return nil;
+}
+
 - (id)dataRepresentationFromCGRepresentationWithCompressionFactor:(id)arg1
 {
     return nil;
@@ -200,6 +160,11 @@
 }
 
 - (id)drawInRect:(id)arg1 fromRect:(id)arg2 alpha:(id)arg3
+{
+    return nil;
+}
+
+- (id)flags
 {
     return nil;
 }
@@ -225,6 +190,11 @@
 }
 
 - (id)generateNewGLTextureID
+{
+    return nil;
+}
+
+- (id)hasAlpha
 {
     return nil;
 }
@@ -304,7 +274,17 @@
     return nil;
 }
 
+- (id)initWithCGImage:(CGImageRef)arg1
+{
+    return nil;
+}
+
 - (id)initWithCGImageSource:(id)arg1
+{
+    return nil;
+}
+
+- (id)initWithData:(id)arg1
 {
     return nil;
 }
@@ -334,6 +314,26 @@
     return nil;
 }
 
+- (id)initWithPasteboard:(id)arg1
+{
+    return nil;
+}
+
+- (id)initWithPath:(id)arg1
+{
+    return nil;
+}
+
+- (id)initWithSize:(NSSize)arg1
+{
+    return nil;
+}
+
+- (id)initWithURL:(id)arg1
+{
+    return nil;
+}
+
 - (id)integrateReferenceInstance:(id)arg1
 {
     return nil;
@@ -344,7 +344,17 @@
     return nil;
 }
 
+- (id)isEmpty
+{
+    return nil;
+}
+
 - (id)isMarkedAsInvalid
+{
+    return nil;
+}
+
+- (id)isValid
 {
     return nil;
 }
@@ -352,6 +362,11 @@
 - (id)isVectorial
 {
     return nil;
+}
+
+- (void)lockFocus
+{
+
 }
 
 - (id)loopCount
@@ -449,12 +464,27 @@
     return nil;
 }
 
+- (void)setBitmapRepresentation:(id)arg1
+{
+
+}
+
 - (void)setCGImage:(id)arg1
 {
 
 }
 
 - (void)setCGImageSource:(id)arg1
+{
+
+}
+
+- (void)setDataRepresentation:(id)arg1
+{
+
+}
+
+- (void)setFlags:(id)arg1
 {
 
 }
@@ -504,12 +534,27 @@
 
 }
 
+- (BOOL)setPath:(id)arg1
+{
+    return (BOOL){0};
+}
+
 - (void)setQuality:(id)arg1
 {
 
 }
 
+- (void)setSize:(id)arg1
+{
+
+}
+
 - (void)setSizeWithoutSavingContent:(id)arg1
+{
+
+}
+
+- (void)setURL:(id)arg1
 {
 
 }
@@ -527,6 +572,11 @@
 - (void)setWasGeneratedWithIconServices:(id)arg1
 {
 
+}
+
+- (CGSize)size
+{
+    return (CGSize){0};
 }
 
 - (id)textureIsPacked
@@ -555,6 +605,16 @@
 }
 
 - (id)underlyingDataAreVolatile
+{
+    return nil;
+}
+
+- (void)unlockFocus
+{
+
+}
+
+- (id)url
 {
     return nil;
 }

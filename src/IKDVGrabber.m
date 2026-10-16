@@ -9,36 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)cameraIsBusy
-{
-    return nil;
-}
-
-+ (id)canPotentiallyHaveCameraAccess
-{
-    return nil;
-}
-
-+ (id)captureDevice
-{
-    return nil;
-}
-
-+ (id)hasCameraAccess
-{
-    return nil;
-}
-
-+ (id)releaseSharedDVGrabber
-{
-    return nil;
-}
-
-+ (id)sharedDVGrabber
-{
-    return nil;
-}
-
 - (id)QTKitErrorNotification:(id)arg1
 {
     return nil;
@@ -122,6 +92,11 @@
 - (id)startCapture
 {
     return nil;
+}
+
+- (void)stopCapture
+{
+
 }
 
 - (id)videoProvider:(id)arg1 didOutputVideoFrame:(id)arg2

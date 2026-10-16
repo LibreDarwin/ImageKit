@@ -39,6 +39,11 @@
     return nil;
 }
 
+- (id)path
+{
+    return nil;
+}
+
 - (id)pixelDataType
 {
     return nil;
@@ -67,6 +72,11 @@
 - (void)setFileFormat:(id)arg1
 {
 
+}
+
+- (BOOL)setPath:(id)arg1
+{
+    return (BOOL){0};
 }
 
 - (void)setPixelDataType:(id)arg1

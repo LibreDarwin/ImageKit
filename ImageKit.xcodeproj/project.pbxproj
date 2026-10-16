@@ -746,6 +746,7 @@
 		E00000000000000000000185 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E00000000000000000000165 /* libbz2.tbd */; };
 		E00000000000000000000190 /* version.plist in Resources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000170 /* version.plist */; };
 		20000000000000000000016D /* CIFilterListProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1000000000000000000002DC /* CIFilterListProvider.m */; };
+		200000000000000000000179 /* ImageKitCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 1000000000000000000002F3 /* ImageKitCategories.m */; };
 		30000000000000000000016E /* CIFilterListProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 1000000000000000000002DB /* CIFilterListProvider.h */; settings = {ATTRIBUTES = (); }; };
 		20000000000000000000016E /* CIMutableVector.m in Sources */ = {isa = PBXBuildFile; fileRef = 1000000000000000000002DE /* CIMutableVector.m */; };
 		30000000000000000000016F /* CIMutableVector.h in Headers */ = {isa = PBXBuildFile; fileRef = 1000000000000000000002DD /* CIMutableVector.h */; settings = {ATTRIBUTES = (); }; };
@@ -1513,6 +1514,7 @@
 		E00000000000000000000171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = src/Info.plist; sourceTree = "<group>"; };
 		E00000000000000000000150 /* ImageKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImageKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1000000000000000000002DC /* CIFilterListProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = src/CIFilterListProvider.m; sourceTree = "<group>"; };
+		1000000000000000000002F3 /* ImageKitCategories.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = src/ImageKitCategories.m; sourceTree = "<group>"; };
 		1000000000000000000002DB /* CIFilterListProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = src/CIFilterListProvider.h; sourceTree = "<group>"; };
 		1000000000000000000002DE /* CIMutableVector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = src/CIMutableVector.m; sourceTree = "<group>"; };
 		1000000000000000000002DD /* CIMutableVector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = src/CIMutableVector.h; sourceTree = "<group>"; };
@@ -2318,6 +2320,7 @@
 				1000000000000000000002D6 /* IKWindowTransitionAnimation.m */,
 				1000000000000000000002D8 /* IKiOSStyleGroupCell.m */,
 				1000000000000000000002DC /* CIFilterListProvider.m */,
+				1000000000000000000002F3 /* ImageKitCategories.m */,
 				1000000000000000000002DE /* CIMutableVector.m */,
 				1000000000000000000002E0 /* CIVectorView.m */,
 				1000000000000000000002E2 /* EncapsulatedTextValueTransformer.m */,
@@ -3164,6 +3167,7 @@
 				20000000000000000000016A /* IKWindowTransitionAnimation.m in Sources */,
 				20000000000000000000016B /* IKiOSStyleGroupCell.m in Sources */,
 				20000000000000000000016D /* CIFilterListProvider.m in Sources */,
+				200000000000000000000179 /* ImageKitCategories.m in Sources */,
 				20000000000000000000016E /* CIMutableVector.m in Sources */,
 				20000000000000000000016F /* CIVectorView.m in Sources */,
 				200000000000000000000170 /* EncapsulatedTextValueTransformer.m in Sources */,

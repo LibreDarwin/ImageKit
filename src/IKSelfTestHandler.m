@@ -9,6 +9,11 @@
 
 
 /* --- generated selector-parity stubs --- */
+- (id)delegate
+{
+    return nil;
+}
+
 - (id)deviceName
 {
     return nil;
@@ -127,6 +132,11 @@
 - (id)selfTestFailed:(id)arg1
 {
     return nil;
+}
+
+- (void)setDelegate:(id)arg1
+{
+
 }
 
 - (void)setDeviceName:(id)arg1

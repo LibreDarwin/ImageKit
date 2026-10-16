@@ -9,11 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)hardwareCapsChangeNotifier
-{
-    return nil;
-}
-
 - (id)_broadcastHardwareCaps
 {
     return nil;
@@ -44,7 +39,17 @@
     return nil;
 }
 
+- (id)delegate
+{
+    return nil;
+}
+
 - (id)initIOKitNotifications
+{
+    return nil;
+}
+
+- (id)initialize
 {
     return nil;
 }
@@ -62,6 +67,11 @@
 - (id)registerForHardwareNotification
 {
     return nil;
+}
+
+- (void)setDelegate:(id)arg1
+{
+
 }
 
 - (id)unregisterForHardwareNotification

@@ -19,6 +19,11 @@
     return nil;
 }
 
+- (id)delegate
+{
+    return nil;
+}
+
 - (id)findButtonWithPrompt:(id)arg1 inView:(id)arg2
 {
     return nil;
@@ -74,12 +79,22 @@
     return nil;
 }
 
+- (id)savePanel
+{
+    return nil;
+}
+
 - (id)savePanelDidEndSheet:(id)arg1
 {
     return nil;
 }
 
 - (void)setCanCalculateEstimatedSize:(id)arg1
+{
+
+}
+
+- (void)setDelegate:(id)arg1
 {
 
 }

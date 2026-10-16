@@ -13,9 +13,4 @@
 {
     return nil;
 }
-
-- (id)defaultDoubleClickAction:(id)arg1
-{
-    return nil;
-}
 @end

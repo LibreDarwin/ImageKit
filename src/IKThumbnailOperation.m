@@ -9,11 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)operationWithThumbnail:(id)arg1 delegate:(id)arg2 didEndSelector:(id)arg3
-{
-    return nil;
-}
-
 - (id)initWithThumbnail:(id)arg1 delegate:(id)arg2 didEndSelector:(id)arg3
 {
     return nil;

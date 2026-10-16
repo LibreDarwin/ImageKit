@@ -9,11 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)filterBrowserPanelWithStyleMask:(id)arg1
-{
-    return nil;
-}
-
 - (id)beginSheetWithOptions:(id)arg1 modalForWindow:(id)arg2 modalDelegate:(id)arg3 didEndSelector:(id)arg4 contextInfo:(id)arg5
 {
     return nil;

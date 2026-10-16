@@ -19,7 +19,22 @@
     return nil;
 }
 
+- (id)image
+{
+    return nil;
+}
+
 - (id)integrateReferenceInstance:(id)arg1 replaceImage:(id)arg2
+{
+    return nil;
+}
+
+- (void)invalidate
+{
+
+}
+
+- (id)isValid
 {
     return nil;
 }
@@ -35,6 +50,11 @@
 }
 
 - (id)mipmapSize
+{
+    return nil;
+}
+
+- (id)parent
 {
     return nil;
 }
@@ -59,12 +79,22 @@
 
 }
 
+- (void)setImage:(id)arg1
+{
+
+}
+
 - (void)setIsReference:(id)arg1
 {
 
 }
 
 - (void)setMipmapSize:(id)arg1
+{
+
+}
+
+- (void)setParent:(id)arg1
 {
 
 }
@@ -92,6 +122,11 @@
 - (id)thumbnailQuality
 {
     return nil;
+}
+
+- (BOOL)unload
+{
+    return (BOOL){0};
 }
 
 - (id)vmUsagePolicy

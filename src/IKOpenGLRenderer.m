@@ -89,6 +89,11 @@
     return nil;
 }
 
+- (void)fillRect:(NSRect)arg1
+{
+
+}
+
 - (id)fillRoundedRect:(id)arg1 radius:(id)arg2 cacheIt:(id)arg3
 {
     return nil;
@@ -109,6 +114,11 @@
     return nil;
 }
 
+- (id)offset
+{
+    return nil;
+}
+
 - (id)perspectivePushed
 {
     return nil;
@@ -125,6 +135,11 @@
 }
 
 - (id)resetOffset
+{
+    return nil;
+}
+
+- (id)scaleFactor
 {
     return nil;
 }
@@ -150,6 +165,11 @@
 }
 
 - (void)setPerspectivePushed:(id)arg1
+{
+
+}
+
+- (void)setScaleFactor:(id)arg1
 {
 
 }

@@ -24,6 +24,11 @@
     return nil;
 }
 
+- (id)parent
+{
+    return nil;
+}
+
 - (id)session
 {
     return nil;
@@ -35,6 +40,11 @@
 }
 
 - (void)setPackerID:(id)arg1
+{
+
+}
+
+- (void)setParent:(id)arg1
 {
 
 }

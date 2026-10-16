@@ -9,26 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)addEffectWithDictionary:(id)arg1
-{
-    return nil;
-}
-
-+ (id)effectDescriptionWithDictionary:(id)arg1
-{
-    return nil;
-}
-
-+ (id)effectNamed:(id)arg1
-{
-    return nil;
-}
-
-+ (id)effectNames
-{
-    return nil;
-}
-
 - (id)ciIdentifier
 {
     return nil;
@@ -45,6 +25,11 @@
 }
 
 - (id)descriptionDictionary
+{
+    return nil;
+}
+
+- (id)displayName
 {
     return nil;
 }
@@ -92,6 +77,11 @@
 - (id)parameterAtIndex:(id)arg1
 {
     return nil;
+}
+
+- (void)setDescription:(id)arg1
+{
+
 }
 
 - (id)yPosition

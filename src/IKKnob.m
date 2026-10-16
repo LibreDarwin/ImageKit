@@ -19,22 +19,12 @@
     return nil;
 }
 
-- (id)ikMouseDown:(id)arg1
-{
-    return nil;
-}
-
 - (id)ikMouseDragged:(id)arg1
 {
     return nil;
 }
 
 - (id)ikMouseUp:(id)arg1
-{
-    return nil;
-}
-
-- (id)knobLayer
 {
     return nil;
 }

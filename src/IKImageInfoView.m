@@ -9,26 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)locateLongitude:(id)arg1 latitude:(id)arg2
-{
-    return nil;
-}
-
-+ (id)locateLongitude:(id)arg1 latitude:(id)arg2 query:(id)arg3
-{
-    return nil;
-}
-
-+ (id)processMetaData:(id)arg1
-{
-    return nil;
-}
-
-+ (id)sharedImageEditView
-{
-    return nil;
-}
-
 - (id)beautifyMetaData
 {
     return nil;
@@ -54,22 +34,17 @@
     return nil;
 }
 
+- (BOOL)tableView:(id)arg1 shouldSelectRow:(NSInteger)arg2
+{
+    return (BOOL){0};
+}
+
 - (id)tabs
 {
     return nil;
 }
 
 - (id)updateTabs
-{
-    return nil;
-}
-
-- (id)viewWillBecomeActive
-{
-    return nil;
-}
-
-- (id)viewWillBecomeInActive
 {
     return nil;
 }

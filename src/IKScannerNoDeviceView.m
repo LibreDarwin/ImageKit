@@ -9,7 +9,22 @@
 
 
 /* --- generated selector-parity stubs --- */
+- (id)mode
+{
+    return nil;
+}
+
 - (void)setCanCancel:(id)arg1
+{
+
+}
+
+- (void)setMode:(NSColorPanelMode)arg1
+{
+
+}
+
+- (void)setProgress:(id)arg1
 {
 
 }

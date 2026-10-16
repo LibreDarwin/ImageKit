@@ -9,6 +9,11 @@
 
 
 /* --- generated selector-parity stubs --- */
+- (id)defaultValue
+{
+    return nil;
+}
+
 - (id)filterCorrection
 {
     return nil;
@@ -24,6 +29,11 @@
     return nil;
 }
 
+- (id)key
+{
+    return nil;
+}
+
 - (id)leftImageClicked:(id)arg1
 {
     return nil;
@@ -34,6 +44,11 @@
     return nil;
 }
 
+- (void)reset
+{
+
+}
+
 - (id)rightImageClicked:(id)arg1
 {
     return nil;
@@ -42,6 +57,11 @@
 - (id)scanUIController
 {
     return nil;
+}
+
+- (void)setDefaultValue:(id)arg1
+{
+
 }
 
 - (void)setFilterCorrection:(id)arg1
@@ -55,6 +75,11 @@
 }
 
 - (void)setHistogram:(id)arg1
+{
+
+}
+
+- (void)setKey:(id)arg1
 {
 
 }

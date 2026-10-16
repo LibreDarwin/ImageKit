@@ -13,9 +13,4 @@
 {
     return nil;
 }
-
-- (id)snapsToDefault
-{
-    return nil;
-}
 @end

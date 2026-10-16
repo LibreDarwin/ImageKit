@@ -24,6 +24,16 @@
     return nil;
 }
 
+- (id)initWithSize:(NSSize)arg1
+{
+    return nil;
+}
+
+- (id)isEmpty
+{
+    return nil;
+}
+
 - (id)rectIsUsed:(id)arg1
 {
     return nil;
@@ -37,6 +47,11 @@
 - (void)setPadding:(id)arg1
 {
 
+}
+
+- (CGSize)size
+{
+    return (CGSize){0};
 }
 
 - (id)usedArea

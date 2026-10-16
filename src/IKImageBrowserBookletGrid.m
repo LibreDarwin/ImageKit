@@ -7,20 +7,4 @@
 
 @implementation IKImageBrowserBookletGrid
 
-
-/* --- generated selector-parity stubs --- */
-- (id)adjustedCellMargin
-{
-    return nil;
-}
-
-- (id)automaticallyMinimizeRowMargin
-{
-    return nil;
-}
-
-- (id)cellMargin
-{
-    return nil;
-}
 @end

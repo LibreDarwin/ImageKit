@@ -14,12 +14,22 @@
     return nil;
 }
 
+- (void)close:(id)arg1
+{
+
+}
+
 - (id)crop:(id)arg1
 {
     return nil;
 }
 
 - (id)effects:(id)arg1
+{
+    return nil;
+}
+
+- (id)panel
 {
     return nil;
 }

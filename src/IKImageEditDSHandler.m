@@ -14,6 +14,11 @@
     return nil;
 }
 
+- (id)dataSource
+{
+    return nil;
+}
+
 - (id)dataSourceIsIKImageView
 {
     return nil;
@@ -62,6 +67,11 @@
 - (id)metaDataFromCGImageRef
 {
     return nil;
+}
+
+- (void)setDataSource:(id)arg1
+{
+
 }
 
 - (void)setDataSourceIsIKImageView:(id)arg1

@@ -89,7 +89,17 @@
     return nil;
 }
 
+- (id)progress
+{
+    return nil;
+}
+
 - (id)removeObservers:(id)arg1
+{
+    return nil;
+}
+
+- (id)representedObject
 {
     return nil;
 }
@@ -130,6 +140,16 @@
 }
 
 - (void)setLockIcon:(id)arg1
+{
+
+}
+
+- (void)setProgress:(id)arg1
+{
+
+}
+
+- (void)setRepresentedObject:(id)arg1
 {
 
 }

@@ -9,22 +9,12 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)sharedImageEditView
-{
-    return nil;
-}
-
 - (id)createQuestionMarkImage
 {
     return nil;
 }
 
-- (id)viewWillBecomeActive
-{
-    return nil;
-}
-
-- (id)viewWillBecomeInActive
+- (id)image
 {
     return nil;
 }

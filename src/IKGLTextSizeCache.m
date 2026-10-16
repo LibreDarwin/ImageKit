@@ -34,6 +34,11 @@
     return nil;
 }
 
+- (id)isEmpty
+{
+    return nil;
+}
+
 - (id)removeText:(id)arg1
 {
     return nil;

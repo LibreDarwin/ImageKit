@@ -9,11 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)applyUserSettings:(id)arg1 toMetadata:(id)arg2
-{
-    return nil;
-}
-
 - (id)addBitDepth:(id)arg1 toMenu:(id)arg2 enabled:(id)arg3
 {
     return nil;
@@ -95,6 +90,16 @@
 }
 
 - (id)containerView
+{
+    return nil;
+}
+
+- (void)controlTextDidChange:(id)arg1
+{
+
+}
+
+- (id)currentSelection
 {
     return nil;
 }
@@ -215,6 +220,11 @@
 }
 
 - (id)formatRowVisible
+{
+    return nil;
+}
+
+- (id)gridView
 {
     return nil;
 }
@@ -434,6 +444,11 @@
     return nil;
 }
 
+- (id)saveOptions
+{
+    return nil;
+}
+
 - (id)saveOptionsChanged:(id)arg1
 {
     return nil;
@@ -515,6 +530,11 @@
 }
 
 - (void)setContainerView:(id)arg1
+{
+
+}
+
+- (void)setCurrentSelection:(id)arg1
 {
 
 }
@@ -625,6 +645,11 @@
 }
 
 - (void)setFormatRowVisible:(id)arg1
+{
+
+}
+
+- (void)setGridView:(id)arg1
 {
 
 }
@@ -814,6 +839,11 @@
 
 }
 
+- (void)setSaveOptions:(id)arg1
+{
+
+}
+
 - (void)setSelectedBitDepth:(id)arg1
 {
 
@@ -985,6 +1015,11 @@
 }
 
 - (id)userSelection
+{
+    return nil;
+}
+
+- (id)view
 {
     return nil;
 }

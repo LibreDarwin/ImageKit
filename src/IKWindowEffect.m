@@ -9,12 +9,22 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)newEffectForWindow:(id)arg1
+- (void)animationDidEnd:(id)arg1
+{
+
+}
+
+- (void)animationDidStop:(id)arg1
+{
+
+}
+
+- (id)animationDone:(id)arg1
 {
     return nil;
 }
 
-- (id)animationDone:(id)arg1
+- (id)initWithWindow:(id)arg1
 {
     return nil;
 }
@@ -54,6 +64,11 @@
 
 }
 
+- (void)setWindow:(id)arg1
+{
+
+}
+
 - (id)start:(id)arg1
 {
     return nil;
@@ -65,6 +80,11 @@
 }
 
 - (id)updateWindowForProgress:(id)arg1
+{
+    return nil;
+}
+
+- (id)window
 {
     return nil;
 }

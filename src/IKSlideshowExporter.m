@@ -9,11 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)sharedSlideshowExporter
-{
-    return nil;
-}
-
 - (id)addItem:(id)arg1 toFileArray:(id)arg2
 {
     return nil;
@@ -62,5 +57,15 @@
 - (id)sampleJPG_URL
 {
     return nil;
+}
+
+- (void)sharingService:(id)arg1 didFailToShareItems:(id)arg2 error:(id)arg3
+{
+
+}
+
+- (void)sharingService:(id)arg1 didShareItems:(id)arg2
+{
+
 }
 @end

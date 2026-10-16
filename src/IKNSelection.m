@@ -49,6 +49,11 @@
     return nil;
 }
 
+- (id)defaultLineWidth
+{
+    return nil;
+}
+
 - (id)doUpdateGeometry
 {
     return nil;
@@ -84,6 +89,11 @@
     return nil;
 }
 
+- (void)hide
+{
+
+}
+
 - (id)hilite
 {
     return nil;
@@ -95,6 +105,11 @@
 }
 
 - (id)inchRect
+{
+    return nil;
+}
+
+- (id)initWithRect:(CGRect)arg1
 {
     return nil;
 }
@@ -125,6 +140,11 @@
 }
 
 - (id)installPatchOverlay
+{
+    return nil;
+}
+
+- (id)layer
 {
     return nil;
 }
@@ -219,12 +239,22 @@
 
 }
 
+- (void)setLayer:(id)arg1
+{
+
+}
+
 - (void)setPercentDone:(id)arg1
 {
 
 }
 
 - (void)setRotationAngle:(id)arg1
+{
+
+}
+
+- (void)setSelected:(id)arg1
 {
 
 }

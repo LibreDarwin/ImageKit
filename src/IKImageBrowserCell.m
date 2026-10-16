@@ -9,41 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)aCellIsPlayingInView:(id)arg1
-{
-    return nil;
-}
-
-+ (id)anchorPointForCellFrame:(id)arg1 withView:(id)arg2
-{
-    return nil;
-}
-
-+ (id)anchorPointTranslationWithView:(id)arg1
-{
-    return nil;
-}
-
-+ (id)shouldWrapLabelsForIconSize:(id)arg1 gridSpacing:(id)arg2 titlesOnRight:(id)arg3
-{
-    return nil;
-}
-
-+ (id)stopCurrentPlayerIfAny
-{
-    return nil;
-}
-
-+ (id)supportsHeightOfInfoSpaceFactorization
-{
-    return nil;
-}
-
-+ (id)temporaryPauseCurrentPlayingMovieIfAny:(id)arg1
-{
-    return nil;
-}
-
 - (id)__caRenderer
 {
     return nil;
@@ -109,6 +74,11 @@
     return nil;
 }
 
+- (id)aspectRatio
+{
+    return nil;
+}
+
 - (id)baseline
 {
     return nil;
@@ -167,6 +137,11 @@
 - (id)didRecoverImageFromCache
 {
     return nil;
+}
+
+- (BOOL)draw
+{
+    return (BOOL){0};
 }
 
 - (id)drawBackground
@@ -239,7 +214,22 @@
     return nil;
 }
 
+- (unsigned long long)fileSize
+{
+    return (unsigned long long){0};
+}
+
+- (id)frame
+{
+    return nil;
+}
+
 - (id)heightOfInfoSpace
+{
+    return nil;
+}
+
+- (id)hidden
 {
     return nil;
 }
@@ -250,6 +240,11 @@
 }
 
 - (id)hitTestWithRect:(id)arg1
+{
+    return nil;
+}
+
+- (id)imageAlignment
 {
     return nil;
 }
@@ -319,6 +314,16 @@
     return nil;
 }
 
+- (void)invalidate
+{
+
+}
+
+- (void)invalidateLayout
+{
+
+}
+
 - (id)invalidateTitle
 {
     return nil;
@@ -344,12 +349,42 @@
     return nil;
 }
 
+- (id)isPlaying
+{
+    return nil;
+}
+
+- (id)isSelectable
+{
+    return nil;
+}
+
+- (id)isSelected
+{
+    return nil;
+}
+
 - (id)layerForType:(id)arg1
 {
     return nil;
 }
 
 - (id)mouseDown:(id)arg1 inView:(id)arg2
+{
+    return nil;
+}
+
+- (void)mouseEntered:(id)arg1
+{
+
+}
+
+- (void)mouseExited:(id)arg1
+{
+
+}
+
+- (id)opacity
 {
     return nil;
 }
@@ -370,6 +405,11 @@
 }
 
 - (id)playerView
+{
+    return nil;
+}
+
+- (id)position
 {
     return nil;
 }
@@ -404,6 +444,11 @@
     return nil;
 }
 
+- (NSInteger)rotation
+{
+    return (NSInteger){0};
+}
+
 - (id)roundedFrame
 {
     return nil;
@@ -419,6 +464,11 @@
     return nil;
 }
 
+- (void)setAspectRatio:(id)arg1
+{
+
+}
+
 - (void)setBlinking:(id)arg1
 {
 
@@ -429,7 +479,17 @@
 
 }
 
+- (void)setFrame:(id)arg1
+{
+
+}
+
 - (void)setGroup:(id)arg1
+{
+
+}
+
+- (void)setHidden:(id)arg1
 {
 
 }
@@ -444,6 +504,16 @@
 
 }
 
+- (void)setParent:(id)arg1
+{
+
+}
+
+- (void)setPosition:(id)arg1
+{
+
+}
+
 - (void)setPrivateAnimationMask:(id)arg1
 {
 
@@ -454,9 +524,29 @@
 
 }
 
+- (void)setRotation:(int)arg1
+{
+
+}
+
+- (void)setSelected:(id)arg1
+{
+
+}
+
+- (void)setSize:(id)arg1
+{
+
+}
+
 - (id)showPlayerControls
 {
     return nil;
+}
+
+- (CGSize)size
+{
+    return (CGSize){0};
 }
 
 - (id)sizeDidChange

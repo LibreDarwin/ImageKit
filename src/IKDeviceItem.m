@@ -9,6 +9,11 @@
 
 
 /* --- generated selector-parity stubs --- */
+- (id)deviceID
+{
+    return nil;
+}
+
 - (id)deviceIcon
 {
     return nil;
@@ -42,6 +47,11 @@
 - (id)isScanner
 {
     return nil;
+}
+
+- (void)setDeviceID:(id)arg1
+{
+
 }
 
 - (void)setDeviceIcon:(id)arg1

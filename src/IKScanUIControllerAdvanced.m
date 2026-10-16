@@ -44,11 +44,6 @@
     return nil;
 }
 
-- (id)cleanup
-{
-    return nil;
-}
-
 - (id)cleanupPreview
 {
     return nil;
@@ -57,6 +52,21 @@
 - (id)combineToSinglePageCheckBoxChanged:(id)arg1
 {
     return nil;
+}
+
+- (void)comboBoxSelectionDidChange:(id)arg1
+{
+
+}
+
+- (void)controlTextDidChange:(id)arg1
+{
+
+}
+
+- (void)controlTextDidEndEditing:(id)arg1
+{
+
 }
 
 - (id)copySettingsFromFunctionalUnit:(id)arg1
@@ -124,27 +134,7 @@
     return nil;
 }
 
-- (id)didCompleteScanToURL:(id)arg1
-{
-    return nil;
-}
-
-- (id)didCompleteScansToURLs:(id)arg1
-{
-    return nil;
-}
-
 - (id)didCompleteSelfTest
-{
-    return nil;
-}
-
-- (id)didReceiveButtonPress:(id)arg1
-{
-    return nil;
-}
-
-- (id)didScanToURLNotProcessedYet:(id)arg1
 {
     return nil;
 }
@@ -155,11 +145,6 @@
 }
 
 - (id)documentKindPopupChanged:(id)arg1
-{
-    return nil;
-}
-
-- (id)downloadsDirectoryChanged:(id)arg1
 {
     return nil;
 }
@@ -185,11 +170,6 @@
 }
 
 - (id)fileFormatTag
-{
-    return nil;
-}
-
-- (id)finishedScanSelectionAtIndex:(id)arg1
 {
     return nil;
 }
@@ -225,11 +205,6 @@
 }
 
 - (id)functionalUnitPrefsKey:(id)arg1
-{
-    return nil;
-}
-
-- (id)functionalUnitWillSwitchAway:(id)arg1
 {
     return nil;
 }
@@ -329,11 +304,6 @@
     return nil;
 }
 
-- (id)overviewImageChanged
-{
-    return nil;
-}
-
 - (id)overviewScanDidFinish:(id)arg1
 {
     return nil;
@@ -350,11 +320,6 @@
 }
 
 - (id)pixelDataType
-{
-    return nil;
-}
-
-- (id)postProcessApplicationChanged:(id)arg1
 {
     return nil;
 }
@@ -430,11 +395,6 @@
 }
 
 - (id)scanDidStart
-{
-    return nil;
-}
-
-- (id)scanFailed:(id)arg1 error:(id)arg2
 {
     return nil;
 }
@@ -559,22 +519,12 @@
     return nil;
 }
 
-- (void)setScanUIEnabled:(id)arg1
-{
-
-}
-
 - (void)setScanUIViewAdvanced:(id)arg1
 {
 
 }
 
 - (void)setSelectionRect:(id)arg1
-{
-
-}
-
-- (void)setStatusText:(id)arg1
 {
 
 }
@@ -599,11 +549,6 @@
 
 }
 
-- (id)setTempStatusText:(id)arg1 duration:(id)arg2
-{
-    return nil;
-}
-
 - (void)setTemplates:(id)arg1
 {
 
@@ -612,11 +557,6 @@
 - (void)setUseCustomSize:(id)arg1
 {
 
-}
-
-- (id)setup
-{
-    return nil;
 }
 
 - (id)setupScanRectAtIndex:(id)arg1 ikScan:(id)arg2

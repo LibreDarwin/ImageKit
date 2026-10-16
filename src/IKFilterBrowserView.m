@@ -54,6 +54,36 @@
     return nil;
 }
 
+- (BOOL)browser:(id)arg1 acceptDrop:(id)arg2 atRow:(NSInteger)arg3 column:(NSInteger)arg4 dropOperation:(NSBrowserDropOperation)arg5
+{
+    return (BOOL){0};
+}
+
+- (BOOL)browser:(id)arg1 canDragRowsWithIndexes:(id)arg2 inColumn:(NSInteger)arg3 withEvent:(id)arg4
+{
+    return (BOOL){0};
+}
+
+- (NSInteger)browser:(id)arg1 numberOfRowsInColumn:(NSInteger)arg2
+{
+    return (NSInteger){0};
+}
+
+- (NSDragOperation)browser:(id)arg1 validateDrop:(id)arg2 proposedRow:(id)arg3 column:(id)arg4 dropOperation:(id)arg5
+{
+    return (NSDragOperation){0};
+}
+
+- (void)browser:(id)arg1 willDisplayCell:(id)arg2 atRow:(NSInteger)arg3 column:(NSInteger)arg4
+{
+
+}
+
+- (BOOL)browser:(id)arg1 writeRowsWithIndexes:(id)arg2 inColumn:(NSInteger)arg3 toPasteboard:(id)arg4
+{
+    return (BOOL){0};
+}
+
 - (id)browserDoubleClick:(id)arg1
 {
     return nil;
@@ -79,9 +109,9 @@
     return nil;
 }
 
-- (id)removeCollection:(id)arg1
+- (BOOL)removeCollection:(id)arg1
 {
-    return nil;
+    return (BOOL){0};
 }
 
 - (id)removeFromCollection:(id)arg1

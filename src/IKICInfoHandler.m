@@ -9,11 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)sharedInfoHandler
-{
-    return nil;
-}
-
 - (id)addAutoLaunchInfo:(id)arg1 devices:(id)arg2
 {
     return nil;
@@ -132,5 +127,15 @@
 - (void)setSaveButton:(id)arg1
 {
 
+}
+
+- (void)setView:(id)arg1
+{
+
+}
+
+- (id)view
+{
+    return nil;
 }
 @end

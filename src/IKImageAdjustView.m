@@ -9,19 +9,14 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)sharedImageEditView
-{
-    return nil;
-}
-
-- (id)dataSourceDidChange
-{
-    return nil;
-}
-
 - (id)resetAll:(id)arg1
 {
     return nil;
+}
+
+- (void)setEnabled:(id)arg1
+{
+
 }
 
 - (id)setup
@@ -30,16 +25,6 @@
 }
 
 - (id)updateCIFilter:(id)arg1 slider:(id)arg2 key:(id)arg3 value:(id)arg4 label:(id)arg5
-{
-    return nil;
-}
-
-- (id)viewWillBecomeActive
-{
-    return nil;
-}
-
-- (id)viewWillBecomeInActive
 {
     return nil;
 }

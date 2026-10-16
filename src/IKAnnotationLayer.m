@@ -9,16 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)addAnnotationLayer:(id)arg1
-{
-    return nil;
-}
-
-+ (id)registerLayerWithView:(id)arg1
-{
-    return nil;
-}
-
 - (id)addCursorRects
 {
     return nil;
@@ -27,6 +17,16 @@
 - (id)annotationType
 {
     return nil;
+}
+
+- (void)changeColor:(id)arg1
+{
+
+}
+
+- (void)changeFont:(id)arg1
+{
+
 }
 
 - (id)clearAnnotation
@@ -44,17 +44,7 @@
     return nil;
 }
 
-- (id)drawInContext:(id)arg1 drawSelection:(id)arg2
-{
-    return nil;
-}
-
 - (id)ikKeyDown:(id)arg1
-{
-    return nil;
-}
-
-- (id)ikMouseDown:(id)arg1
 {
     return nil;
 }
@@ -84,22 +74,12 @@
     return nil;
 }
 
-- (id)selectLayer:(id)arg1 extendSelection:(id)arg2
-{
-    return nil;
-}
-
 - (void)setAnnotationType:(id)arg1
 {
 
 }
 
 - (void)setUndoString:(id)arg1
-{
-
-}
-
-- (void)setup:(id)arg1
 {
 
 }
@@ -124,22 +104,12 @@
     return nil;
 }
 
-- (id)toolmodeWillChangeFrom:(id)arg1 to:(id)arg2
-{
-    return nil;
-}
-
 - (id)undoString
 {
     return nil;
 }
 
 - (id)updateBorderWidth:(id)arg1
-{
-    return nil;
-}
-
-- (id)willBeRemovedFromSuperlayer
 {
     return nil;
 }

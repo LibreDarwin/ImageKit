@@ -64,7 +64,17 @@
 
 }
 
+- (void)setWantsExtendedDynamicRange:(id)arg1
+{
+
+}
+
 - (id)usingSoftwareRenderer
+{
+    return nil;
+}
+
+- (id)wantsExtendedDynamicRange
 {
     return nil;
 }

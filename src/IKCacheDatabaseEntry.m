@@ -9,11 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)nullNode
-{
-    return nil;
-}
-
 - (id)addNode:(id)arg1 withSize:(id)arg2
 {
     return nil;

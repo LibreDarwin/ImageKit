@@ -24,6 +24,11 @@
     return nil;
 }
 
+- (id)height
+{
+    return nil;
+}
+
 - (id)imageViewHandler
 {
     return nil;
@@ -64,6 +69,11 @@
     return nil;
 }
 
+- (NSInteger)rotation
+{
+    return (NSInteger){0};
+}
+
 - (id)setImage:(id)arg1 imageProperties:(id)arg2
 {
     return nil;
@@ -75,6 +85,11 @@
 }
 
 - (void)setNoImageSize:(id)arg1
+{
+
+}
+
+- (void)setRotation:(int)arg1
 {
 
 }
@@ -105,6 +120,11 @@
 }
 
 - (id)updateTemplateLayer
+{
+    return nil;
+}
+
+- (id)width
 {
     return nil;
 }

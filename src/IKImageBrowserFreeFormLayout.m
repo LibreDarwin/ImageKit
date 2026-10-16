@@ -34,29 +34,14 @@
     return nil;
 }
 
-- (id)cellFrameAtIndex:(id)arg1
-{
-    return nil;
-}
-
-- (id)cellIndexesAtLocation:(id)arg1
-{
-    return nil;
-}
-
-- (id)cellIndexesInRect:(id)arg1
-{
-    return nil;
-}
-
 - (id)checkAllocZValues
 {
     return nil;
 }
 
-- (id)computeContentSize
+- (void)clear
 {
-    return nil;
+
 }
 
 - (id)freeFormDocumentTranslation
@@ -74,22 +59,7 @@
     return nil;
 }
 
-- (id)indexToRenderForNonOrderedIndex:(id)arg1
-{
-    return nil;
-}
-
-- (id)initWithParameters:(id)arg1 parent:(id)arg2
-{
-    return nil;
-}
-
 - (id)invalidateBSP
-{
-    return nil;
-}
-
-- (id)isGridBased
 {
     return nil;
 }
@@ -100,11 +70,6 @@
 }
 
 - (id)moveIndexOnTop:(id)arg1
-{
-    return nil;
-}
-
-- (id)nearestCellOfPosition:(id)arg1
 {
     return nil;
 }
@@ -130,11 +95,6 @@
 }
 
 - (id)positionAtIndex:(id)arg1
-{
-    return nil;
-}
-
-- (id)prepareRenderingOrderingWithIndexes:(id)arg1
 {
     return nil;
 }
@@ -184,11 +144,6 @@
     return nil;
 }
 
-- (id)topLeftItemPosition
-{
-    return nil;
-}
-
 - (id)translateAllBy:(id)arg1
 {
     return nil;
@@ -200,16 +155,6 @@
 }
 
 - (id)validateEdgeIndexesIfNeeded
-{
-    return nil;
-}
-
-- (id)zAtIndex:(id)arg1
-{
-    return nil;
-}
-
-- (id)zSortWithZValues:(id)arg1
 {
     return nil;
 }

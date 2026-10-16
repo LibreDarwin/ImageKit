@@ -19,6 +19,11 @@
     return nil;
 }
 
+- (void)addSelection:(id)arg1
+{
+
+}
+
 - (id)addSelectionFromAutodetectedItem:(id)arg1
 {
     return nil;
@@ -35,6 +40,11 @@
 }
 
 - (id)adjustToViewFrame:(id)arg1
+{
+    return nil;
+}
+
+- (id)annotations
 {
     return nil;
 }
@@ -104,6 +114,11 @@
     return nil;
 }
 
+- (void)drawLayer:(id)arg1 inContext:(CGContextRef)arg2
+{
+
+}
+
 - (id)drawOrientationUI:(id)arg1
 {
     return nil;
@@ -117,6 +132,11 @@
 - (id)dumpSelections
 {
     return nil;
+}
+
+- (void)flagsChanged:(id)arg1
+{
+
 }
 
 - (id)forceSelectionInsideView
@@ -159,6 +179,11 @@
     return nil;
 }
 
+- (id)imageView
+{
+    return nil;
+}
+
 - (id)initWithImageView:(id)arg1
 {
     return nil;
@@ -167,6 +192,11 @@
 - (id)installKnobsLayer:(id)arg1
 {
     return nil;
+}
+
+- (void)keyDown:(id)arg1
+{
+
 }
 
 - (id)knobsLayer
@@ -179,9 +209,29 @@
     return nil;
 }
 
+- (void)mouseDown:(id)arg1
+{
+
+}
+
 - (id)mouseDownLoc
 {
     return nil;
+}
+
+- (void)mouseDragged:(id)arg1
+{
+
+}
+
+- (void)mouseMoved:(id)arg1
+{
+
+}
+
+- (void)mouseUp:(id)arg1
+{
+
 }
 
 - (id)postRotationAngleIsChanging:(id)arg1
@@ -269,6 +319,11 @@
     return nil;
 }
 
+- (void)setAnnotations:(id)arg1
+{
+
+}
+
 - (void)setAutoDetectedItems:(id)arg1
 {
 
@@ -285,6 +340,11 @@
 }
 
 - (void)setForceSelectionInsideView:(id)arg1
+{
+
+}
+
+- (void)setImageView:(id)arg1
 {
 
 }

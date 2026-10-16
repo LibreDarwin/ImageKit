@@ -9,31 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)keyPathsForValuesAffectingContentsEDRStrength
-{
-    return nil;
-}
-
-+ (id)keyPathsForValuesAffectingHasActiveTextSelection
-{
-    return nil;
-}
-
-+ (id)keyPathsForValuesAffectingImageRectInView
-{
-    return nil;
-}
-
-+ (id)keyPathsForValuesAffectingZoomFactor
-{
-    return nil;
-}
-
-+ (id)rotationDegreeForEXIFOrientation:(id)arg1
-{
-    return nil;
-}
-
 - (id)HDRUpdatesPaused
 {
     return nil;
@@ -179,6 +154,16 @@
     return nil;
 }
 
+- (id)contentsEDRStrength
+{
+    return nil;
+}
+
+- (id)contentsMaximumDesiredEDR
+{
+    return nil;
+}
+
 - (id)convertPointFromImage:(id)arg1
 {
     return nil;
@@ -197,6 +182,11 @@
 - (id)convertRectToImage:(id)arg1
 {
     return nil;
+}
+
+- (void)copy:(id)arg1
+{
+
 }
 
 - (id)copySubject:(id)arg1
@@ -220,6 +210,11 @@
 }
 
 - (id)defaultTransformAnimationDuration
+{
+    return nil;
+}
+
+- (id)delegate
 {
     return nil;
 }
@@ -389,6 +384,11 @@
     return nil;
 }
 
+- (void)menuDidClose:(id)arg1
+{
+
+}
+
 - (id)minZoomFactor
 {
     return nil;
@@ -464,6 +464,11 @@
     return nil;
 }
 
+- (id)scrollView
+{
+    return nil;
+}
+
 - (id)scrollviewFrameChanged:(id)arg1
 {
     return nil;
@@ -485,6 +490,11 @@
 }
 
 - (void)setAnalysisContentsRect:(id)arg1
+{
+
+}
+
+- (void)setAnimates:(id)arg1
 {
 
 }
@@ -515,6 +525,11 @@
 }
 
 - (void)setCopySubjectEnabled:(id)arg1
+{
+
+}
+
+- (void)setDelegate:(id)arg1
 {
 
 }
@@ -639,6 +654,11 @@
 
 }
 
+- (void)setWantsExtendedDynamicRangeContent:(id)arg1
+{
+
+}
+
 - (void)setZoomFactor:(id)arg1
 {
 
@@ -745,6 +765,11 @@
 }
 
 - (id)visualSearchInfoButtonGlyphName
+{
+    return nil;
+}
+
+- (id)wantsExtendedDynamicRangeContent
 {
     return nil;
 }

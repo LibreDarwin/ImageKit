@@ -9,6 +9,11 @@
 
 
 /* --- generated selector-parity stubs --- */
+- (id)animationForKey:(id)arg1
+{
+    return nil;
+}
+
 - (id)badgeIconWithImage:(id)arg1 onLayer:(id)arg2
 {
     return nil;
@@ -24,9 +29,9 @@
     return nil;
 }
 
-- (id)didDownloadFile:(id)arg1 error:(id)arg2 options:(id)arg3 contextInfo:(id)arg4
+- (void)didDownloadFile:(id)arg1 error:(id)arg2 options:(id)arg3 contextInfo:(void *)arg4
 {
-    return nil;
+
 }
 
 - (id)disableDoubleClick
@@ -55,6 +60,11 @@
 }
 
 - (id)isDownloaded
+{
+    return nil;
+}
+
+- (id)isSelectable
 {
     return nil;
 }

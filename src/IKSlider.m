@@ -9,7 +9,22 @@
 
 
 /* --- generated selector-parity stubs --- */
+- (id)defaultValue
+{
+    return nil;
+}
+
+- (id)filter
+{
+    return nil;
+}
+
 - (id)filterName
+{
+    return nil;
+}
+
+- (id)key
 {
     return nil;
 }
@@ -24,12 +39,22 @@
     return nil;
 }
 
+- (void)setDefaultValue:(id)arg1
+{
+
+}
+
 - (void)setFilter:(id)arg1
 {
 
 }
 
 - (void)setFilterName:(id)arg1
+{
+
+}
+
+- (void)setKey:(id)arg1
 {
 
 }

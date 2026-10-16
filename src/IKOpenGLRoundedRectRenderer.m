@@ -38,4 +38,14 @@
 {
     return nil;
 }
+
+- (id)scaleFactor
+{
+    return nil;
+}
+
+- (void)setScaleFactor:(id)arg1
+{
+
+}
 @end

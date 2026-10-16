@@ -9,12 +9,12 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)colorWithRGBA:(id)arg1
+- (id)cgColor
 {
     return nil;
 }
 
-- (id)cgColor
+- (id)initWithRed:(CGFloat)arg1 green:(CGFloat)arg2 blue:(CGFloat)arg3 alpha:(CGFloat)arg4
 {
     return nil;
 }

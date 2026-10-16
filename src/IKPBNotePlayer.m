@@ -9,11 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)countdownNotePlayer
-{
-    return nil;
-}
-
 - (id)initWithSample:(id)arg1
 {
     return nil;

@@ -14,6 +14,11 @@
     return nil;
 }
 
+- (id)initWithDelegate:(id)arg1
+{
+    return nil;
+}
+
 - (id)irisClosed
 {
     return nil;

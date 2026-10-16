@@ -44,36 +44,6 @@
 }
 
 /* --- generated selector-parity stubs --- */
-+ (id)IKEditPanelLocalizedString:(id)arg1
-{
-    return nil;
-}
-
-+ (id)IKImageIOLocalizedString:(id)arg1
-{
-    return nil;
-}
-
-+ (id)hasSharedImageEditPanel
-{
-    return nil;
-}
-
-+ (id)locateLongitude:(id)arg1 latitude:(id)arg2
-{
-    return nil;
-}
-
-+ (id)locateLongitude:(id)arg1 latitude:(id)arg2 query:(id)arg3
-{
-    return nil;
-}
-
-+ (id)processMetaData:(id)arg1
-{
-    return nil;
-}
-
 - (id)adjustDisplayModes:(id)arg1
 {
     return nil;
@@ -104,6 +74,11 @@
     return nil;
 }
 
+- (id)imageView
+{
+    return nil;
+}
+
 - (id)makeBig
 {
     return nil;
@@ -112,6 +87,11 @@
 - (id)makeSmall
 {
     return nil;
+}
+
+- (void)reloadData
+{
+
 }
 
 - (void)setHasAdjustMode:(id)arg1
@@ -125,6 +105,11 @@
 }
 
 - (void)setHasEffectsMode:(id)arg1
+{
+
+}
+
+- (void)setImageView:(id)arg1
 {
 
 }

@@ -44,6 +44,11 @@
     return nil;
 }
 
+- (void)clear
+{
+
+}
+
 - (id)commonInitWithDictionary:(id)arg1
 {
     return nil;
@@ -60,6 +65,11 @@
 }
 
 - (id)getLastHoleStart:(id)arg1 len:(id)arg2
+{
+    return nil;
+}
+
+- (id)initWithDictionary:(id)arg1
 {
     return nil;
 }

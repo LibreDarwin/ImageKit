@@ -9,11 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)copy1BitImageFromCGContext:(id)arg1 inputImage:(id)arg2
-{
-    return nil;
-}
-
 - (id)CGImageSaveToFile:(id)arg1 name:(id)arg2
 {
     return nil;
@@ -99,6 +94,11 @@
     return nil;
 }
 
+- (id)copyWithZone:(id)arg1
+{
+    return nil;
+}
+
 - (id)createSingleDocument
 {
     return nil;
@@ -109,19 +109,24 @@
     return nil;
 }
 
+- (id)delegate
+{
+    return nil;
+}
+
 - (id)deleteTempFileForURL:(id)arg1
 {
     return nil;
 }
 
-- (id)device:(id)arg1 didEncounterError:(id)arg2
+- (void)device:(id)arg1 didEncounterError:(id)arg2
 {
-    return nil;
+
 }
 
-- (id)device:(id)arg1 didReceiveStatusInformation:(id)arg2
+- (void)device:(id)arg1 didReceiveStatusInformation:(id)arg2
 {
-    return nil;
+
 }
 
 - (id)doPostProcessing:(id)arg1
@@ -269,6 +274,11 @@
     return nil;
 }
 
+- (void)reset
+{
+
+}
+
 - (id)resetOverviewTimer
 {
     return nil;
@@ -310,6 +320,11 @@
 }
 
 - (id)saveToFinalDestination:(id)arg1 url:(id)arg2
+{
+    return nil;
+}
+
+- (id)scaleFactor
 {
     return nil;
 }
@@ -369,14 +384,14 @@
     return nil;
 }
 
-- (id)scannerDevice:(id)arg1 didCompleteOverviewScanWithError:(id)arg2
+- (void)scannerDevice:(id)arg1 didCompleteOverviewScanWithError:(id)arg2
 {
-    return nil;
+
 }
 
-- (id)scannerDevice:(id)arg1 didCompleteScanWithError:(id)arg2
+- (void)scannerDevice:(id)arg1 didCompleteScanWithError:(id)arg2
 {
-    return nil;
+
 }
 
 - (id)scannerDevice:(id)arg1 didScanToURL:(id)arg2 newStyle:(id)arg3
@@ -425,6 +440,11 @@
 }
 
 - (void)setCreateSingleDocumentReChecked:(id)arg1
+{
+
+}
+
+- (void)setDelegate:(id)arg1
 {
 
 }
@@ -534,6 +554,11 @@
 
 }
 
+- (void)setScaleFactor:(id)arg1
+{
+
+}
+
 - (void)setScanComplete:(id)arg1
 {
 
@@ -594,6 +619,11 @@
 
 }
 
+- (void)setState:(NSInteger)arg1
+{
+
+}
+
 - (void)setUseScanRect:(id)arg1
 {
 
@@ -612,6 +642,11 @@
 - (id)startScan:(id)arg1
 {
     return nil;
+}
+
+- (NSInteger)state
+{
+    return (NSInteger){0};
 }
 
 - (id)tempScanDir

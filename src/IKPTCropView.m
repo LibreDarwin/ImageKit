@@ -24,6 +24,11 @@
     return nil;
 }
 
+- (id)image
+{
+    return nil;
+}
+
 - (id)manualLayout
 {
     return nil;
@@ -42,6 +47,11 @@
 - (id)moveSliderWithIncrement:(id)arg1
 {
     return nil;
+}
+
+- (void)setImage:(id)arg1
+{
+
 }
 
 - (id)zoomSliderAction:(id)arg1

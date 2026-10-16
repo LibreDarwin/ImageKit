@@ -9,16 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)_exifToVKImageOrientation:(id)arg1
-{
-    return nil;
-}
-
-+ (id)keyPathsForValuesAffectingHasActiveTextSelection
-{
-    return nil;
-}
-
 - (id)_getAnalyzerRequest
 {
     return nil;
@@ -49,12 +39,22 @@
     return nil;
 }
 
+- (void)copy:(id)arg1
+{
+
+}
+
 - (id)copySubject
 {
     return nil;
 }
 
 - (id)dataDetectorExistsAtPoint:(id)arg1
+{
+    return nil;
+}
+
+- (id)delegate
 {
     return nil;
 }
@@ -174,7 +174,17 @@
     return nil;
 }
 
+- (void)selectAll:(id)arg1
+{
+
+}
+
 - (void)setAnalysisContentsRect:(id)arg1
+{
+
+}
+
+- (void)setDelegate:(id)arg1
 {
 
 }

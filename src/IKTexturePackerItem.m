@@ -14,6 +14,11 @@
     return nil;
 }
 
+- (id)initWithSize:(NSSize)arg1
+{
+    return nil;
+}
+
 - (id)rectanglePacker
 {
     return nil;

@@ -9,36 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)defaultRecentPictureWithImageWrapper:(id)arg1 cropSize:(id)arg2
-{
-    return nil;
-}
-
-+ (id)defaultRecentPictureWithOriginalData:(id)arg1 cropSize:(id)arg2
-{
-    return nil;
-}
-
-+ (id)defaultRecentPictureWithOriginalImage:(id)arg1 cropSize:(id)arg2
-{
-    return nil;
-}
-
-+ (id)defaultThumbnailSize
-{
-    return nil;
-}
-
-+ (id)emptyRecentPictureWithIcon:(id)arg1
-{
-    return nil;
-}
-
-+ (id)recentPicturePlaceholderForHUD:(id)arg1
-{
-    return nil;
-}
-
 - (id)cropInfo
 {
     return nil;
@@ -74,6 +44,11 @@
     return nil;
 }
 
+- (id)infoDictionary
+{
+    return nil;
+}
+
 - (id)initWithOriginalImage:(id)arg1 cropSize:(id)arg2 cropInfo:(id)arg3 smallIcon:(id)arg4
 {
     return nil;
@@ -85,6 +60,11 @@
 }
 
 - (id)isCurrent
+{
+    return nil;
+}
+
+- (id)isEmpty
 {
     return nil;
 }
@@ -154,6 +134,11 @@
 
 }
 
+- (void)setUserInfo:(id)arg1
+{
+
+}
+
 - (id)smallIcon
 {
     return nil;
@@ -165,6 +150,16 @@
 }
 
 - (id)upgradeForCropSize:(id)arg1
+{
+    return nil;
+}
+
+- (id)userInfo
+{
+    return nil;
+}
+
+- (id)version
 {
     return nil;
 }

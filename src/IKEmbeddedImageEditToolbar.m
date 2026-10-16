@@ -19,11 +19,6 @@
     return nil;
 }
 
-- (id)initWithFrame:(id)arg1 delegate:(id)arg2
-{
-    return nil;
-}
-
 - (id)leaveCropMode
 {
     return nil;
@@ -35,16 +30,6 @@
 }
 
 - (id)selectionRectRemoved
-{
-    return nil;
-}
-
-- (id)setup
-{
-    return nil;
-}
-
-- (id)toolbarType
 {
     return nil;
 }

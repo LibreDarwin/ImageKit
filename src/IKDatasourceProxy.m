@@ -9,31 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)_noQuickLookFallbackImageWithRepresentation:(id)arg1 source:(id)arg2
-{
-    return nil;
-}
-
-+ (id)_proxyImageWithType:(id)arg1 representation:(id)arg2 source:(id)arg3
-{
-    return nil;
-}
-
-+ (id)_thumbnailWithRepresentation:(id)arg1 type:(id)arg2 uti:(id)arg3 quickLookOptions:(id)arg4 proxySource:(id)arg5 size:(id)arg6 antialiased:(id)arg7 quality:(id)arg8
-{
-    return nil;
-}
-
-+ (id)datasourceProxy
-{
-    return nil;
-}
-
-+ (id)representationTypeSupportsConcurrentLoading:(id)arg1
-{
-    return nil;
-}
-
 - (id)isVectorial
 {
     return nil;

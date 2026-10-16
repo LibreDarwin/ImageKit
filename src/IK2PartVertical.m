@@ -7,10 +7,4 @@
 
 @implementation IK2PartVertical
 
-
-/* --- generated selector-parity stubs --- */
-+ (id)layerWithImageNamesTop:(id)arg1 middle:(id)arg2
-{
-    return nil;
-}
 @end

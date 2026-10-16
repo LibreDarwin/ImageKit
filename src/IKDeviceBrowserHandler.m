@@ -9,6 +9,11 @@
 
 
 /* --- generated selector-parity stubs --- */
+- (id)accessoryView
+{
+    return nil;
+}
+
 - (id)accessoryViewConstraint
 {
     return nil;
@@ -22,6 +27,26 @@
 - (id)addRootsIfNeeded
 {
     return nil;
+}
+
+- (void)collectionView:(id)arg1 didSelectItemsAtIndexPaths:(id)arg2
+{
+
+}
+
+- (id)collectionView:(id)arg1 itemForRepresentedObjectAtIndexPath:(id)arg2
+{
+    return nil;
+}
+
+- (NSSize)collectionView:(id)arg1 layout:(id)arg2 sizeForItemAtIndexPath:(id)arg3
+{
+    return (NSSize){0};
+}
+
+- (NSInteger)collectionView:(id)arg1 numberOfItemsInSection:(NSInteger)arg2
+{
+    return (NSInteger){0};
 }
 
 - (id)commonInit
@@ -44,24 +69,29 @@
     return nil;
 }
 
+- (id)delegate
+{
+    return nil;
+}
+
 - (id)deviceBrowser
 {
     return nil;
 }
 
-- (id)deviceBrowser:(id)arg1 deviceDidChangeName:(id)arg2
+- (void)deviceBrowser:(id)arg1 deviceDidChangeName:(id)arg2
 {
-    return nil;
+
 }
 
-- (id)deviceBrowser:(id)arg1 didAddDevice:(id)arg2 moreComing:(id)arg3
+- (void)deviceBrowser:(id)arg1 didAddDevice:(id)arg2 moreComing:(BOOL)arg3
 {
-    return nil;
+
 }
 
-- (id)deviceBrowser:(id)arg1 didRemoveDevice:(id)arg2 moreGoing:(id)arg3
+- (void)deviceBrowser:(id)arg1 didRemoveDevice:(id)arg2 moreGoing:(BOOL)arg3
 {
-    return nil;
+
 }
 
 - (id)deviceBrowser:(id)arg1 requestsDeselectDevice:(id)arg2
@@ -69,14 +99,14 @@
     return nil;
 }
 
-- (id)deviceBrowser:(id)arg1 requestsSelectDevice:(id)arg2
+- (void)deviceBrowser:(id)arg1 requestsSelectDevice:(id)arg2
 {
-    return nil;
+
 }
 
-- (id)deviceBrowserDidEnumerateLocalDevices:(id)arg1
+- (void)deviceBrowserDidEnumerateLocalDevices:(id)arg1
 {
-    return nil;
+
 }
 
 - (id)deviceBrowserViewTLO
@@ -134,9 +164,9 @@
     return nil;
 }
 
-- (id)didRemoveDevice:(id)arg1
+- (void)didRemoveDevice:(id)arg1
 {
-    return nil;
+
 }
 
 - (id)displaysAccessoryView
@@ -234,6 +264,11 @@
     return nil;
 }
 
+- (id)mode
+{
+    return nil;
+}
+
 - (id)numberOfLocalDevices
 {
     return nil;
@@ -244,9 +279,24 @@
     return nil;
 }
 
+- (NSInteger)numberOfRowsInTableView:(id)arg1
+{
+    return (NSInteger){0};
+}
+
 - (id)outlineView
 {
     return nil;
+}
+
+- (BOOL)outlineView:(id)arg1 isGroupItem:(id)arg2
+{
+    return (BOOL){0};
+}
+
+- (BOOL)outlineView:(id)arg1 isItemExpandable:(id)arg2
+{
+    return (BOOL){0};
 }
 
 - (id)outlineView:(id)arg1 menuForItem:(id)arg2
@@ -254,9 +304,34 @@
     return nil;
 }
 
+- (BOOL)outlineView:(id)arg1 shouldSelectItem:(id)arg2
+{
+    return (BOOL){0};
+}
+
+- (id)outlineView:(id)arg1 viewForTableColumn:(id)arg2 item:(id)arg3
+{
+    return nil;
+}
+
+- (void)outlineViewItemDidCollapse:(id)arg1
+{
+
+}
+
+- (void)outlineViewItemDidExpand:(id)arg1
+{
+
+}
+
 - (id)outlineViewSelectionChanged
 {
     return nil;
+}
+
+- (void)outlineViewSelectionDidChange:(id)arg1
+{
+
 }
 
 - (id)parent:(id)arg1
@@ -314,6 +389,11 @@
     return nil;
 }
 
+- (void)setAccessoryView:(id)arg1
+{
+
+}
+
 - (void)setAccessoryViewConstraint:(id)arg1
 {
 
@@ -330,6 +410,11 @@
 }
 
 - (void)setCurrentDeviceItem:(id)arg1
+{
+
+}
+
+- (void)setDelegate:(id)arg1
 {
 
 }
@@ -404,6 +489,11 @@
 
 }
 
+- (void)setMode:(NSColorPanelMode)arg1
+{
+
+}
+
 - (void)setNumberOfLocalDevices:(id)arg1
 {
 
@@ -419,7 +509,17 @@
 
 }
 
+- (void)setTabView:(id)arg1
+{
+
+}
+
 - (void)setTableSelectionIndexes:(id)arg1
+{
+
+}
+
+- (void)setTableView:(id)arg1
 {
 
 }
@@ -449,7 +549,32 @@
     return nil;
 }
 
+- (id)tabView
+{
+    return nil;
+}
+
 - (id)tableSelectionIndexes
+{
+    return nil;
+}
+
+- (id)tableView
+{
+    return nil;
+}
+
+- (BOOL)tableView:(id)arg1 isGroupRow:(NSInteger)arg2
+{
+    return (BOOL){0};
+}
+
+- (BOOL)tableView:(id)arg1 shouldSelectRow:(NSInteger)arg2
+{
+    return (BOOL){0};
+}
+
+- (id)tableView:(id)arg1 viewForTableColumn:(id)arg2 row:(NSInteger)arg3
 {
     return nil;
 }
@@ -457,6 +582,11 @@
 - (id)tableViewSelectionChanged
 {
     return nil;
+}
+
+- (void)tableViewSelectionDidChange:(id)arg1
+{
+
 }
 
 - (id)takeoverICDeviceBrowser

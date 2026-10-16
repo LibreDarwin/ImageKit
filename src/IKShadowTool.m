@@ -9,11 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)sharedInstanceWithScaleFactor:(id)arg1
-{
-    return nil;
-}
-
 - (id)initWithScaleFactor:(id)arg1
 {
     return nil;

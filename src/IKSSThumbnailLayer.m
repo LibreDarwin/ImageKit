@@ -14,6 +14,11 @@
     return nil;
 }
 
+- (id)index
+{
+    return nil;
+}
+
 - (id)invalidated
 {
     return nil;
@@ -22,6 +27,11 @@
 - (id)removeSpinner
 {
     return nil;
+}
+
+- (void)setIndex:(id)arg1
+{
+
 }
 
 - (void)setInvalidated:(id)arg1

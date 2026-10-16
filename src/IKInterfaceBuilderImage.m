@@ -19,18 +19,18 @@
     return nil;
 }
 
-- (id)imageSubtitle
-{
-    return nil;
-}
-
-- (id)imageTitle
-{
-    return nil;
-}
-
 - (id)imageUID
 {
     return nil;
+}
+
+- (id)path
+{
+    return nil;
+}
+
+- (BOOL)setPath:(id)arg1
+{
+    return (BOOL){0};
 }
 @end

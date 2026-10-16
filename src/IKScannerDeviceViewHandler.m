@@ -59,19 +59,24 @@
     return nil;
 }
 
-- (id)device:(id)arg1 didCloseSessionWithError:(id)arg2
+- (id)delegate
 {
     return nil;
 }
 
-- (id)device:(id)arg1 didEncounterError:(id)arg2
+- (void)device:(id)arg1 didCloseSessionWithError:(id)arg2
 {
-    return nil;
+
 }
 
-- (id)device:(id)arg1 didOpenSessionWithError:(id)arg2
+- (void)device:(id)arg1 didEncounterError:(id)arg2
 {
-    return nil;
+
+}
+
+- (void)device:(id)arg1 didOpenSessionWithError:(id)arg2
+{
+
 }
 
 - (id)device:(id)arg1 didReceiveButtonPress:(id)arg2
@@ -79,9 +84,9 @@
     return nil;
 }
 
-- (id)device:(id)arg1 didReceiveStatusInformation:(id)arg2
+- (void)device:(id)arg1 didReceiveStatusInformation:(id)arg2
 {
-    return nil;
+
 }
 
 - (id)deviceBrowser
@@ -89,39 +94,39 @@
     return nil;
 }
 
-- (id)deviceBrowser:(id)arg1 deviceDidChangeSharingState:(id)arg2
+- (void)deviceBrowser:(id)arg1 deviceDidChangeSharingState:(id)arg2
 {
-    return nil;
+
 }
 
-- (id)deviceBrowser:(id)arg1 didAddDevice:(id)arg2 moreComing:(id)arg3
+- (void)deviceBrowser:(id)arg1 didAddDevice:(id)arg2 moreComing:(BOOL)arg3
 {
-    return nil;
+
 }
 
-- (id)deviceBrowser:(id)arg1 didRemoveDevice:(id)arg2 moreGoing:(id)arg3
+- (void)deviceBrowser:(id)arg1 didRemoveDevice:(id)arg2 moreGoing:(BOOL)arg3
 {
-    return nil;
+
 }
 
-- (id)deviceBrowser:(id)arg1 requestsSelectDevice:(id)arg2
+- (void)deviceBrowser:(id)arg1 requestsSelectDevice:(id)arg2
 {
-    return nil;
+
 }
 
-- (id)deviceDidBecomeReady:(id)arg1
+- (void)deviceDidBecomeReady:(id)arg1
 {
-    return nil;
+
 }
 
-- (id)deviceDidChangeName:(id)arg1
+- (void)deviceDidChangeName:(id)arg1
 {
-    return nil;
+
 }
 
-- (id)deviceDidChangeSharingState:(id)arg1
+- (void)deviceDidChangeSharingState:(id)arg1
 {
-    return nil;
+
 }
 
 - (id)deviceWillEjectOrDisconnect:(id)arg1
@@ -129,9 +134,9 @@
     return nil;
 }
 
-- (id)didRemoveDevice:(id)arg1
+- (void)didRemoveDevice:(id)arg1
 {
-    return nil;
+
 }
 
 - (id)didSelectFunctionalUnitAlertDidEnd:(id)arg1 returnCode:(id)arg2 contextInfo:(id)arg3
@@ -304,6 +309,11 @@
     return nil;
 }
 
+- (id)mode
+{
+    return nil;
+}
+
 - (id)noScannerAvailableText
 {
     return nil;
@@ -414,39 +424,39 @@
     return nil;
 }
 
-- (id)scannerDevice:(id)arg1 didCompleteOverviewScanWithError:(id)arg2
+- (void)scannerDevice:(id)arg1 didCompleteOverviewScanWithError:(id)arg2
 {
-    return nil;
+
 }
 
-- (id)scannerDevice:(id)arg1 didCompleteScanWithError:(id)arg2
+- (void)scannerDevice:(id)arg1 didCompleteScanWithError:(id)arg2
 {
-    return nil;
+
 }
 
-- (id)scannerDevice:(id)arg1 didScanToBandData:(id)arg2
+- (void)scannerDevice:(id)arg1 didScanToBandData:(id)arg2
 {
-    return nil;
+
 }
 
-- (id)scannerDevice:(id)arg1 didScanToURL:(id)arg2
+- (void)scannerDevice:(id)arg1 didScanToURL:(id)arg2
 {
-    return nil;
+
 }
 
-- (id)scannerDevice:(id)arg1 didScanToURL:(id)arg2 data:(id)arg3
+- (void)scannerDevice:(id)arg1 didScanToURL:(id)arg2 data:(id)arg3
 {
-    return nil;
+
 }
 
-- (id)scannerDevice:(id)arg1 didSelectFunctionalUnit:(id)arg2 error:(id)arg3
+- (void)scannerDevice:(id)arg1 didSelectFunctionalUnit:(id)arg2 error:(id)arg3
 {
-    return nil;
+
 }
 
-- (id)scannerDeviceDidBecomeAvailable:(id)arg1
+- (void)scannerDeviceDidBecomeAvailable:(id)arg1
 {
-    return nil;
+
 }
 
 - (id)scannerFunctionalUnit
@@ -475,6 +485,11 @@
 }
 
 - (void)setCompressionQuality:(id)arg1
+{
+
+}
+
+- (void)setDelegate:(id)arg1
 {
 
 }
@@ -580,6 +595,11 @@
 }
 
 - (void)setLastValidMode:(id)arg1
+{
+
+}
+
+- (void)setMode:(NSColorPanelMode)arg1
 {
 
 }
@@ -804,9 +824,19 @@
     return nil;
 }
 
+- (void)viewDidMoveToWindow
+{
+
+}
+
 - (id)viewWasRemovedFromSuperview
 {
     return nil;
+}
+
+- (void)windowWillClose:(id)arg1
+{
+
 }
 
 - (id)windowWillClose_closeSession:(id)arg1

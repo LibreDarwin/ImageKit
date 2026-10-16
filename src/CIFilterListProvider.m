@@ -8,11 +8,6 @@
 @implementation CIFilterListProvider
 
 /* --- generated selector-parity stubs --- */
-+ (id)sharedFilterListProvider
-{
-    return nil;
-}
-
 - (id)_getCollections
 {
     return nil;
@@ -58,9 +53,24 @@
     return nil;
 }
 
-- (id)removeCollection:(id)arg1
+- (id)localizedDescriptionForFilterName:(id)arg1
 {
     return nil;
+}
+
+- (id)localizedNameForCategory:(id)arg1
+{
+    return nil;
+}
+
+- (id)localizedNameForFilterName:(id)arg1
+{
+    return nil;
+}
+
+- (BOOL)removeCollection:(id)arg1
+{
+    return (BOOL){0};
 }
 
 - (id)removeFilter:(id)arg1 toCollection:(id)arg2

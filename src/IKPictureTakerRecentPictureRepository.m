@@ -9,11 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)recentRepository
-{
-    return nil;
-}
-
 - (id)addRecent:(id)arg1
 {
     return nil;

@@ -9,12 +9,32 @@
 
 
 /* --- generated selector-parity stubs --- */
+- (id)currentValue
+{
+    return nil;
+}
+
 - (id)finalValue
 {
     return nil;
 }
 
+- (id)initialValue
+{
+    return nil;
+}
+
+- (void)setCurrentValue:(id)arg1
+{
+
+}
+
 - (void)setFinalValue:(id)arg1
+{
+
+}
+
+- (void)setInitialValue:(id)arg1
 {
 
 }

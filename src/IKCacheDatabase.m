@@ -84,6 +84,11 @@
     return nil;
 }
 
+- (id)lastIndex
+{
+    return nil;
+}
+
 - (id)nextFreeIndex
 {
     return nil;

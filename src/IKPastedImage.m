@@ -14,32 +14,7 @@
     return nil;
 }
 
-- (id)beginMouseOperation
-{
-    return nil;
-}
-
-- (id)defaultKnob
-{
-    return nil;
-}
-
-- (id)endMouseOperation
-{
-    return nil;
-}
-
-- (id)ikMouseDown:(id)arg1
-{
-    return nil;
-}
-
-- (id)isPasteboardLayer
-{
-    return nil;
-}
-
-- (id)knobLayer
+- (id)image
 {
     return nil;
 }
@@ -49,23 +24,8 @@
     return nil;
 }
 
-- (id)selected
-{
-    return nil;
-}
-
-- (void)setSupportsUndo:(id)arg1
+- (void)setImage:(id)arg1
 {
 
-}
-
-- (void)setup:(id)arg1
-{
-
-}
-
-- (id)supportsUndo
-{
-    return nil;
 }
 @end

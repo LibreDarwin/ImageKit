@@ -9,22 +9,7 @@
 
 
 /* --- generated selector-parity stubs --- */
-- (id)_transform:(id)arg1 forLayer:(id)arg2 inFrame:(id)arg3
-{
-    return nil;
-}
-
-- (id)baseline
-{
-    return nil;
-}
-
 - (id)baselineForImage:(id)arg1 renderSize:(id)arg2 context:(id)arg3
-{
-    return nil;
-}
-
-- (id)canBeDoubleClicked
 {
     return nil;
 }
@@ -34,32 +19,7 @@
     return nil;
 }
 
-- (id)drawImage:(id)arg1
-{
-    return nil;
-}
-
 - (id)drawReflection:(id)arg1
-{
-    return nil;
-}
-
-- (id)drawSelection
-{
-    return nil;
-}
-
-- (id)drawShadow
-{
-    return nil;
-}
-
-- (id)drawSubtitle
-{
-    return nil;
-}
-
-- (id)drawTitle
 {
     return nil;
 }
@@ -79,11 +39,6 @@
     return nil;
 }
 
-- (id)imageFrame
-{
-    return nil;
-}
-
 - (id)popTransform
 {
     return nil;
@@ -99,22 +54,12 @@
     return nil;
 }
 
-- (id)reflectionFrame
-{
-    return nil;
-}
-
 - (id)reflectionHeight
 {
     return nil;
 }
 
 - (id)rotatedTextAlphaFactor
-{
-    return nil;
-}
-
-- (id)selectionFrame
 {
     return nil;
 }

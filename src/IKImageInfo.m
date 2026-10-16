@@ -33,4 +33,9 @@
 {
 
 }
+
+- (id)textColor
+{
+    return nil;
+}
 @end

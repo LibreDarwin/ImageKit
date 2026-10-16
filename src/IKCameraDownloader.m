@@ -9,6 +9,11 @@
 
 
 /* --- generated selector-parity stubs --- */
+- (id)delegate
+{
+    return nil;
+}
+
 - (id)downloadPathMatchesPath:(id)arg1
 {
     return nil;
@@ -29,6 +34,16 @@
     return nil;
 }
 
+- (id)path
+{
+    return nil;
+}
+
+- (void)setDelegate:(id)arg1
+{
+
+}
+
 - (void)setDownloadPath:(id)arg1
 {
 
@@ -37,6 +52,11 @@
 - (void)setFolderWatcher:(id)arg1
 {
 
+}
+
+- (BOOL)setPath:(id)arg1
+{
+    return (BOOL){0};
 }
 
 - (id)updateFiles

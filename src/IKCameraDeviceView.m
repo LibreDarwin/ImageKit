@@ -69,6 +69,11 @@
     return nil;
 }
 
+- (id)delegate
+{
+    return nil;
+}
+
 - (id)deleteSelectedItems:(id)arg1
 {
     return nil;
@@ -150,6 +155,11 @@
 }
 
 - (id)installView:(id)arg1
+{
+    return nil;
+}
+
+- (id)mode
 {
     return nil;
 }
@@ -244,6 +254,11 @@
 
 }
 
+- (void)setDelegate:(id)arg1
+{
+
+}
+
 - (void)setDisplaysDownloadsDirectoryControl:(id)arg1
 {
 
@@ -285,6 +300,11 @@
 }
 
 - (void)setIconSize:(id)arg1
+{
+
+}
+
+- (void)setMode:(NSColorPanelMode)arg1
 {
 
 }

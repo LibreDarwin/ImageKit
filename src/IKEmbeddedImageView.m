@@ -59,8 +59,33 @@
     return nil;
 }
 
+- (void)setImage:(id)arg1
+{
+
+}
+
+- (void)setImageAlignment:(id)arg1
+{
+
+}
+
+- (void)setImageFrameStyle:(id)arg1
+{
+
+}
+
+- (void)setImageScaling:(id)arg1
+{
+
+}
+
 - (id)updateTextView
 {
     return nil;
+}
+
+- (void)windowWillClose:(id)arg1
+{
+
 }
 @end

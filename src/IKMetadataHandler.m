@@ -9,11 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)sharedMetadataHandler
-{
-    return nil;
-}
-
 - (id)forInfoKey:(id)arg1 addKey:(id)arg2 fromDictionary:(id)arg3 toArray:(id)arg4
 {
     return nil;

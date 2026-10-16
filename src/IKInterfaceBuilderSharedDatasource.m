@@ -24,8 +24,18 @@
     return nil;
 }
 
+- (id)numberOfItems
+{
+    return nil;
+}
+
 - (id)numberOfItemsInImageBrowser:(id)arg1
 {
     return nil;
+}
+
+- (void)setNumberOfItems:(id)arg1
+{
+
 }
 @end

@@ -9,11 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)sampleFileTypes
-{
-    return nil;
-}
-
 - (id)actionApp
 {
     return nil;
@@ -45,6 +40,11 @@
 }
 
 - (id)canChooseApplications
+{
+    return nil;
+}
+
+- (id)canChooseDirectories
 {
     return nil;
 }
@@ -99,11 +99,6 @@
     return nil;
 }
 
-- (id)ikSelectItemWithRepresentedObject:(id)arg1
-{
-    return nil;
-}
-
 - (id)includeAutoDownloader
 {
     return nil;
@@ -120,6 +115,11 @@
 }
 
 - (id)makeSubFoldersPerCamera
+{
+    return nil;
+}
+
+- (id)path
 {
     return nil;
 }
@@ -199,6 +199,11 @@
 
 }
 
+- (void)setCanChooseDirectories:(id)arg1
+{
+
+}
+
 - (void)setCanChooseImageCaptureTools:(id)arg1
 {
 
@@ -259,7 +264,17 @@
 
 }
 
+- (BOOL)setPath:(id)arg1
+{
+    return (BOOL){0};
+}
+
 - (void)setSelectedPathType:(id)arg1
+{
+
+}
+
+- (void)setUrl:(id)arg1
 {
 
 }
@@ -290,6 +305,11 @@
 }
 
 - (id)subFolder:(id)arg1
+{
+    return nil;
+}
+
+- (id)url
 {
     return nil;
 }

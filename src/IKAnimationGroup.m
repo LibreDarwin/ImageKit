@@ -19,6 +19,11 @@
     return nil;
 }
 
+- (id)cells
+{
+    return nil;
+}
+
 - (id)didFinish:(id)arg1
 {
     return nil;
@@ -39,6 +44,11 @@
     return nil;
 }
 
+- (id)level
+{
+    return nil;
+}
+
 - (id)needFinalDataForKey:(id)arg1
 {
     return nil;
@@ -52,6 +62,16 @@
 - (id)parameters
 {
     return nil;
+}
+
+- (void)setCells:(id)arg1
+{
+
+}
+
+- (void)setFinished:(id)arg1
+{
+
 }
 
 - (void)setTimeValue:(id)arg1

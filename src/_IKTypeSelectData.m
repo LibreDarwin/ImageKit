@@ -13,6 +13,11 @@
     return nil;
 }
 
+- (id)_typeSelectEndCurrentSearch
+{
+    return nil;
+}
+
 - (id)cancelScheduledEndOfSearch
 {
     return nil;

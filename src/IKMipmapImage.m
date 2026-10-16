@@ -114,6 +114,11 @@
     return nil;
 }
 
+- (id)image
+{
+    return nil;
+}
+
 - (id)indexOfMipmapItem:(id)arg1
 {
     return nil;
@@ -235,6 +240,11 @@
 }
 
 - (void)setDirty:(id)arg1
+{
+
+}
+
+- (void)setImage:(id)arg1
 {
 
 }

@@ -59,6 +59,11 @@
     return nil;
 }
 
+- (id)mode
+{
+    return nil;
+}
+
 - (id)popup
 {
     return nil;
@@ -85,6 +90,11 @@
 }
 
 - (void)setKeepOriginals:(id)arg1
+{
+
+}
+
+- (void)setMode:(NSColorPanelMode)arg1
 {
 
 }

@@ -7,10 +7,4 @@
 
 @implementation IKTintCorrection
 
-
-/* --- generated selector-parity stubs --- */
-+ (id)registerFilter
-{
-    return nil;
-}
 @end

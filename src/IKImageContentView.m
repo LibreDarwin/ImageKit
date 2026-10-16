@@ -9,31 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)_clampImageAlphaTo01:(id)arg1 colorSpace:(id)arg2
-{
-    return nil;
-}
-
-+ (id)_colorSpaceNeedsExtendedRangeSupport:(id)arg1
-{
-    return nil;
-}
-
-+ (id)_dropsToSDRWhenBackgrounded
-{
-    return nil;
-}
-
-+ (id)keyPathsForValuesAffectingContentsEDRStrength
-{
-    return nil;
-}
-
-+ (id)keyPathsForValuesAffectingHasActiveTextSelection
-{
-    return nil;
-}
-
 - (id)_backgroundDidFinishLoading
 {
     return nil;
@@ -494,6 +469,16 @@
     return nil;
 }
 
+- (id)contentsEDRStrength
+{
+    return nil;
+}
+
+- (id)contentsMaximumDesiredEDR
+{
+    return nil;
+}
+
 - (id)convertPointFromImage:(id)arg1
 {
     return nil;
@@ -664,6 +649,11 @@
     return nil;
 }
 
+- (id)imageView
+{
+    return nil;
+}
+
 - (id)imageViewResized:(id)arg1
 {
     return nil;
@@ -830,6 +820,11 @@
 }
 
 - (void)setAnalysisContentsRect:(id)arg1
+{
+
+}
+
+- (void)setAnimates:(id)arg1
 {
 
 }
@@ -1127,6 +1122,16 @@
 - (id)webPageURL
 {
     return nil;
+}
+
+- (void)windowDidChangeBackingProperties:(id)arg1
+{
+
+}
+
+- (void)windowDidChangeScreen:(id)arg1
+{
+
 }
 
 - (id)zoomFactor

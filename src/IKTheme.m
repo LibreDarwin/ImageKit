@@ -9,36 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)_loadThemeFromURL:(id)arg1 error:(id)arg2
-{
-    return nil;
-}
-
-+ (id)_parseColorElement:(id)arg1 requireName:(id)arg2 name:(id)arg3 allowLocation:(id)arg4 location:(id)arg5 error:(id)arg6
-{
-    return nil;
-}
-
-+ (id)_parseFontElement:(id)arg1 name:(id)arg2 error:(id)arg3
-{
-    return nil;
-}
-
-+ (id)_parseGradientElement:(id)arg1 name:(id)arg2 error:(id)arg3
-{
-    return nil;
-}
-
-+ (id)_parseInsetElement:(id)arg1 name:(id)arg2 error:(id)arg3
-{
-    return nil;
-}
-
-+ (id)currentTheme
-{
-    return nil;
-}
-
 - (id)_initWithDictionary:(id)arg1
 {
     return nil;
@@ -70,6 +40,11 @@
 }
 
 - (id)background2Color
+{
+    return nil;
+}
+
+- (id)blackColor
 {
     return nil;
 }
@@ -234,12 +209,22 @@
     return nil;
 }
 
+- (id)whiteColor
+{
+    return nil;
+}
+
 - (id)whiteShadow1Color
 {
     return nil;
 }
 
 - (id)whiteShadow2Color
+{
+    return nil;
+}
+
+- (id)windowBackgroundColor
 {
     return nil;
 }

@@ -69,6 +69,11 @@
     return nil;
 }
 
+- (id)backgroundView
+{
+    return nil;
+}
+
 - (id)backgroundViewTLO
 {
     return nil;
@@ -94,64 +99,64 @@
     return nil;
 }
 
-- (id)cameraDevice:(id)arg1 didAddItems:(id)arg2
+- (void)cameraDevice:(id)arg1 didAddItems:(id)arg2
 {
-    return nil;
+
 }
 
-- (id)cameraDevice:(id)arg1 didCompleteDeleteFilesWithError:(id)arg2
+- (void)cameraDevice:(id)arg1 didCompleteDeleteFilesWithError:(id)arg2
 {
-    return nil;
+
 }
 
-- (id)cameraDevice:(id)arg1 didReceiveMetadata:(id)arg2 forItem:(id)arg3 error:(id)arg4
+- (void)cameraDevice:(id)arg1 didReceiveMetadata:(id)arg2 forItem:(id)arg3 error:(id)arg4
 {
-    return nil;
+
 }
 
-- (id)cameraDevice:(id)arg1 didReceivePTPEvent:(id)arg2
+- (void)cameraDevice:(id)arg1 didReceivePTPEvent:(id)arg2
 {
-    return nil;
+
 }
 
-- (id)cameraDevice:(id)arg1 didReceiveThumbnail:(id)arg2 forItem:(id)arg3 error:(id)arg4
+- (void)cameraDevice:(id)arg1 didReceiveThumbnail:(CGImageRef)arg2 forItem:(id)arg3 error:(id)arg4
 {
-    return nil;
+
 }
 
-- (id)cameraDevice:(id)arg1 didRemoveItems:(id)arg2
+- (void)cameraDevice:(id)arg1 didRemoveItems:(id)arg2
 {
-    return nil;
+
 }
 
-- (id)cameraDevice:(id)arg1 didRenameItems:(id)arg2
+- (void)cameraDevice:(id)arg1 didRenameItems:(id)arg2
 {
-    return nil;
+
 }
 
-- (id)cameraDevice:(id)arg1 shouldGetMetadataOfItem:(id)arg2
+- (BOOL)cameraDevice:(id)arg1 shouldGetMetadataOfItem:(id)arg2
 {
-    return nil;
+    return (BOOL){0};
 }
 
-- (id)cameraDevice:(id)arg1 shouldGetThumbnailOfItem:(id)arg2
+- (BOOL)cameraDevice:(id)arg1 shouldGetThumbnailOfItem:(id)arg2
 {
-    return nil;
+    return (BOOL){0};
 }
 
-- (id)cameraDeviceDidChangeCapability:(id)arg1
+- (void)cameraDeviceDidChangeCapability:(id)arg1
 {
-    return nil;
+
 }
 
-- (id)cameraDeviceDidEnableAccessRestriction:(id)arg1
+- (void)cameraDeviceDidEnableAccessRestriction:(id)arg1
 {
-    return nil;
+
 }
 
-- (id)cameraDeviceDidRemoveAccessRestriction:(id)arg1
+- (void)cameraDeviceDidRemoveAccessRestriction:(id)arg1
 {
-    return nil;
+
 }
 
 - (id)cameraDeviceHasOpenSession
@@ -214,9 +219,9 @@
     return nil;
 }
 
-- (id)cancelDownload
+- (void)cancelDownload
 {
-    return nil;
+
 }
 
 - (id)cleanup
@@ -224,7 +229,62 @@
     return nil;
 }
 
+- (void)collectionView:(id)arg1 didDeselectItemsAtIndexPaths:(id)arg2
+{
+
+}
+
+- (void)collectionView:(id)arg1 didEndDisplayingItem:(id)arg2 forRepresentedObjectAtIndexPath:(id)arg3
+{
+
+}
+
+- (void)collectionView:(id)arg1 didSelectItemsAtIndexPaths:(id)arg2
+{
+
+}
+
+- (void)collectionView:(id)arg1 draggingSession:(id)arg2 endedAtPoint:(NSPoint)arg3 dragOperation:(NSDragOperation)arg4
+{
+
+}
+
+- (void)collectionView:(id)arg1 draggingSession:(id)arg2 willBeginAtPoint:(NSPoint)arg3 forItemsAtIndexPaths:(id)arg4
+{
+
+}
+
+- (id)collectionView:(id)arg1 itemForRepresentedObjectAtIndexPath:(id)arg2
+{
+    return nil;
+}
+
+- (NSSize)collectionView:(id)arg1 layout:(id)arg2 sizeForItemAtIndexPath:(id)arg3
+{
+    return (NSSize){0};
+}
+
+- (NSInteger)collectionView:(id)arg1 numberOfItemsInSection:(NSInteger)arg2
+{
+    return (NSInteger){0};
+}
+
+- (id)collectionView:(id)arg1 pasteboardWriterForItemAtIndexPath:(id)arg2
+{
+    return nil;
+}
+
+- (void)collectionView:(id)arg1 willDisplayItem:(id)arg2 forRepresentedObjectAtIndexPath:(id)arg3
+{
+
+}
+
 - (id)containerTLO
+{
+    return nil;
+}
+
+- (id)delegate
 {
     return nil;
 }
@@ -244,19 +304,19 @@
     return nil;
 }
 
-- (id)device:(id)arg1 didCloseSessionWithError:(id)arg2
+- (void)device:(id)arg1 didCloseSessionWithError:(id)arg2
 {
-    return nil;
+
 }
 
-- (id)device:(id)arg1 didEncounterError:(id)arg2
+- (void)device:(id)arg1 didEncounterError:(id)arg2
 {
-    return nil;
+
 }
 
-- (id)device:(id)arg1 didOpenSessionWithError:(id)arg2
+- (void)device:(id)arg1 didOpenSessionWithError:(id)arg2
 {
-    return nil;
+
 }
 
 - (id)device:(id)arg1 didReceiveNotification:(id)arg2
@@ -264,9 +324,9 @@
     return nil;
 }
 
-- (id)deviceDidBecomeReadyWithCompleteContentCatalog:(id)arg1
+- (void)deviceDidBecomeReadyWithCompleteContentCatalog:(id)arg1
 {
-    return nil;
+
 }
 
 - (id)deviceDidChangeName
@@ -274,9 +334,9 @@
     return nil;
 }
 
-- (id)deviceDidChangeName:(id)arg1
+- (void)deviceDidChangeName:(id)arg1
 {
-    return nil;
+
 }
 
 - (id)deviceDidChangeSharingState
@@ -284,9 +344,9 @@
     return nil;
 }
 
-- (id)deviceDidChangeSharingState:(id)arg1
+- (void)deviceDidChangeSharingState:(id)arg1
 {
-    return nil;
+
 }
 
 - (id)deviceWillEjectOrDisconnect:(id)arg1
@@ -294,19 +354,19 @@
     return nil;
 }
 
-- (id)didDownloadFile:(id)arg1 error:(id)arg2 options:(id)arg3 contextInfo:(id)arg4
+- (void)didDownloadFile:(id)arg1 error:(id)arg2 options:(id)arg3 contextInfo:(void *)arg4
 {
-    return nil;
+
 }
 
-- (id)didReceiveDownloadProgressForFile:(id)arg1 downloadedBytes:(id)arg2 maxBytes:(id)arg3
+- (void)didReceiveDownloadProgressForFile:(id)arg1 downloadedBytes:(id)arg2 maxBytes:(id)arg3
 {
-    return nil;
+
 }
 
-- (id)didRemoveDevice:(id)arg1
+- (void)didRemoveDevice:(id)arg1
 {
-    return nil;
+
 }
 
 - (id)didRemoveItems:(id)arg1
@@ -315,6 +375,11 @@
 }
 
 - (id)displayHelp:(id)arg1
+{
+    return nil;
+}
+
+- (id)displayMode
 {
     return nil;
 }
@@ -414,12 +479,32 @@
     return nil;
 }
 
+- (NSDragOperation)draggingEntered:(id)arg1
+{
+    return (NSDragOperation){0};
+}
+
+- (NSDragOperation)draggingUpdated:(id)arg1
+{
+    return (NSDragOperation){0};
+}
+
 - (id)dumpBaseNameInfo
 {
     return nil;
 }
 
 - (id)dumpDownloadErrors
+{
+    return nil;
+}
+
+- (id)filePromiseProvider:(id)arg1 fileNameForType:(id)arg2
+{
+    return nil;
+}
+
+- (id)filePromiseProvider:(id)arg1 writePromiseToURL:(id)arg2 completionHandler:(id)arg3
 {
     return nil;
 }
@@ -574,6 +659,11 @@
     return nil;
 }
 
+- (id)itemCount
+{
+    return nil;
+}
+
 - (id)itemCountSelectionString
 {
     return nil;
@@ -609,6 +699,21 @@
     return nil;
 }
 
+- (void)menuNeedsUpdate:(id)arg1
+{
+
+}
+
+- (void)menuWillOpen:(id)arg1
+{
+
+}
+
+- (id)mode
+{
+    return nil;
+}
+
 - (id)noAutomaticTask:(id)arg1
 {
     return nil;
@@ -634,12 +739,22 @@
     return nil;
 }
 
+- (NSInteger)numberOfRowsInTableView:(id)arg1
+{
+    return (NSInteger){0};
+}
+
 - (id)oDispatchQueue
 {
     return nil;
 }
 
 - (id)oQueue
+{
+    return nil;
+}
+
+- (id)operationQueueForFilePromiseProvider:(id)arg1
 {
     return nil;
 }
@@ -652,6 +767,11 @@
 - (id)pathControlChangedDir:(id)arg1
 {
     return nil;
+}
+
+- (BOOL)performDragOperation:(id)arg1
+{
+    return (BOOL){0};
 }
 
 - (id)placeholderStringForOpenWith
@@ -677,6 +797,11 @@
 - (id)prefsPrefix
 {
     return nil;
+}
+
+- (void)reloadData
+{
+
 }
 
 - (id)removeVisibleIndexPath:(id)arg1
@@ -722,6 +847,11 @@
 - (id)selectionCount
 {
     return nil;
+}
+
+- (BOOL)selectionShouldChangeInTableView:(id)arg1
+{
+    return (BOOL){0};
 }
 
 - (void)setAllowSingleSelectionOnly:(id)arg1
@@ -819,7 +949,17 @@
 
 }
 
+- (void)setDelegate:(id)arg1
+{
+
+}
+
 - (void)setDeleteButtonToolTip:(id)arg1
+{
+
+}
+
+- (void)setDisplayMode:(id)arg1
 {
 
 }
@@ -974,6 +1114,11 @@
 
 }
 
+- (void)setMode:(NSColorPanelMode)arg1
+{
+
+}
+
 - (void)setNoCameraAvailableText:(id)arg1
 {
 
@@ -1004,12 +1149,27 @@
 
 }
 
+- (void)setProgress:(id)arg1
+{
+
+}
+
 - (void)setResourceHandler:(id)arg1
 {
 
 }
 
+- (BOOL)setSelectionIndexes:(id)arg1
+{
+    return (BOOL){0};
+}
+
 - (void)setShowStatusInfoAsWindowSubtitle:(id)arg1
+{
+
+}
+
+- (void)setSortDescriptors:(id)arg1
 {
 
 }
@@ -1099,6 +1259,11 @@
     return nil;
 }
 
+- (id)sortDescriptors
+{
+    return nil;
+}
+
 - (id)startAddedItemsTimerWithInterval:(id)arg1 andFireBlock:(id)arg2
 {
     return nil;
@@ -1154,14 +1319,44 @@
     return nil;
 }
 
-- (id)tableView:(id)arg1 writeRowsWithIndexes:(id)arg2 toPasteboard:(id)arg3
+- (id)tableView:(id)arg1 namesOfPromisedFilesDroppedAtDestination:(id)arg2 forDraggedRowsWithIndexes:(id)arg3
 {
     return nil;
+}
+
+- (id)tableView:(id)arg1 objectValueForTableColumn:(id)arg2 row:(NSInteger)arg3
+{
+    return nil;
+}
+
+- (BOOL)tableView:(id)arg1 shouldSelectRow:(NSInteger)arg2
+{
+    return (BOOL){0};
+}
+
+- (BOOL)tableView:(id)arg1 shouldTrackCell:(id)arg2 forTableColumn:(id)arg3 row:(NSInteger)arg4
+{
+    return (BOOL){0};
+}
+
+- (void)tableView:(id)arg1 sortDescriptorsDidChange:(id)arg2
+{
+
+}
+
+- (BOOL)tableView:(id)arg1 writeRowsWithIndexes:(id)arg2 toPasteboard:(id)arg3
+{
+    return (BOOL){0};
 }
 
 - (id)tableViewDoubleClicked:(id)arg1
 {
     return nil;
+}
+
+- (void)tableViewSelectionDidChange:(id)arg1
+{
+
 }
 
 - (id)tableViewTLO
@@ -1254,6 +1449,11 @@
     return nil;
 }
 
+- (void)viewDidMoveToWindow
+{
+
+}
+
 - (id)visibleIndexes
 {
     return nil;
@@ -1277,5 +1477,10 @@
 - (id)windowStateDeactivate:(id)arg1
 {
     return nil;
+}
+
+- (void)windowWillClose:(id)arg1
+{
+
 }
 @end

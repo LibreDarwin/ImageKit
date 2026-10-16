@@ -7,4 +7,15 @@
 
 @implementation IKLinkedListNode
 
+
+/* --- generated selector-parity stubs --- */
+- (void)setValue:(id)arg1
+{
+
+}
+
+- (id)value
+{
+    return nil;
+}
 @end

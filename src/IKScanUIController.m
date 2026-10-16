@@ -9,11 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)convertRect:(id)arg1 fromUnit:(id)arg2 toUnit:(id)arg3 resolution:(id)arg4
-{
-    return nil;
-}
-
 - (id)addScanResult:(id)arg1
 {
     return nil;
@@ -107,6 +102,11 @@
 - (id)imageFlow:(id)arg1 itemAtIndex:(id)arg2
 {
     return nil;
+}
+
+- (BOOL)isExecutableFileAtPath:(id)arg1
+{
+    return (BOOL){0};
 }
 
 - (id)numberOfItemsInImageFlow:(id)arg1

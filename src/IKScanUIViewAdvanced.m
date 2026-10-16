@@ -79,6 +79,11 @@
     return nil;
 }
 
+- (id)scrollView
+{
+    return nil;
+}
+
 - (void)setOverviewButton:(id)arg1
 {
 
@@ -100,6 +105,11 @@
 }
 
 - (void)setScannerParameterView:(id)arg1
+{
+
+}
+
+- (void)setScrollView:(id)arg1
 {
 
 }

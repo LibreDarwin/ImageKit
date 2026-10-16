@@ -7,20 +7,4 @@
 
 @implementation IKDeviceBrowserHandlerIB
 
-
-/* --- generated selector-parity stubs --- */
-- (id)commonInit
-{
-    return nil;
-}
-
-- (id)initWithIKDeviceBrowserView:(id)arg1
-{
-    return nil;
-}
-
-- (id)setup
-{
-    return nil;
-}
 @end

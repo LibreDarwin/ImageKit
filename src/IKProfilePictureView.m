@@ -109,9 +109,19 @@
     return nil;
 }
 
+- (BOOL)abortEditing
+{
+    return (BOOL){0};
+}
+
 - (id)accountType
 {
     return nil;
+}
+
+- (void)beginEditing
+{
+
 }
 
 - (id)beginEditingForDropOrPasteWithImage:(id)arg1
@@ -134,9 +144,44 @@
     return nil;
 }
 
+- (void)copy:(id)arg1
+{
+
+}
+
 - (id)defaultImage
 {
     return nil;
+}
+
+- (id)delegate
+{
+    return nil;
+}
+
+- (void)delete:(id)arg1
+{
+
+}
+
+- (void)draggingSession:(id)arg1 endedAtPoint:(NSPoint)arg2 operation:(NSDragOperation)arg3
+{
+
+}
+
+- (void)draggingSession:(id)arg1 movedToPoint:(NSPoint)arg2
+{
+
+}
+
+- (NSDragOperation)draggingSession:(id)arg1 sourceOperationMaskForDraggingContext:(NSDraggingContext)arg2
+{
+    return (NSDragOperation){0};
+}
+
+- (void)draggingSession:(id)arg1 willBeginAtPoint:(NSPoint)arg2
+{
+
 }
 
 - (id)editionHighlightType
@@ -159,9 +204,44 @@
     return nil;
 }
 
+- (BOOL)ignoreModifierKeysForDraggingSession:(id)arg1
+{
+    return (BOOL){0};
+}
+
+- (id)image
+{
+    return nil;
+}
+
+- (id)isEditable
+{
+    return nil;
+}
+
+- (id)isEditing
+{
+    return nil;
+}
+
+- (BOOL)isEnabled
+{
+    return (BOOL){0};
+}
+
 - (id)isMe
 {
     return nil;
+}
+
+- (id)namesOfPromisedFilesDroppedAtDestination:(id)arg1
+{
+    return nil;
+}
+
+- (void)paste:(id)arg1
+{
+
 }
 
 - (id)pictureTakerValidated:(id)arg1 code:(id)arg2 contextInfo:(id)arg3
@@ -170,6 +250,11 @@
 }
 
 - (id)recentPictureID
+{
+    return nil;
+}
+
+- (id)representedObject
 {
     return nil;
 }
@@ -189,7 +274,17 @@
 
 }
 
+- (void)setDelegate:(id)arg1
+{
+
+}
+
 - (void)setDropURL:(id)arg1
+{
+
+}
+
+- (void)setEditable:(id)arg1
 {
 
 }
@@ -209,12 +304,27 @@
 
 }
 
+- (void)setEnabled:(id)arg1
+{
+
+}
+
+- (void)setImage:(id)arg1
+{
+
+}
+
 - (void)setIsMe:(id)arg1
 {
 
 }
 
 - (void)setRecentPictureID:(id)arg1
+{
+
+}
+
+- (void)setRepresentedObject:(id)arg1
 {
 
 }

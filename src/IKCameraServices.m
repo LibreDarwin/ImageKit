@@ -9,11 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)sharedCameraServices
-{
-    return nil;
-}
-
 - (id)_logState
 {
     return nil;

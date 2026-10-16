@@ -79,6 +79,11 @@
     return nil;
 }
 
+- (id)delegate
+{
+    return nil;
+}
+
 - (id)evaluateDefragmentation
 {
     return nil;
@@ -125,6 +130,11 @@
 }
 
 - (void)setCacheData:(id)arg1
+{
+
+}
+
+- (void)setDelegate:(id)arg1
 {
 
 }

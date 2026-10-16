@@ -9,32 +9,32 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)flipHorizontal:(id)arg1
-{
-    return nil;
-}
-
-+ (id)flipVertical:(id)arg1
-{
-    return nil;
-}
-
-+ (id)rotateLeft:(id)arg1
-{
-    return nil;
-}
-
-+ (id)rotateRight:(id)arg1
-{
-    return nil;
-}
-
 - (id)cleanup
 {
     return nil;
 }
 
+- (BOOL)containsValueForKey:(id)arg1
+{
+    return (BOOL){0};
+}
+
+- (id)dictionary
+{
+    return nil;
+}
+
+- (void)encodeWithCoder:(id)arg1
+{
+
+}
+
 - (id)filterArray
+{
+    return nil;
+}
+
+- (id)filters
 {
     return nil;
 }
@@ -50,6 +50,21 @@
 }
 
 - (id)imageStateDescription
+{
+    return nil;
+}
+
+- (id)initWithCoder:(id)arg1
+{
+    return nil;
+}
+
+- (id)initWithDictionary:(id)arg1
+{
+    return nil;
+}
+
+- (id)objectForKey:(id)arg1
 {
     return nil;
 }
@@ -77,6 +92,16 @@
 - (id)selectionInfo
 {
     return nil;
+}
+
+- (void)setFilters:(id)arg1
+{
+
+}
+
+- (void)setObject:(id)arg1 forKey:(id)arg2
+{
+
 }
 
 - (void)setOrientationTag:(id)arg1

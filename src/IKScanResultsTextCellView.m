@@ -44,6 +44,11 @@
     return nil;
 }
 
+- (id)representedObject
+{
+    return nil;
+}
+
 - (id)scanInfo
 {
     return nil;
@@ -65,6 +70,11 @@
 }
 
 - (void)setFindButton:(id)arg1
+{
+
+}
+
+- (void)setRepresentedObject:(id)arg1
 {
 
 }

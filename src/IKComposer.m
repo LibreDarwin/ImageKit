@@ -9,27 +9,7 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)createContextForCGImage:(id)arg1 width:(id)arg2 height:(id)arg3 alphaInfo:(id)arg4 data:(id)arg5
-{
-    return nil;
-}
-
-+ (id)createCopy:(id)arg1 filterArray:(id)arg2
-{
-    return nil;
-}
-
-+ (id)createCopy:(id)arg1 orientationTag:(id)arg2
-{
-    return nil;
-}
-
-+ (id)imageFromCGImage:(id)arg1 imageProperties:(id)arg2 imageState:(id)arg3 options:(id)arg4
-{
-    return nil;
-}
-
-+ (id)imageFromURL:(id)arg1 imageState:(id)arg2 options:(id)arg3
+- (id)URL
 {
     return nil;
 }
@@ -60,6 +40,11 @@
 }
 
 - (id)applyPendingChanges
+{
+    return nil;
+}
+
+- (id)backgroundColor
 {
     return nil;
 }
@@ -99,6 +84,16 @@
     return nil;
 }
 
+- (void)changeColor:(id)arg1
+{
+
+}
+
+- (void)changeFont:(id)arg1
+{
+
+}
+
 - (id)cleanup
 {
     return nil;
@@ -127,6 +122,11 @@
 - (id)convertViewRectToImageRect:(id)arg1
 {
     return nil;
+}
+
+- (void)copy:(id)arg1
+{
+
 }
 
 - (id)createCGColorFromNSColor:(id)arg1
@@ -224,6 +224,11 @@
     return nil;
 }
 
+- (id)image
+{
+    return nil;
+}
+
 - (id)imageDidChange
 {
     return nil;
@@ -264,6 +269,11 @@
     return nil;
 }
 
+- (id)imageView
+{
+    return nil;
+}
+
 - (id)imageWillChange
 {
     return nil;
@@ -277,6 +287,16 @@
 - (id)initWithView:(id)arg1
 {
     return nil;
+}
+
+- (id)isOpaque
+{
+    return nil;
+}
+
+- (void)keyDown:(id)arg1
+{
+
 }
 
 - (id)layerForImage
@@ -304,14 +324,39 @@
     return nil;
 }
 
+- (void)mouseDown:(id)arg1
+{
+
+}
+
 - (id)mouseDownLayer
 {
     return nil;
 }
 
+- (void)mouseDragged:(id)arg1
+{
+
+}
+
+- (void)mouseUp:(id)arg1
+{
+
+}
+
 - (id)overlayForType:(id)arg1
 {
     return nil;
+}
+
+- (void)paste:(id)arg1
+{
+
+}
+
+- (BOOL)performKeyEquivalent:(id)arg1
+{
+    return (BOOL){0};
 }
 
 - (id)reassignFilterChain:(id)arg1
@@ -369,6 +414,21 @@
     return nil;
 }
 
+- (void)scrollToPoint:(NSPoint)arg1
+{
+
+}
+
+- (void)scrollToRect:(CGRect)arg1
+{
+
+}
+
+- (void)selectAll:(id)arg1
+{
+
+}
+
 - (id)selectionRectAdded
 {
     return nil;
@@ -395,6 +455,11 @@
 }
 
 - (void)setAnnotationType:(id)arg1
+{
+
+}
+
+- (void)setBackgroundColor:(id)arg1
 {
 
 }
@@ -465,6 +530,11 @@
 }
 
 - (void)setToolMode:(id)arg1
+{
+
+}
+
+- (void)setURL:(id)arg1
 {
 
 }

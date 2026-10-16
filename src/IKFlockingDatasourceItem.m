@@ -19,11 +19,6 @@
     return nil;
 }
 
-- (id)imageTitle
-{
-    return nil;
-}
-
 - (id)imageUID
 {
     return nil;
@@ -34,12 +29,22 @@
     return nil;
 }
 
+- (void)setImage:(id)arg1
+{
+
+}
+
 - (void)setImageUID:(id)arg1
 {
 
 }
 
 - (void)setImageVersion:(id)arg1
+{
+
+}
+
+- (void)setTitle:(id)arg1
 {
 
 }

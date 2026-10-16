@@ -39,9 +39,19 @@
     return nil;
 }
 
+- (id)progress
+{
+    return nil;
+}
+
 - (id)resizeStatusLayer
 {
     return nil;
+}
+
+- (void)setProgress:(id)arg1
+{
+
 }
 
 - (void)setShowCancelButton:(id)arg1
@@ -55,11 +65,6 @@
 }
 
 - (void)setYPosition:(id)arg1
-{
-
-}
-
-- (void)setup:(id)arg1
 {
 
 }

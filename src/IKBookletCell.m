@@ -7,20 +7,4 @@
 
 @implementation IKBookletCell
 
-
-/* --- generated selector-parity stubs --- */
-- (id)drawSelection
-{
-    return nil;
-}
-
-- (id)imageSizeForCellSize:(id)arg1 withAspectRatio:(id)arg2
-{
-    return nil;
-}
-
-- (id)selectionFrame
-{
-    return nil;
-}
 @end

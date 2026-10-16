@@ -24,6 +24,11 @@
     return nil;
 }
 
+- (id)delegate
+{
+    return nil;
+}
+
 - (id)doubleClickOpensEditPanel
 {
     return nil;
@@ -89,7 +94,17 @@
 
 }
 
+- (void)setDelegate:(id)arg1
+{
+
+}
+
 - (void)setDoubleClickOpensEditPanel:(id)arg1
+{
+
+}
+
+- (void)setEditable:(id)arg1
 {
 
 }
@@ -125,6 +140,11 @@
 }
 
 - (void)setNeedsToReplaceClipView:(id)arg1
+{
+
+}
+
+- (void)setSelected:(id)arg1
 {
 
 }

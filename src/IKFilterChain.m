@@ -29,6 +29,16 @@
     return nil;
 }
 
+- (id)delegate
+{
+    return nil;
+}
+
+- (void)encodeWithCoder:(id)arg1
+{
+
+}
+
 - (id)filter:(id)arg1 setValue:(id)arg2 forKey:(id)arg3
 {
     return nil;
@@ -64,6 +74,11 @@
     return nil;
 }
 
+- (id)initWithCoder:(id)arg1
+{
+    return nil;
+}
+
 - (id)initWithFilterArray:(id)arg1
 {
     return nil;
@@ -79,6 +94,11 @@
     return nil;
 }
 
+- (void)setDelegate:(id)arg1
+{
+
+}
+
 - (void)setFilterArray:(id)arg1
 {
 
@@ -92,6 +112,11 @@
 - (id)setupWithOptions:(id)arg1 createFilter:(id)arg2
 {
     return nil;
+}
+
+- (void)update
+{
+
 }
 
 - (id)updateCIFilter:(id)arg1 parameters:(id)arg2

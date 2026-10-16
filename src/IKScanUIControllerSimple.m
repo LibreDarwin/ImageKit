@@ -14,11 +14,6 @@
     return nil;
 }
 
-- (id)cleanup
-{
-    return nil;
-}
-
 - (id)cleanupDocumentFeederView
 {
     return nil;
@@ -44,42 +39,12 @@
     return nil;
 }
 
-- (id)didCompleteScanToURL:(id)arg1
-{
-    return nil;
-}
-
-- (id)didCompleteScansToURLs:(id)arg1
-{
-    return nil;
-}
-
-- (id)didReceiveButtonPress:(id)arg1
-{
-    return nil;
-}
-
 - (id)documentType
 {
     return nil;
 }
 
-- (id)downloadsDirectoryChanged:(id)arg1
-{
-    return nil;
-}
-
-- (id)finishedScanSelectionAtIndex:(id)arg1
-{
-    return nil;
-}
-
 - (id)functionalUnitDidChange:(id)arg1
-{
-    return nil;
-}
-
-- (id)functionalUnitWillSwitchAway:(id)arg1
 {
     return nil;
 }
@@ -149,11 +114,6 @@
     return nil;
 }
 
-- (id)postProcessApplicationChanged:(id)arg1
-{
-    return nil;
-}
-
 - (id)progressCancelButtonPressed
 {
     return nil;
@@ -180,11 +140,6 @@
 }
 
 - (id)scanDidStart
-{
-    return nil;
-}
-
-- (id)scanFailed:(id)arg1 error:(id)arg2
 {
     return nil;
 }
@@ -244,17 +199,7 @@
 
 }
 
-- (void)setScanUIEnabled:(id)arg1
-{
-
-}
-
 - (void)setScanUIViewSimple:(id)arg1
-{
-
-}
-
-- (void)setStatusText:(id)arg1
 {
 
 }
@@ -262,16 +207,6 @@
 - (void)setSupportedDocumentTypes:(id)arg1
 {
 
-}
-
-- (id)setTempStatusText:(id)arg1 duration:(id)arg2
-{
-    return nil;
-}
-
-- (id)setup
-{
-    return nil;
 }
 
 - (id)setupScanRectAtIndex:(id)arg1 ikScan:(id)arg2

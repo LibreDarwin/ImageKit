@@ -244,16 +244,6 @@ NSString *const IKOverlayTypeImage = @"IKOverlayTypeImage";
 }
 
 /* --- generated selector-parity stubs --- */
-+ (id)imageFromCGImage:(id)arg1 imageProperties:(id)arg2 imageState:(id)arg3 options:(id)arg4
-{
-    return nil;
-}
-
-+ (id)imageFromURL:(id)arg1 imageState:(id)arg2 options:(id)arg3
-{
-    return nil;
-}
-
 - (id)_didInitWithCoder
 {
     return nil;
@@ -270,6 +260,11 @@ NSString *const IKOverlayTypeImage = @"IKOverlayTypeImage";
 }
 
 - (id)addLayer:(id)arg1 linkedTo:(id)arg2
+{
+    return nil;
+}
+
+- (id)animates
 {
     return nil;
 }
@@ -292,6 +287,16 @@ NSString *const IKOverlayTypeImage = @"IKOverlayTypeImage";
 - (id)centerImage
 {
     return nil;
+}
+
+- (void)changeColor:(id)arg1
+{
+
+}
+
+- (void)changeFont:(id)arg1
+{
+
 }
 
 - (id)closeInspector:(id)arg1
@@ -469,6 +474,11 @@ NSString *const IKOverlayTypeImage = @"IKOverlayTypeImage";
     return nil;
 }
 
+- (void)scrollToPoint:(NSPoint)arg1
+{
+
+}
+
 - (id)selectionRect
 {
     return nil;
@@ -487,6 +497,11 @@ NSString *const IKOverlayTypeImage = @"IKOverlayTypeImage";
 - (id)selectionRectRemoved
 {
     return nil;
+}
+
+- (void)setAnimates:(id)arg1
+{
+
 }
 
 - (void)setAnnotationType:(id)arg1
@@ -514,6 +529,11 @@ NSString *const IKOverlayTypeImage = @"IKOverlayTypeImage";
 
 }
 
+- (void)setImage:(id)arg1
+{
+
+}
+
 - (id)setImage:(id)arg1 imageProperties:(id)arg2 imageState:(id)arg3
 {
     return nil;
@@ -527,6 +547,21 @@ NSString *const IKOverlayTypeImage = @"IKOverlayTypeImage";
 - (id)setImage:(id)arg1 imageProperties:(id)arg2 options:(id)arg3
 {
     return nil;
+}
+
+- (void)setImageAlignment:(id)arg1
+{
+
+}
+
+- (void)setImageFrameStyle:(id)arg1
+{
+
+}
+
+- (void)setImageScaling:(id)arg1
+{
+
 }
 
 - (void)setImageWithCGImageSource:(id)arg1
@@ -569,6 +604,11 @@ NSString *const IKOverlayTypeImage = @"IKOverlayTypeImage";
 
 }
 
+- (void)setRotation:(int)arg1
+{
+
+}
+
 - (void)setSelectionRect:(id)arg1
 {
 
@@ -597,6 +637,11 @@ NSString *const IKOverlayTypeImage = @"IKOverlayTypeImage";
 - (id)updateImageEditPanelIfNeeded
 {
     return nil;
+}
+
+- (BOOL)validateMenuItem:(id)arg1
+{
+    return (BOOL){0};
 }
 
 - (id)valueURL

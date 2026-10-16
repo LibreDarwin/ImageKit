@@ -7,10 +7,4 @@
 
 @implementation IKThresholdCorrection
 
-
-/* --- generated selector-parity stubs --- */
-+ (id)registerFilter
-{
-    return nil;
-}
 @end

@@ -9,11 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)eventWithPath:(id)arg1 eventType:(id)arg2
-{
-    return nil;
-}
-
 - (id)eventType
 {
     return nil;
@@ -24,8 +19,18 @@
     return nil;
 }
 
+- (id)path
+{
+    return nil;
+}
+
 - (void)setEventType:(id)arg1
 {
 
+}
+
+- (BOOL)setPath:(id)arg1
+{
+    return (BOOL){0};
 }
 @end

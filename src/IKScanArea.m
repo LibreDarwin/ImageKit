@@ -9,6 +9,11 @@
 
 
 /* --- generated selector-parity stubs --- */
+- (id)angle
+{
+    return nil;
+}
+
 - (id)angle0
 {
     return nil;
@@ -84,12 +89,12 @@
     return nil;
 }
 
-- (id)imageTitle
+- (id)imageUID
 {
     return nil;
 }
 
-- (id)imageUID
+- (id)index
 {
     return nil;
 }
@@ -189,6 +194,11 @@
     return nil;
 }
 
+- (id)selection
+{
+    return nil;
+}
+
 - (void)setAngle0:(id)arg1
 {
 
@@ -209,6 +219,11 @@
 
 }
 
+- (void)setAngle:(id)arg1
+{
+
+}
+
 - (void)setAutoBitDepth:(id)arg1
 {
 
@@ -225,6 +240,11 @@
 }
 
 - (void)setExtraStorage:(id)arg1
+{
+
+}
+
+- (void)setIndex:(id)arg1
 {
 
 }
@@ -310,6 +330,11 @@
 }
 
 - (void)setScannerDeviceViewHandler:(id)arg1
+{
+
+}
+
+- (void)setSelection:(id)arg1
 {
 
 }

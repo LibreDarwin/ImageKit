@@ -14,6 +14,16 @@
     return nil;
 }
 
+- (id)delegate
+{
+    return nil;
+}
+
+- (id)progress
+{
+    return nil;
+}
+
 - (id)resetStatus
 {
     return nil;
@@ -25,6 +35,16 @@
 }
 
 - (void)setCanCancel:(id)arg1
+{
+
+}
+
+- (void)setDelegate:(id)arg1
+{
+
+}
+
+- (void)setProgress:(id)arg1
 {
 
 }

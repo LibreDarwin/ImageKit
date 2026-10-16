@@ -7,10 +7,4 @@
 
 @implementation IKNStatusView2
 
-
-/* --- generated selector-parity stubs --- */
-- (void)setStatusText:(id)arg1
-{
-
-}
 @end

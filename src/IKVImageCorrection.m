@@ -7,25 +7,4 @@
 
 @implementation IKVImageCorrection
 
-
-/* --- generated selector-parity stubs --- */
-+ (id)filterWithName:(id)arg1 identifier:(id)arg2
-{
-    return nil;
-}
-
-- (id)isIdentity
-{
-    return nil;
-}
-
-- (id)processedImage:(id)arg1 ciContext:(id)arg2 cgContext:(id)arg3
-{
-    return nil;
-}
-
-- (void)setCorrectionEnabled:(id)arg1
-{
-
-}
 @end

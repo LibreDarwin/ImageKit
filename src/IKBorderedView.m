@@ -69,6 +69,21 @@
     return nil;
 }
 
+- (id)contentRect
+{
+    return nil;
+}
+
+- (id)contentView
+{
+    return nil;
+}
+
+- (void)drawBackgroundInRect:(NSRect)arg1
+{
+
+}
+
 - (id)drawBorderInRect:(id)arg1
 {
     return nil;
@@ -92,6 +107,11 @@
 - (id)inactiveBackgroundGradient
 {
     return nil;
+}
+
+- (void)invalidateLayout
+{
+
 }
 
 - (id)isShowingShadow
@@ -159,6 +179,11 @@
 
 }
 
+- (void)setContentView:(id)arg1
+{
+
+}
+
 - (void)setHorizontalContentViewResizingMode:(id)arg1
 {
 
@@ -194,6 +219,11 @@
 
 }
 
+- (void)setShadowColor:(id)arg1
+{
+
+}
+
 - (void)setShadowSide:(id)arg1
 {
 
@@ -217,6 +247,11 @@
 - (void)setVerticalContentViewResizingMode:(id)arg1
 {
 
+}
+
+- (id)shadowColor
+{
+    return nil;
 }
 
 - (id)shadowSides

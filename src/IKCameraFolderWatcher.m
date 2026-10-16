@@ -9,9 +9,9 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)watchPathArray:(id)arg1 withCallback:(id)arg2
+- (BOOL)handleEvent:(id)arg1
 {
-    return nil;
+    return (BOOL){0};
 }
 
 - (id)initWithPathArray:(id)arg1 andCallback:(id)arg2

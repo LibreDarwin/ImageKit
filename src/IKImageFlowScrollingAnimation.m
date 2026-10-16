@@ -9,13 +9,13 @@
 
 
 /* --- generated selector-parity stubs --- */
-- (id)animationManager:(id)arg1 processStep:(id)arg2
+- (id)delegate
 {
     return nil;
 }
 
-- (id)handleChannel:(id)arg1
+- (void)setDelegate:(id)arg1
 {
-    return nil;
+
 }
 @end

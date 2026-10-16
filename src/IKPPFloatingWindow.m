@@ -9,6 +9,21 @@
 
 
 /* --- generated selector-parity stubs --- */
+- (void)animationDidEnd:(id)arg1
+{
+
+}
+
+- (void)animationDidStop:(id)arg1
+{
+
+}
+
+- (BOOL)animationShouldStart:(id)arg1
+{
+    return (BOOL){0};
+}
+
 - (id)closeAction
 {
     return nil;
@@ -27,6 +42,11 @@
 - (id)initWithFrame:(id)arg1 image:(id)arg2 circular:(id)arg3 screen:(id)arg4 delegate:(id)arg5
 {
     return nil;
+}
+
+- (void)setCompletionBlock:(id)arg1
+{
+
 }
 
 - (void)setDestinationAngle:(id)arg1

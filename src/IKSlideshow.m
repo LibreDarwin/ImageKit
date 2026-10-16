@@ -9,26 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)canExportToApplication:(id)arg1
-{
-    return nil;
-}
-
-+ (id)exportSlideshowItem:(id)arg1 toApplication:(id)arg2
-{
-    return nil;
-}
-
-+ (id)exportSlideshowItemToApplication:(id)arg1 application:(id)arg2
-{
-    return nil;
-}
-
-+ (id)sharedSlideshow
-{
-    return nil;
-}
-
 - (id)autoPlayDelay
 {
     return nil;
@@ -42,6 +22,11 @@
 - (id)indexOfCurrentSlideshowItem
 {
     return nil;
+}
+
+- (void)reloadData
+{
+
 }
 
 - (id)reloadSlideshowItemAtIndex:(id)arg1

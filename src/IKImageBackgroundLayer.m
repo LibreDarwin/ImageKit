@@ -9,11 +9,6 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)registerLayerWithView:(id)arg1
-{
-    return nil;
-}
-
 - (id)createPatternColor
 {
     return nil;
@@ -35,11 +30,6 @@
 }
 
 - (void)setShowsCheckerboard:(id)arg1
-{
-
-}
-
-- (void)setup:(id)arg1
 {
 
 }

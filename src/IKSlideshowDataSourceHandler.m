@@ -14,7 +14,27 @@
     return nil;
 }
 
+- (id)dataSource
+{
+    return nil;
+}
+
 - (id)gotoItem:(id)arg1
+{
+    return nil;
+}
+
+- (id)initWithDataSource:(id)arg1
+{
+    return nil;
+}
+
+- (id)itemAtIndex:(NSUInteger)arg1
+{
+    return nil;
+}
+
+- (id)itemCount
 {
     return nil;
 }

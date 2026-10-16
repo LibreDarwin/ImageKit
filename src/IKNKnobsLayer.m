@@ -49,6 +49,16 @@
     return nil;
 }
 
+- (void)mouseDown:(id)arg1
+{
+
+}
+
+- (void)mouseMoved:(id)arg1
+{
+
+}
+
 - (id)mouseOverSelection
 {
     return nil;

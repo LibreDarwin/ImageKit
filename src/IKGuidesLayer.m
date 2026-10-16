@@ -9,29 +9,14 @@
 
 
 /* --- generated selector-parity stubs --- */
-+ (id)addGuidesLayer:(id)arg1
+- (void)changeColor:(id)arg1
 {
-    return nil;
-}
 
-+ (id)registerLayerWithView:(id)arg1
-{
-    return nil;
-}
-
-- (id)ikMouseDown:(id)arg1
-{
-    return nil;
 }
 
 - (id)setOrientation:(id)arg1 anchorPoint:(id)arg2
 {
     return nil;
-}
-
-- (void)setup:(id)arg1
-{
-
 }
 
 - (id)toggleOrientation:(id)arg1
