@@ -5,8 +5,9 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import "IKGraySlider.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKImageCropViewSlider : NSObject
+@interface IKImageCropViewSlider : IKGraySlider
 
 @end

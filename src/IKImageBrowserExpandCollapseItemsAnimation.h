@@ -5,8 +5,9 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import "IKImageBrowserReorderAnimation.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKImageBrowserExpandCollapseItemsAnimation : NSObject
+@interface IKImageBrowserExpandCollapseItemsAnimation : IKImageBrowserReorderAnimation
 
 @end

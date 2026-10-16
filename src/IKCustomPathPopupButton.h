@@ -5,8 +5,9 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import "IKPathPopupButton.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKCustomPathPopupButton : NSObject
+@interface IKCustomPathPopupButton : IKPathPopupButton
 
 @end

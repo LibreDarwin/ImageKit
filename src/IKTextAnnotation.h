@@ -5,8 +5,9 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import <QuartzCore/QuartzCore.h>
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKTextAnnotation : NSObject
+@interface IKTextAnnotation : CATextLayer
 
 @end

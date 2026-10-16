@@ -5,8 +5,9 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import "IKImageCropView.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKPictureTakerCropView : NSObject
+@interface IKPictureTakerCropView : IKImageCropView
 
 @end

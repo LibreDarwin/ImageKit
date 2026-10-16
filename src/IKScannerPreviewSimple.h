@@ -5,8 +5,9 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import "IKNImageView.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKScannerPreviewSimple : NSObject
+@interface IKScannerPreviewSimple : IKNImageView
 
 @end

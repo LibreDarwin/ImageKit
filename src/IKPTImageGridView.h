@@ -5,8 +5,9 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import "IKImageBrowserView.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKPTImageGridView : NSObject
+@interface IKPTImageGridView : IKImageBrowserView
 
 @end

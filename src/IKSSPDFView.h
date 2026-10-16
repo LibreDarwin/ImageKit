@@ -5,8 +5,9 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import <Quartz/Quartz.h>
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKSSPDFView : NSObject
+@interface IKSSPDFView : PDFView
 
 @end

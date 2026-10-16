@@ -5,8 +5,9 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import "IKIconCell.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKReflectiveIconCell : NSObject
+@interface IKReflectiveIconCell : IKIconCell
 
 @end

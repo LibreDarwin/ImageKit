@@ -5,8 +5,9 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import "IKSlider.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKAdjustSlider : NSObject
+@interface IKAdjustSlider : IKSlider
 
 @end

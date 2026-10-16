@@ -5,8 +5,9 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import "IKAnnotation.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKCircleAnnotation : NSObject
+@interface IKCircleAnnotation : IKAnnotation
 
 @end

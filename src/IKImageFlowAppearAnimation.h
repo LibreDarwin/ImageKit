@@ -5,8 +5,9 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import "IKAnimationGroup.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKImageFlowAppearAnimation : NSObject
+@interface IKImageFlowAppearAnimation : IKAnimationGroup
 
 @end

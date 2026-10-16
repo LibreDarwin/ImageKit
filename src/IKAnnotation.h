@@ -5,8 +5,9 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import <QuartzCore/QuartzCore.h>
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKAnnotation : NSObject
+@interface IKAnnotation : CALayer
 
 @end

@@ -5,8 +5,9 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import "IKNStatusView.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKNStatusView2 : NSObject
+@interface IKNStatusView2 : IKNStatusView
 
 @end

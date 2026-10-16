@@ -5,8 +5,9 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import "IKImageBrowserCoverFlowGrid.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKImageBrowseriOSGroupGrid : NSObject
+@interface IKImageBrowseriOSGroupGrid : IKImageBrowserCoverFlowGrid
 
 @end

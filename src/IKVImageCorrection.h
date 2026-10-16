@@ -5,8 +5,9 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import "IKImageCorrection.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKVImageCorrection : NSObject
+@interface IKVImageCorrection : IKImageCorrection
 
 @end

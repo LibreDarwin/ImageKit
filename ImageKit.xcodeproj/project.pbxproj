@@ -745,6 +745,30 @@
 		E00000000000000000000184 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E00000000000000000000164 /* libz.tbd */; };
 		E00000000000000000000185 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E00000000000000000000165 /* libbz2.tbd */; };
 		E00000000000000000000190 /* version.plist in Resources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000170 /* version.plist */; };
+		20000000000000000000016D /* CIFilterListProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1000000000000000000002DC /* CIFilterListProvider.m */; };
+		30000000000000000000016E /* CIFilterListProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 1000000000000000000002DB /* CIFilterListProvider.h */; settings = {ATTRIBUTES = (); }; };
+		20000000000000000000016E /* CIMutableVector.m in Sources */ = {isa = PBXBuildFile; fileRef = 1000000000000000000002DE /* CIMutableVector.m */; };
+		30000000000000000000016F /* CIMutableVector.h in Headers */ = {isa = PBXBuildFile; fileRef = 1000000000000000000002DD /* CIMutableVector.h */; settings = {ATTRIBUTES = (); }; };
+		20000000000000000000016F /* CIVectorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1000000000000000000002E0 /* CIVectorView.m */; };
+		300000000000000000000170 /* CIVectorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1000000000000000000002DF /* CIVectorView.h */; settings = {ATTRIBUTES = (); }; };
+		200000000000000000000170 /* EncapsulatedTextValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1000000000000000000002E2 /* EncapsulatedTextValueTransformer.m */; };
+		300000000000000000000171 /* EncapsulatedTextValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1000000000000000000002E1 /* EncapsulatedTextValueTransformer.h */; settings = {ATTRIBUTES = (); }; };
+		200000000000000000000171 /* GPSTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1000000000000000000002E4 /* GPSTextFieldCell.m */; };
+		300000000000000000000172 /* GPSTextFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 1000000000000000000002E3 /* GPSTextFieldCell.h */; settings = {ATTRIBUTES = (); }; };
+		200000000000000000000172 /* HorizontalSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1000000000000000000002E6 /* HorizontalSlider.m */; };
+		300000000000000000000173 /* HorizontalSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 1000000000000000000002E5 /* HorizontalSlider.h */; settings = {ATTRIBUTES = (); }; };
+		200000000000000000000173 /* HorizontalSliderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1000000000000000000002E8 /* HorizontalSliderCell.m */; };
+		300000000000000000000174 /* HorizontalSliderCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 1000000000000000000002E7 /* HorizontalSliderCell.h */; settings = {ATTRIBUTES = (); }; };
+		200000000000000000000174 /* NSAffineTransformView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1000000000000000000002EA /* NSAffineTransformView.m */; };
+		300000000000000000000175 /* NSAffineTransformView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1000000000000000000002E9 /* NSAffineTransformView.h */; settings = {ATTRIBUTES = (); }; };
+		200000000000000000000175 /* NSMutableAffineTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 1000000000000000000002EC /* NSMutableAffineTransform.m */; };
+		300000000000000000000176 /* NSMutableAffineTransform.h in Headers */ = {isa = PBXBuildFile; fileRef = 1000000000000000000002EB /* NSMutableAffineTransform.h */; settings = {ATTRIBUTES = (); }; };
+		200000000000000000000176 /* _IKIRLMainProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1000000000000000000002EE /* _IKIRLMainProxy.m */; };
+		300000000000000000000177 /* _IKIRLMainProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 1000000000000000000002ED /* _IKIRLMainProxy.h */; settings = {ATTRIBUTES = (); }; };
+		200000000000000000000177 /* _IKTypeSelectData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1000000000000000000002F0 /* _IKTypeSelectData.m */; };
+		300000000000000000000178 /* _IKTypeSelectData.h in Headers */ = {isa = PBXBuildFile; fileRef = 1000000000000000000002EF /* _IKTypeSelectData.h */; settings = {ATTRIBUTES = (); }; };
+		200000000000000000000178 /* _IKiOSStyleGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1000000000000000000002F2 /* _IKiOSStyleGroupCell.m */; };
+		300000000000000000000179 /* _IKiOSStyleGroupCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 1000000000000000000002F1 /* _IKiOSStyleGroupCell.h */; settings = {ATTRIBUTES = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1488,6 +1512,30 @@
 		E00000000000000000000170 /* version.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = src/version.plist; sourceTree = "<group>"; };
 		E00000000000000000000171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = src/Info.plist; sourceTree = "<group>"; };
 		E00000000000000000000150 /* ImageKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImageKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1000000000000000000002DC /* CIFilterListProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = src/CIFilterListProvider.m; sourceTree = "<group>"; };
+		1000000000000000000002DB /* CIFilterListProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = src/CIFilterListProvider.h; sourceTree = "<group>"; };
+		1000000000000000000002DE /* CIMutableVector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = src/CIMutableVector.m; sourceTree = "<group>"; };
+		1000000000000000000002DD /* CIMutableVector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = src/CIMutableVector.h; sourceTree = "<group>"; };
+		1000000000000000000002E0 /* CIVectorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = src/CIVectorView.m; sourceTree = "<group>"; };
+		1000000000000000000002DF /* CIVectorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = src/CIVectorView.h; sourceTree = "<group>"; };
+		1000000000000000000002E2 /* EncapsulatedTextValueTransformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = src/EncapsulatedTextValueTransformer.m; sourceTree = "<group>"; };
+		1000000000000000000002E1 /* EncapsulatedTextValueTransformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = src/EncapsulatedTextValueTransformer.h; sourceTree = "<group>"; };
+		1000000000000000000002E4 /* GPSTextFieldCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = src/GPSTextFieldCell.m; sourceTree = "<group>"; };
+		1000000000000000000002E3 /* GPSTextFieldCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = src/GPSTextFieldCell.h; sourceTree = "<group>"; };
+		1000000000000000000002E6 /* HorizontalSlider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = src/HorizontalSlider.m; sourceTree = "<group>"; };
+		1000000000000000000002E5 /* HorizontalSlider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = src/HorizontalSlider.h; sourceTree = "<group>"; };
+		1000000000000000000002E8 /* HorizontalSliderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = src/HorizontalSliderCell.m; sourceTree = "<group>"; };
+		1000000000000000000002E7 /* HorizontalSliderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = src/HorizontalSliderCell.h; sourceTree = "<group>"; };
+		1000000000000000000002EA /* NSAffineTransformView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = src/NSAffineTransformView.m; sourceTree = "<group>"; };
+		1000000000000000000002E9 /* NSAffineTransformView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = src/NSAffineTransformView.h; sourceTree = "<group>"; };
+		1000000000000000000002EC /* NSMutableAffineTransform.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = src/NSMutableAffineTransform.m; sourceTree = "<group>"; };
+		1000000000000000000002EB /* NSMutableAffineTransform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = src/NSMutableAffineTransform.h; sourceTree = "<group>"; };
+		1000000000000000000002EE /* _IKIRLMainProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = src/_IKIRLMainProxy.m; sourceTree = "<group>"; };
+		1000000000000000000002ED /* _IKIRLMainProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = src/_IKIRLMainProxy.h; sourceTree = "<group>"; };
+		1000000000000000000002F0 /* _IKTypeSelectData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = src/_IKTypeSelectData.m; sourceTree = "<group>"; };
+		1000000000000000000002EF /* _IKTypeSelectData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = src/_IKTypeSelectData.h; sourceTree = "<group>"; };
+		1000000000000000000002F2 /* _IKiOSStyleGroupCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = src/_IKiOSStyleGroupCell.m; sourceTree = "<group>"; };
+		1000000000000000000002F1 /* _IKiOSStyleGroupCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = src/_IKiOSStyleGroupCell.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1891,6 +1939,18 @@
 				1000000000000000000002D3 /* IKWindowEffect.h */,
 				1000000000000000000002D5 /* IKWindowTransitionAnimation.h */,
 				1000000000000000000002D7 /* IKiOSStyleGroupCell.h */,
+				1000000000000000000002DB /* CIFilterListProvider.h */,
+				1000000000000000000002DD /* CIMutableVector.h */,
+				1000000000000000000002DF /* CIVectorView.h */,
+				1000000000000000000002E1 /* EncapsulatedTextValueTransformer.h */,
+				1000000000000000000002E3 /* GPSTextFieldCell.h */,
+				1000000000000000000002E5 /* HorizontalSlider.h */,
+				1000000000000000000002E7 /* HorizontalSliderCell.h */,
+				1000000000000000000002E9 /* NSAffineTransformView.h */,
+				1000000000000000000002EB /* NSMutableAffineTransform.h */,
+				1000000000000000000002ED /* _IKIRLMainProxy.h */,
+				1000000000000000000002EF /* _IKTypeSelectData.h */,
+				1000000000000000000002F1 /* _IKiOSStyleGroupCell.h */,
 				1000000000000000000002D9 /* ImageKit.h */,
 				1000000000000000000002DA /* ImageKitBase.h */,
 				100000000000000000000001 /* IK2PartVertical.m */,
@@ -2257,6 +2317,18 @@
 				1000000000000000000002D4 /* IKWindowEffect.m */,
 				1000000000000000000002D6 /* IKWindowTransitionAnimation.m */,
 				1000000000000000000002D8 /* IKiOSStyleGroupCell.m */,
+				1000000000000000000002DC /* CIFilterListProvider.m */,
+				1000000000000000000002DE /* CIMutableVector.m */,
+				1000000000000000000002E0 /* CIVectorView.m */,
+				1000000000000000000002E2 /* EncapsulatedTextValueTransformer.m */,
+				1000000000000000000002E4 /* GPSTextFieldCell.m */,
+				1000000000000000000002E6 /* HorizontalSlider.m */,
+				1000000000000000000002E8 /* HorizontalSliderCell.m */,
+				1000000000000000000002EA /* NSAffineTransformView.m */,
+				1000000000000000000002EC /* NSMutableAffineTransform.m */,
+				1000000000000000000002EE /* _IKIRLMainProxy.m */,
+				1000000000000000000002F0 /* _IKTypeSelectData.m */,
+				1000000000000000000002F2 /* _IKiOSStyleGroupCell.m */,
 				100000000000000000000008 /* IKAdditionalFunctions.c */,
 				E00000000000000000000171 /* Info.plist */,
 				E00000000000000000000170 /* version.plist */,
@@ -2648,6 +2720,18 @@
 				300000000000000000000169 /* IKWindowEffect.h in Headers */,
 				30000000000000000000016A /* IKWindowTransitionAnimation.h in Headers */,
 				30000000000000000000016B /* IKiOSStyleGroupCell.h in Headers */,
+				30000000000000000000016E /* CIFilterListProvider.h in Headers */,
+				30000000000000000000016F /* CIMutableVector.h in Headers */,
+				300000000000000000000170 /* CIVectorView.h in Headers */,
+				300000000000000000000171 /* EncapsulatedTextValueTransformer.h in Headers */,
+				300000000000000000000172 /* GPSTextFieldCell.h in Headers */,
+				300000000000000000000173 /* HorizontalSlider.h in Headers */,
+				300000000000000000000174 /* HorizontalSliderCell.h in Headers */,
+				300000000000000000000175 /* NSAffineTransformView.h in Headers */,
+				300000000000000000000176 /* NSMutableAffineTransform.h in Headers */,
+				300000000000000000000177 /* _IKIRLMainProxy.h in Headers */,
+				300000000000000000000178 /* _IKTypeSelectData.h in Headers */,
+				300000000000000000000179 /* _IKiOSStyleGroupCell.h in Headers */,
 				30000000000000000000016C /* ImageKit.h in Headers */,
 				30000000000000000000016D /* ImageKitBase.h in Headers */,
 			);
@@ -3079,6 +3163,18 @@
 				200000000000000000000169 /* IKWindowEffect.m in Sources */,
 				20000000000000000000016A /* IKWindowTransitionAnimation.m in Sources */,
 				20000000000000000000016B /* IKiOSStyleGroupCell.m in Sources */,
+				20000000000000000000016D /* CIFilterListProvider.m in Sources */,
+				20000000000000000000016E /* CIMutableVector.m in Sources */,
+				20000000000000000000016F /* CIVectorView.m in Sources */,
+				200000000000000000000170 /* EncapsulatedTextValueTransformer.m in Sources */,
+				200000000000000000000171 /* GPSTextFieldCell.m in Sources */,
+				200000000000000000000172 /* HorizontalSlider.m in Sources */,
+				200000000000000000000173 /* HorizontalSliderCell.m in Sources */,
+				200000000000000000000174 /* NSAffineTransformView.m in Sources */,
+				200000000000000000000175 /* NSMutableAffineTransform.m in Sources */,
+				200000000000000000000176 /* _IKIRLMainProxy.m in Sources */,
+				200000000000000000000177 /* _IKTypeSelectData.m in Sources */,
+				200000000000000000000178 /* _IKiOSStyleGroupCell.m in Sources */,
 				20000000000000000000016C /* IKAdditionalFunctions.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

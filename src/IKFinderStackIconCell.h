@@ -5,8 +5,9 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import "IKFinderReflectiveIconCell.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKFinderStackIconCell : NSObject
+@interface IKFinderStackIconCell : IKFinderReflectiveIconCell
 
 @end

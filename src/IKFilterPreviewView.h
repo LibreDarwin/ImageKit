@@ -5,8 +5,9 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import <MetalKit/MetalKit.h>
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKFilterPreviewView : NSObject
+@interface IKFilterPreviewView : MTKView
 
 @end

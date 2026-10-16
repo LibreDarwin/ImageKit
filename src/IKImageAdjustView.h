@@ -5,8 +5,9 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import "IKImageEditView.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKImageAdjustView : NSObject
+@interface IKImageAdjustView : IKImageEditView
 
 @end

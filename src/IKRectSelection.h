@@ -5,8 +5,9 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import "IKSelection.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKRectSelection : NSObject
+@interface IKRectSelection : IKSelection
 
 @end

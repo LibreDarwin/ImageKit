@@ -7,6 +7,6 @@
 #import "ImageKitBase.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKGradientImageButton : NSObject
+@interface IKGradientImageButton : NSButton
 
 @end

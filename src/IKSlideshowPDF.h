@@ -5,8 +5,9 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import "IKSlideshowElement.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKSlideshowPDF : NSObject
+@interface IKSlideshowPDF : IKSlideshowElement
 
 @end

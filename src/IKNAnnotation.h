@@ -5,8 +5,9 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import "IKNSelection.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKNAnnotation : NSObject
+@interface IKNAnnotation : IKNSelection
 
 @end

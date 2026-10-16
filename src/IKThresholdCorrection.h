@@ -5,8 +5,9 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import <CoreImage/CoreImage.h>
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKThresholdCorrection : NSObject
+@interface IKThresholdCorrection : CIFilter
 
 @end

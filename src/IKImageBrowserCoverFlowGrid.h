@@ -5,8 +5,9 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import "IKImageBrowserFloatingGroupGrid.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKImageBrowserCoverFlowGrid : NSObject
+@interface IKImageBrowserCoverFlowGrid : IKImageBrowserFloatingGroupGrid
 
 @end

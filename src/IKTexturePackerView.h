@@ -7,6 +7,9 @@
 #import "ImageKitBase.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKTexturePackerView : NSObject
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+@interface IKTexturePackerView : NSOpenGLView
 
 @end
+#pragma clang diagnostic pop

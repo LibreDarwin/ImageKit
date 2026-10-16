@@ -5,8 +5,9 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import "IKNCustomLayer.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IK3PartHorizontal : NSObject
+@interface IK3PartHorizontal : IKNCustomLayer
 
 @end

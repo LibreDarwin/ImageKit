@@ -5,8 +5,9 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import "IKImageBrowserCell.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKBookletCell : NSObject
+@interface IKBookletCell : IKImageBrowserCell
 
 @end

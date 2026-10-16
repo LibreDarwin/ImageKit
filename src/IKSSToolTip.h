@@ -7,6 +7,6 @@
 #import "ImageKitBase.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKSSToolTip : NSObject
+@interface IKSSToolTip : NSWindow
 
 @end

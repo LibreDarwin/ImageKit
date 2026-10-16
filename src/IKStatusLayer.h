@@ -5,8 +5,9 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import "IKCenteredLayer.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKStatusLayer : NSObject
+@interface IKStatusLayer : IKCenteredLayer
 
 @end

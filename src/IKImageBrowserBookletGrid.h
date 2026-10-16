@@ -5,8 +5,9 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import "IKImageBrowserGrid.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKImageBrowserBookletGrid : NSObject
+@interface IKImageBrowserBookletGrid : IKImageBrowserGrid
 
 @end

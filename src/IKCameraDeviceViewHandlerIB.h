@@ -5,8 +5,9 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import "IKCameraDeviceViewHandler.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKCameraDeviceViewHandlerIB : NSObject
+@interface IKCameraDeviceViewHandlerIB : IKCameraDeviceViewHandler
 
 @end

@@ -5,8 +5,9 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import "IKSFElement.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKSFCropElement : NSObject
+@interface IKSFCropElement : IKSFElement
 
 @end

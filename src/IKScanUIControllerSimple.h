@@ -5,8 +5,9 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import "IKScanUIController.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKScanUIControllerSimple : NSObject
+@interface IKScanUIControllerSimple : IKScanUIController
 
 @end

@@ -7,6 +7,6 @@
 #import "ImageKitBase.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKCameraTableView : NSObject
+@interface IKCameraTableView : NSTableView
 
 @end

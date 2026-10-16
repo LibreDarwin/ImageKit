@@ -5,8 +5,9 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import "IKImageBrowserSubsetLayoutManager.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKImageBrowserFreeFormLayout : NSObject
+@interface IKImageBrowserFreeFormLayout : IKImageBrowserSubsetLayoutManager
 
 @end

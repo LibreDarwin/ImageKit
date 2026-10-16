@@ -5,8 +5,9 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import "IKDeviceBrowserHandler.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKDeviceBrowserHandlerIB : NSObject
+@interface IKDeviceBrowserHandlerIB : IKDeviceBrowserHandler
 
 @end
