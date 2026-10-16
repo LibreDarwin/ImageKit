@@ -7,4 +7,10 @@
 
 @implementation IKTransitionAnimation
 
+
+/* --- generated selector-parity stubs --- */
+- (void)setSelectorToCall:(id)arg1
+{
+
+}
 @end

@@ -7,4 +7,20 @@
 
 @implementation IKSlideshowItemLoadThumbnailOperation
 
+
+/* --- generated selector-parity stubs --- */
+- (id)cleanup
+{
+    return nil;
+}
+
+- (id)initWithItem:(id)arg1 currentCount:(id)arg2 display:(id)arg3
+{
+    return nil;
+}
+
+- (id)slideshowWillStop:(id)arg1
+{
+    return nil;
+}
 @end

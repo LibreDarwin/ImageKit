@@ -7,4 +7,20 @@
 
 @implementation IKImageAdjust
 
+
+/* --- generated selector-parity stubs --- */
+- (id)ikImageAdjustViewTLO
+{
+    return nil;
+}
+
+- (id)imageAdjustView
+{
+    return nil;
+}
+
+- (void)setIkImageAdjustViewTLO:(id)arg1
+{
+
+}
 @end

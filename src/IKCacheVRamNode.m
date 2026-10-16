@@ -7,4 +7,55 @@
 
 @implementation IKCacheVRamNode
 
+
+/* --- generated selector-parity stubs --- */
+- (id)memoryUsage
+{
+    return nil;
+}
+
+- (id)packed
+{
+    return nil;
+}
+
+- (id)packerID
+{
+    return nil;
+}
+
+- (id)session
+{
+    return nil;
+}
+
+- (void)setMemoryUsage:(id)arg1
+{
+
+}
+
+- (void)setPackerID:(id)arg1
+{
+
+}
+
+- (void)setSession:(id)arg1
+{
+
+}
+
+- (void)setTextureRect:(id)arg1
+{
+
+}
+
+- (id)textureRect
+{
+    return nil;
+}
+
+- (id)willDie
+{
+    return nil;
+}
 @end

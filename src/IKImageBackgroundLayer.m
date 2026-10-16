@@ -7,4 +7,45 @@
 
 @implementation IKImageBackgroundLayer
 
+
+/* --- generated selector-parity stubs --- */
++ (id)registerLayerWithView:(id)arg1
+{
+    return nil;
+}
+
+- (id)createPatternColor
+{
+    return nil;
+}
+
+- (id)setDarkFillColorRed:(id)arg1 green:(id)arg2 blue:(id)arg3 alpha:(id)arg4
+{
+    return nil;
+}
+
+- (id)setLightFillColorRed:(id)arg1 green:(id)arg2 blue:(id)arg3 alpha:(id)arg4
+{
+    return nil;
+}
+
+- (void)setPatternSize:(id)arg1
+{
+
+}
+
+- (void)setShowsCheckerboard:(id)arg1
+{
+
+}
+
+- (void)setup:(id)arg1
+{
+
+}
+
+- (id)showsCheckerboard
+{
+    return nil;
+}
 @end

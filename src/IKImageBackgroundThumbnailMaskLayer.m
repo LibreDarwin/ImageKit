@@ -7,4 +7,15 @@
 
 @implementation IKImageBackgroundThumbnailMaskLayer
 
+
+/* --- generated selector-parity stubs --- */
+- (id)maskTiles
+{
+    return nil;
+}
+
+- (void)setMaskTiles:(id)arg1
+{
+
+}
 @end

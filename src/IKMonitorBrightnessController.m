@@ -7,4 +7,25 @@
 
 @implementation IKMonitorBrightnessController
 
+
+/* --- generated selector-parity stubs --- */
++ (id)defaultController
+{
+    return nil;
+}
+
+- (id)revertBrightness
+{
+    return nil;
+}
+
+- (void)setBrightnessOnAllDisplays:(id)arg1
+{
+
+}
+
+- (id)setMaximumBrightnessOnAllDisplays
+{
+    return nil;
+}
 @end

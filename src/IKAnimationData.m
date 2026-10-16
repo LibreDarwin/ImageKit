@@ -7,4 +7,15 @@
 
 @implementation IKAnimationData
 
+
+/* --- generated selector-parity stubs --- */
+- (id)finalValue
+{
+    return nil;
+}
+
+- (void)setFinalValue:(id)arg1
+{
+
+}
 @end

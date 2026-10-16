@@ -7,4 +7,45 @@
 
 @implementation IKKnob
 
+
+/* --- generated selector-parity stubs --- */
+- (id)addCursorRects:(id)arg1
+{
+    return nil;
+}
+
+- (id)deselect
+{
+    return nil;
+}
+
+- (id)ikMouseDown:(id)arg1
+{
+    return nil;
+}
+
+- (id)ikMouseDragged:(id)arg1
+{
+    return nil;
+}
+
+- (id)ikMouseUp:(id)arg1
+{
+    return nil;
+}
+
+- (id)knobLayer
+{
+    return nil;
+}
+
+- (id)select
+{
+    return nil;
+}
+
+- (id)setImageLayer:(id)arg1 originalLayer:(id)arg2 mode:(id)arg3
+{
+    return nil;
+}
 @end

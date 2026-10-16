@@ -7,4 +7,30 @@
 
 @implementation IKInterfaceBuilderImage
 
+
+/* --- generated selector-parity stubs --- */
+- (id)imageRepresentation
+{
+    return nil;
+}
+
+- (id)imageRepresentationType
+{
+    return nil;
+}
+
+- (id)imageSubtitle
+{
+    return nil;
+}
+
+- (id)imageTitle
+{
+    return nil;
+}
+
+- (id)imageUID
+{
+    return nil;
+}
 @end

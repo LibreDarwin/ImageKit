@@ -7,4 +7,20 @@
 
 @implementation IKCameraTableView
 
+
+/* --- generated selector-parity stubs --- */
+- (id)getBagdeBackgroundForObjectCount:(id)arg1
+{
+    return nil;
+}
+
+- (id)getCountBadgeForCount:(id)arg1
+{
+    return nil;
+}
+
+- (id)iconSizeChanged:(id)arg1
+{
+    return nil;
+}
 @end

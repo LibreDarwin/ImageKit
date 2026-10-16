@@ -7,4 +7,20 @@
 
 @implementation IKLinkedListNodePool
 
+
+/* --- generated selector-parity stubs --- */
+- (id)free
+{
+    return nil;
+}
+
+- (id)node
+{
+    return nil;
+}
+
+- (id)releaseNode:(id)arg1
+{
+    return nil;
+}
 @end

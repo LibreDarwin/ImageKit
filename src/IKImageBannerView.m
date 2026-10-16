@@ -7,4 +7,15 @@
 
 @implementation IKImageBannerView
 
+
+/* --- generated selector-parity stubs --- */
+- (id)_updateCellsSize
+{
+    return nil;
+}
+
+- (id)defaultDoubleClickAction:(id)arg1
+{
+    return nil;
+}
 @end

@@ -7,4 +7,65 @@
 
 @implementation IKAnimationGroup
 
+
+/* --- generated selector-parity stubs --- */
+- (id)animationManager:(id)arg1 processCell:(id)arg2 channel:(id)arg3
+{
+    return nil;
+}
+
+- (id)animationManager:(id)arg1 processStep:(id)arg2
+{
+    return nil;
+}
+
+- (id)didFinish:(id)arg1
+{
+    return nil;
+}
+
+- (id)finished
+{
+    return nil;
+}
+
+- (id)handleChannel:(id)arg1
+{
+    return nil;
+}
+
+- (id)initialKeysNeeded
+{
+    return nil;
+}
+
+- (id)needFinalDataForKey:(id)arg1
+{
+    return nil;
+}
+
+- (id)needInitialDataForKey:(id)arg1
+{
+    return nil;
+}
+
+- (id)parameters
+{
+    return nil;
+}
+
+- (void)setTimeValue:(id)arg1
+{
+
+}
+
+- (id)timeValue
+{
+    return nil;
+}
+
+- (id)updateTimeValue:(id)arg1
+{
+    return nil;
+}
 @end

@@ -7,4 +7,40 @@
 
 @implementation IKRectanglePacker
 
+
+/* --- generated selector-parity stubs --- */
+- (id)allocateRectWithSize:(id)arg1 rectOut:(id)arg2
+{
+    return nil;
+}
+
+- (id)drawRegionsInCurrentGLContext
+{
+    return nil;
+}
+
+- (id)fragmentation
+{
+    return nil;
+}
+
+- (id)rectIsUsed:(id)arg1
+{
+    return nil;
+}
+
+- (id)releaseRect:(id)arg1
+{
+    return nil;
+}
+
+- (void)setPadding:(id)arg1
+{
+
+}
+
+- (id)usedArea
+{
+    return nil;
+}
 @end

@@ -7,4 +7,10 @@
 
 @implementation IKImageClipView
 
+
+/* --- generated selector-parity stubs --- */
+- (id)docRect
+{
+    return nil;
+}
 @end

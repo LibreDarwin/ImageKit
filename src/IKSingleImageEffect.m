@@ -7,4 +7,20 @@
 
 @implementation IKSingleImageEffect
 
+
+/* --- generated selector-parity stubs --- */
+- (id)setImage:(id)arg1 rect:(id)arg2
+{
+    return nil;
+}
+
+- (void)setupWithOptions:(id)arg1
+{
+
+}
+
+- (id)viewWillBecomeInActive
+{
+    return nil;
+}
 @end

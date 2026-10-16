@@ -7,4 +7,15 @@
 
 @implementation IKCacheManagerRegistry
 
+
+/* --- generated selector-parity stubs --- */
+- (id)registerCacheManager:(id)arg1
+{
+    return nil;
+}
+
+- (id)unregisterCacheManager:(id)arg1
+{
+    return nil;
+}
 @end

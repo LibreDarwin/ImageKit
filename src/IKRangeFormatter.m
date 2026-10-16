@@ -7,4 +7,10 @@
 
 @implementation IKRangeFormatter
 
+
+/* --- generated selector-parity stubs --- */
+- (id)getObjectValue2:(id)arg1 forString:(id)arg2 errorDescription:(id)arg3
+{
+    return nil;
+}
 @end

@@ -7,4 +7,30 @@
 
 @implementation IKImageInfo
 
+
+/* --- generated selector-parity stubs --- */
+- (id)ikImageInfoViewTLO
+{
+    return nil;
+}
+
+- (id)imageInfoView
+{
+    return nil;
+}
+
+- (id)keyTextColor
+{
+    return nil;
+}
+
+- (id)meta
+{
+    return nil;
+}
+
+- (void)setIkImageInfoViewTLO:(id)arg1
+{
+
+}
 @end

@@ -7,4 +7,25 @@
 
 @implementation IKInterfaceBuilderSharedDatasource
 
+
+/* --- generated selector-parity stubs --- */
+- (id)addAnImageWithPath:(id)arg1 toArray:(id)arg2
+{
+    return nil;
+}
+
+- (id)addImagesWithPath:(id)arg1 recursive:(id)arg2 toArray:(id)arg3
+{
+    return nil;
+}
+
+- (id)imageBrowser:(id)arg1 itemAtIndex:(id)arg2
+{
+    return nil;
+}
+
+- (id)numberOfItemsInImageBrowser:(id)arg1
+{
+    return nil;
+}
 @end

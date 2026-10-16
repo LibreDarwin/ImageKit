@@ -7,4 +7,10 @@
 
 @implementation IKSpacerButton
 
+
+/* --- generated selector-parity stubs --- */
+- (id)_configureCell
+{
+    return nil;
+}
 @end

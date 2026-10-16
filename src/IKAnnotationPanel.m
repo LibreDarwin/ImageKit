@@ -7,4 +7,10 @@
 
 @implementation IKAnnotationPanel
 
+
+/* --- generated selector-parity stubs --- */
+- (id)closeDown
+{
+    return nil;
+}
 @end

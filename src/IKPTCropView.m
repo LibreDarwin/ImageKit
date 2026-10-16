@@ -7,4 +7,45 @@
 
 @implementation IKPTCropView
 
+
+/* --- generated selector-parity stubs --- */
+- (id)adjustZoomSliderValue
+{
+    return nil;
+}
+
+- (id)commonInit
+{
+    return nil;
+}
+
+- (id)croppedImage
+{
+    return nil;
+}
+
+- (id)manualLayout
+{
+    return nil;
+}
+
+- (id)maximizeSize:(id)arg1
+{
+    return nil;
+}
+
+- (id)minimizeSize:(id)arg1
+{
+    return nil;
+}
+
+- (id)moveSliderWithIncrement:(id)arg1
+{
+    return nil;
+}
+
+- (id)zoomSliderAction:(id)arg1
+{
+    return nil;
+}
 @end

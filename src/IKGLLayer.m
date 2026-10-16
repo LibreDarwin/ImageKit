@@ -7,4 +7,15 @@
 
 @implementation IKGLLayer
 
+
+/* --- generated selector-parity stubs --- */
+- (id)ikView
+{
+    return nil;
+}
+
+- (void)setIKView:(id)arg1
+{
+
+}
 @end

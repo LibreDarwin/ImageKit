@@ -7,4 +7,10 @@
 
 @implementation IKCacheDatabaseUIDInfo
 
+
+/* --- generated selector-parity stubs --- */
+- (void)setIsValid:(id)arg1
+{
+
+}
 @end

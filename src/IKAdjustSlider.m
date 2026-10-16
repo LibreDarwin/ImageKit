@@ -7,4 +7,15 @@
 
 @implementation IKAdjustSlider
 
+
+/* --- generated selector-parity stubs --- */
+- (id)setValueToDefault
+{
+    return nil;
+}
+
+- (id)snapsToDefault
+{
+    return nil;
+}
 @end

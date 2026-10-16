@@ -7,4 +7,15 @@
 
 @implementation IKColor
 
+
+/* --- generated selector-parity stubs --- */
++ (id)colorWithRGBA:(id)arg1
+{
+    return nil;
+}
+
+- (id)cgColor
+{
+    return nil;
+}
 @end

@@ -7,4 +7,35 @@
 
 @implementation IKRectAnnotation
 
+
+/* --- generated selector-parity stubs --- */
+- (id)changeBorderColor:(id)arg1
+{
+    return nil;
+}
+
+- (id)defaultKnob
+{
+    return nil;
+}
+
+- (id)knobLayerFlags
+{
+    return nil;
+}
+
+- (void)setNewBorderWidth:(id)arg1
+{
+
+}
+
+- (void)setup:(id)arg1
+{
+
+}
+
+- (id)toggleDash
+{
+    return nil;
+}
 @end

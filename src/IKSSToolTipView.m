@@ -7,4 +7,10 @@
 
 @implementation IKSSToolTipView
 
+
+/* --- generated selector-parity stubs --- */
+- (void)setSlideshowPanel:(id)arg1
+{
+
+}
 @end

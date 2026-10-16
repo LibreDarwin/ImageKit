@@ -42,4 +42,115 @@
 {
     return nil;
 }
+
+/* --- generated selector-parity stubs --- */
++ (id)IKEditPanelLocalizedString:(id)arg1
+{
+    return nil;
+}
+
++ (id)IKImageIOLocalizedString:(id)arg1
+{
+    return nil;
+}
+
++ (id)hasSharedImageEditPanel
+{
+    return nil;
+}
+
++ (id)locateLongitude:(id)arg1 latitude:(id)arg2
+{
+    return nil;
+}
+
++ (id)locateLongitude:(id)arg1 latitude:(id)arg2 query:(id)arg3
+{
+    return nil;
+}
+
++ (id)processMetaData:(id)arg1
+{
+    return nil;
+}
+
+- (id)adjustDisplayModes:(id)arg1
+{
+    return nil;
+}
+
+- (id)dsHandler
+{
+    return nil;
+}
+
+- (id)filterArray
+{
+    return nil;
+}
+
+- (id)hasAdjustMode
+{
+    return nil;
+}
+
+- (id)hasDetailsMode
+{
+    return nil;
+}
+
+- (id)hasEffectsMode
+{
+    return nil;
+}
+
+- (id)makeBig
+{
+    return nil;
+}
+
+- (id)makeSmall
+{
+    return nil;
+}
+
+- (void)setHasAdjustMode:(id)arg1
+{
+
+}
+
+- (void)setHasDetailsMode:(id)arg1
+{
+
+}
+
+- (void)setHasEffectsMode:(id)arg1
+{
+
+}
+
+- (id)setup
+{
+    return nil;
+}
+
+- (id)showPanel:(id)arg1
+{
+    return nil;
+}
+
+- (id)tabHeight
+{
+    return nil;
+}
+
+- (id)tabSelectionChanged:(id)arg1
+{
+    return nil;
+}
+
+- (id)windowbarHeight
+{
+    return nil;
+}
 @end

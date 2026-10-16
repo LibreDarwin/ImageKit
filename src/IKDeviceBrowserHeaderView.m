@@ -7,4 +7,15 @@
 
 @implementation IKDeviceBrowserHeaderView
 
+
+/* --- generated selector-parity stubs --- */
+- (id)countButton
+{
+    return nil;
+}
+
+- (void)setCountButton:(id)arg1
+{
+
+}
 @end

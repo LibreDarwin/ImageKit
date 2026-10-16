@@ -7,4 +7,35 @@
 
 @implementation IKIrisListener
 
+
+/* --- generated selector-parity stubs --- */
+- (id)iSightRanOffWithItsListener:(id)arg1
+{
+    return nil;
+}
+
+- (id)irisClosed
+{
+    return nil;
+}
+
+- (id)irisOpened
+{
+    return nil;
+}
+
+- (id)isIrisClosed
+{
+    return nil;
+}
+
+- (id)matcher:(id)arg1 foundService:(id)arg2
+{
+    return nil;
+}
+
+- (void)setIrisClosed:(id)arg1
+{
+
+}
 @end

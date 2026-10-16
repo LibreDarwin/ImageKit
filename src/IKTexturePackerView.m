@@ -7,4 +7,25 @@
 
 @implementation IKTexturePackerView
 
+
+/* --- generated selector-parity stubs --- */
+- (id)autoUpdate
+{
+    return nil;
+}
+
+- (id)beginOrtho
+{
+    return nil;
+}
+
+- (id)packer
+{
+    return nil;
+}
+
+- (void)setPacker:(id)arg1
+{
+
+}
 @end

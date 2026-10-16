@@ -7,4 +7,35 @@
 
 @implementation IKNStatusView
 
+
+/* --- generated selector-parity stubs --- */
+- (id)canCancel
+{
+    return nil;
+}
+
+- (id)resetStatus
+{
+    return nil;
+}
+
+- (id)resizeStatusLayer
+{
+    return nil;
+}
+
+- (void)setCanCancel:(id)arg1
+{
+
+}
+
+- (void)setStatusText:(id)arg1
+{
+
+}
+
+- (id)statusText
+{
+    return nil;
+}
 @end

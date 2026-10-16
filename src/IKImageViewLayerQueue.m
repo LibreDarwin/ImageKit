@@ -7,4 +7,35 @@
 
 @implementation IKImageViewLayerQueue
 
+
+/* --- generated selector-parity stubs --- */
+- (id)_popBlockAndDisplay
+{
+    return nil;
+}
+
+- (id)_scheduleBlockForNextRunLoopIteration
+{
+    return nil;
+}
+
+- (id)cancelDisplayForAllLayers
+{
+    return nil;
+}
+
+- (id)cancelDisplayForLayers:(id)arg1
+{
+    return nil;
+}
+
+- (id)enqueueLayerToDisplay:(id)arg1
+{
+    return nil;
+}
+
+- (id)enqueueSuccessHandler:(id)arg1
+{
+    return nil;
+}
 @end

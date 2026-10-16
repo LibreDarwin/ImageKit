@@ -7,4 +7,30 @@
 
 @implementation IKSSIndexSheetTextLayer
 
+
+/* --- generated selector-parity stubs --- */
+- (id)_updateLayerSize
+{
+    return nil;
+}
+
+- (id)_updateTextSize
+{
+    return nil;
+}
+
+- (void)setTextMargins:(id)arg1
+{
+
+}
+
+- (id)textMargins
+{
+    return nil;
+}
+
+- (id)textSize
+{
+    return nil;
+}
 @end

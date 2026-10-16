@@ -7,4 +7,45 @@
 
 @implementation IKLinkedList
 
+
+/* --- generated selector-parity stubs --- */
+- (id)_setFirst:(id)arg1
+{
+    return nil;
+}
+
+- (id)addFirst:(id)arg1
+{
+    return nil;
+}
+
+- (id)addLast:(id)arg1
+{
+    return nil;
+}
+
+- (id)checkListConsistency
+{
+    return nil;
+}
+
+- (id)first
+{
+    return nil;
+}
+
+- (id)last
+{
+    return nil;
+}
+
+- (id)moveFirst:(id)arg1
+{
+    return nil;
+}
+
+- (id)moveLast:(id)arg1
+{
+    return nil;
+}
 @end

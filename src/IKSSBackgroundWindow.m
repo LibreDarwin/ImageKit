@@ -7,4 +7,25 @@
 
 @implementation IKSSBackgroundWindow
 
+
+/* --- generated selector-parity stubs --- */
+- (id)accessibilityAttributeValue2:(id)arg1
+{
+    return nil;
+}
+
+- (id)boundsForPanelButtonAtIndex:(id)arg1
+{
+    return nil;
+}
+
+- (id)buttonSetupDone:(id)arg1
+{
+    return nil;
+}
+
+- (void)setPanel:(id)arg1
+{
+
+}
 @end

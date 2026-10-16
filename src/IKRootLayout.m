@@ -7,4 +7,10 @@
 
 @implementation IKRootLayout
 
+
+/* --- generated selector-parity stubs --- */
+- (id)preferredFrameSizeOfLayer:(id)arg1
+{
+    return nil;
+}
 @end

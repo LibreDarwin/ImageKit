@@ -7,4 +7,15 @@
 
 @implementation IKImageBlockLayer
 
+
+/* --- generated selector-parity stubs --- */
+- (id)maskTile
+{
+    return nil;
+}
+
+- (void)setMaskTile:(id)arg1
+{
+
+}
 @end

@@ -7,4 +7,10 @@
 
 @implementation IKImageBrowserFloatingGroupGrid
 
+
+/* --- generated selector-parity stubs --- */
+- (id)computeContentSize
+{
+    return nil;
+}
 @end

@@ -7,4 +7,10 @@
 
 @implementation IK3PartHorizontal
 
+
+/* --- generated selector-parity stubs --- */
++ (id)layerWithImageNamesLeft:(id)arg1 middle:(id)arg2 right:(id)arg3
+{
+    return nil;
+}
 @end

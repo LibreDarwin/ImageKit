@@ -7,4 +7,15 @@
 
 @implementation IKPTImageGridCell
 
+
+/* --- generated selector-parity stubs --- */
+- (id)drawOverlays
+{
+    return nil;
+}
+
+- (id)drawSelection
+{
+    return nil;
+}
 @end

@@ -7,4 +7,25 @@
 
 @implementation IKTemplateLayer
 
+
+/* --- generated selector-parity stubs --- */
+- (id)handleDoubleClick:(id)arg1
+{
+    return nil;
+}
+
+- (id)handleMouseDown:(id)arg1
+{
+    return nil;
+}
+
+- (id)setTemplateRects:(id)arg1 count:(id)arg2
+{
+    return nil;
+}
+
+- (id)templateRects:(id)arg1
+{
+    return nil;
+}
 @end

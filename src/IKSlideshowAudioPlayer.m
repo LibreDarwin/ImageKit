@@ -7,4 +7,15 @@
 
 @implementation IKSlideshowAudioPlayer
 
+
+/* --- generated selector-parity stubs --- */
+- (id)startPlaying
+{
+    return nil;
+}
+
+- (id)stopPlaying
+{
+    return nil;
+}
 @end

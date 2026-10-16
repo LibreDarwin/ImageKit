@@ -7,4 +7,15 @@
 
 @implementation IKImageBrowserMagnifying
 
+
+/* --- generated selector-parity stubs --- */
+- (id)alternateMagnifying
+{
+    return nil;
+}
+
+- (id)processCells:(id)arg1 withBrowser:(id)arg2
+{
+    return nil;
+}
 @end

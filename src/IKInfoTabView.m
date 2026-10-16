@@ -7,4 +7,10 @@
 
 @implementation IKInfoTabView
 
+
+/* --- generated selector-parity stubs --- */
+- (id)setup
+{
+    return nil;
+}
 @end

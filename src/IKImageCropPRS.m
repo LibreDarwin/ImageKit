@@ -7,4 +7,10 @@
 
 @implementation IKImageCropPRS
 
+
+/* --- generated selector-parity stubs --- */
+- (id)transformVectorFromViewSpaceToCropSpace:(id)arg1
+{
+    return nil;
+}
 @end

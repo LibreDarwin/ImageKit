@@ -7,4 +7,40 @@
 
 @implementation IKProKitCell
 
+
+/* --- generated selector-parity stubs --- */
+- (id)IKProKitSelectionFrame
+{
+    return nil;
+}
+
+- (id)drawBackground
+{
+    return nil;
+}
+
+- (id)drawSelection
+{
+    return nil;
+}
+
+- (id)drawSelectionOnTitle
+{
+    return nil;
+}
+
+- (id)drawTitle
+{
+    return nil;
+}
+
+- (id)subtitleFrame
+{
+    return nil;
+}
+
+- (id)titleFrame
+{
+    return nil;
+}
 @end

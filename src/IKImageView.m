@@ -242,6 +242,372 @@ NSString *const IKOverlayTypeImage = @"IKOverlayTypeImage";
 {
     return nil;
 }
+
+/* --- generated selector-parity stubs --- */
++ (id)imageFromCGImage:(id)arg1 imageProperties:(id)arg2 imageState:(id)arg3 options:(id)arg4
+{
+    return nil;
+}
+
++ (id)imageFromURL:(id)arg1 imageState:(id)arg2 options:(id)arg3
+{
+    return nil;
+}
+
+- (id)_didInitWithCoder
+{
+    return nil;
+}
+
+- (id)_didInitWithCoder:(id)arg1
+{
+    return nil;
+}
+
+- (id)_willInitWithCoder
+{
+    return nil;
+}
+
+- (id)addLayer:(id)arg1 linkedTo:(id)arg2
+{
+    return nil;
+}
+
+- (id)annotationType
+{
+    return nil;
+}
+
+- (id)autoResizeToRect:(id)arg1
+{
+    return nil;
+}
+
+- (id)backgroundLayer
+{
+    return nil;
+}
+
+- (id)centerImage
+{
+    return nil;
+}
+
+- (id)closeInspector:(id)arg1
+{
+    return nil;
+}
+
+- (id)commonInit
+{
+    return nil;
+}
+
+- (id)composer
+{
+    return nil;
+}
+
+- (id)connectToBackgroundLayer
+{
+    return nil;
+}
+
+- (id)createThumbnailOfSize:(id)arg1
+{
+    return nil;
+}
+
+- (id)createThumbnailWithMaximumSize:(id)arg1
+{
+    return nil;
+}
+
+- (id)debugLayerTree:(id)arg1
+{
+    return nil;
+}
+
+- (id)dump
+{
+    return nil;
+}
+
+- (id)dumpLayer:(id)arg1 prefix:(id)arg2
+{
+    return nil;
+}
+
+- (id)dumpLayer:(id)arg1 prefix:(id)arg2 verbose:(id)arg3
+{
+    return nil;
+}
+
+- (id)embedded
+{
+    return nil;
+}
+
+- (id)filter:(id)arg1 setValue:(id)arg2 forKey:(id)arg3
+{
+    return nil;
+}
+
+- (id)filter:(id)arg1 valueForKey:(id)arg2
+{
+    return nil;
+}
+
+- (id)filterAdded:(id)arg1 filterChain:(id)arg2
+{
+    return nil;
+}
+
+- (id)filterArray
+{
+    return nil;
+}
+
+- (id)filterChain
+{
+    return nil;
+}
+
+- (id)filterChainChanged:(id)arg1
+{
+    return nil;
+}
+
+- (id)filterRemoved:(id)arg1 filterChain:(id)arg2
+{
+    return nil;
+}
+
+- (id)handleViewDidMoveToSuperView
+{
+    return nil;
+}
+
+- (id)ibSetSampleURL
+{
+    return nil;
+}
+
+- (id)imageLayer
+{
+    return nil;
+}
+
+- (id)imageProperties
+{
+    return nil;
+}
+
+- (id)imageSize
+{
+    return nil;
+}
+
+- (id)imageState:(id)arg1 image:(id)arg2 options:(id)arg3
+{
+    return nil;
+}
+
+- (id)imageURL
+{
+    return nil;
+}
+
+- (id)imageWithOptions:(id)arg1
+{
+    return nil;
+}
+
+- (id)invalidateCursorRects
+{
+    return nil;
+}
+
+- (id)layerOfType:(id)arg1
+{
+    return nil;
+}
+
+- (id)postZoom
+{
+    return nil;
+}
+
+- (id)preZoom
+{
+    return nil;
+}
+
+- (id)registerLayer:(id)arg1
+{
+    return nil;
+}
+
+- (id)removeLayer:(id)arg1
+{
+    return nil;
+}
+
+- (id)rotateImageLeft:(id)arg1
+{
+    return nil;
+}
+
+- (id)rotateImageRight:(id)arg1
+{
+    return nil;
+}
+
+- (id)saveScrollInfo:(id)arg1 scaling:(id)arg2
+{
+    return nil;
+}
+
+- (id)selectionRect
+{
+    return nil;
+}
+
+- (id)selectionRectAdded
+{
+    return nil;
+}
+
+- (id)selectionRectDidChange:(id)arg1
+{
+    return nil;
+}
+
+- (id)selectionRectRemoved
+{
+    return nil;
+}
+
+- (void)setAnnotationType:(id)arg1
+{
+
+}
+
+- (id)setCIImage:(id)arg1 imageProperties:(id)arg2
+{
+    return nil;
+}
+
+- (void)setEmbedded:(id)arg1
+{
+
+}
+
+- (void)setFilterArray:(id)arg1
+{
+
+}
+
+- (void)setFilterChain:(id)arg1
+{
+
+}
+
+- (id)setImage:(id)arg1 imageProperties:(id)arg2 imageState:(id)arg3
+{
+    return nil;
+}
+
+- (id)setImage:(id)arg1 imageProperties:(id)arg2 imageState:(id)arg3 options:(id)arg4
+{
+    return nil;
+}
+
+- (id)setImage:(id)arg1 imageProperties:(id)arg2 options:(id)arg3
+{
+    return nil;
+}
+
+- (void)setImageWithCGImageSource:(id)arg1
+{
+
+}
+
+- (id)setImageWithCGImageSource:(id)arg1 imageProperties:(id)arg2 options:(id)arg3
+{
+    return nil;
+}
+
+- (void)setImageWithData:(id)arg1
+{
+
+}
+
+- (id)setImageWithData:(id)arg1 imageProperties:(id)arg2 options:(id)arg3
+{
+    return nil;
+}
+
+- (id)setImageWithURL:(id)arg1 imageState:(id)arg2
+{
+    return nil;
+}
+
+- (id)setImageWithURL:(id)arg1 imageState:(id)arg2 options:(id)arg3
+{
+    return nil;
+}
+
+- (id)setNSImage:(id)arg1 imageProperties:(id)arg2
+{
+    return nil;
+}
+
+- (void)setReuseImageLayer:(id)arg1
+{
+
+}
+
+- (void)setSelectionRect:(id)arg1
+{
+
+}
+
+- (void)setValueURL:(id)arg1
+{
+
+}
+
+- (id)showInspector:(id)arg1
+{
+    return nil;
+}
+
+- (id)turnoffAutoresizes
+{
+    return nil;
+}
+
+- (id)updateBackgroundColor
+{
+    return nil;
+}
+
+- (id)updateImageEditPanelIfNeeded
+{
+    return nil;
+}
+
+- (id)valueURL
+{
+    return nil;
+}
+
+- (id)writeImageAtIndex:(id)arg1 toFile:(id)arg2 options:(id)arg3
+{
+    return nil;
+}
 @end
 
 NSString *const IKToolModePaste = @"IKToolModePaste";

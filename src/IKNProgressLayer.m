@@ -7,4 +7,10 @@
 
 @implementation IKNProgressLayer
 
+
+/* --- generated selector-parity stubs --- */
+- (id)setup
+{
+    return nil;
+}
 @end

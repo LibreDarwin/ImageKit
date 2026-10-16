@@ -7,4 +7,10 @@
 
 @implementation IKSSIndexSheetSelectionLayer
 
+
+/* --- generated selector-parity stubs --- */
+- (id)setup
+{
+    return nil;
+}
 @end

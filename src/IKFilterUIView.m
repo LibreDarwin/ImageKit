@@ -7,4 +7,20 @@
 
 @implementation IKFilterUIView
 
+
+/* --- generated selector-parity stubs --- */
++ (id)viewWithFrame:(id)arg1 filter:(id)arg2
+{
+    return nil;
+}
+
+- (id)initWithFrame:(id)arg1 filter:(id)arg2
+{
+    return nil;
+}
+
+- (id)objectController
+{
+    return nil;
+}
 @end

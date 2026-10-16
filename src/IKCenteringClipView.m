@@ -7,4 +7,25 @@
 
 @implementation IKCenteringClipView
 
+
+/* --- generated selector-parity stubs --- */
+- (id)centerDocument
+{
+    return nil;
+}
+
+- (id)disableCentering
+{
+    return nil;
+}
+
+- (id)documentShouldCenter
+{
+    return nil;
+}
+
+- (void)setDisableCentering:(id)arg1
+{
+
+}
 @end

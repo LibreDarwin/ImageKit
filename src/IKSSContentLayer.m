@@ -7,4 +7,50 @@
 
 @implementation IKSSContentLayer
 
+
+/* --- generated selector-parity stubs --- */
+- (id)initWithSlideshow:(id)arg1 indexHandler:(id)arg2
+{
+    return nil;
+}
+
+- (id)itemsPerRow
+{
+    return nil;
+}
+
+- (id)layoutSublayers2
+{
+    return nil;
+}
+
+- (id)rowsPerScreen
+{
+    return nil;
+}
+
+- (void)setItemsPerRow:(id)arg1
+{
+
+}
+
+- (void)setRowsPerScreen:(id)arg1
+{
+
+}
+
+- (void)setThumbnailCount:(id)arg1
+{
+
+}
+
+- (id)thumbnailCount
+{
+    return nil;
+}
+
+- (id)visibleThumbnails
+{
+    return nil;
+}
 @end

@@ -7,4 +7,25 @@
 
 @implementation IKFinderStackIconCell
 
+
+/* --- generated selector-parity stubs --- */
+- (id)disableTwoLineTitles
+{
+    return nil;
+}
+
+- (id)drawSelection
+{
+    return nil;
+}
+
+- (id)reflectionFactor
+{
+    return nil;
+}
+
+- (id)reflectionHeight
+{
+    return nil;
+}
 @end

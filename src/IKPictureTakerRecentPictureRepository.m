@@ -7,4 +7,30 @@
 
 @implementation IKPictureTakerRecentPictureRepository
 
+
+/* --- generated selector-parity stubs --- */
++ (id)recentRepository
+{
+    return nil;
+}
+
+- (id)addRecent:(id)arg1
+{
+    return nil;
+}
+
+- (id)clearRecents:(id)arg1
+{
+    return nil;
+}
+
+- (id)recentPictures
+{
+    return nil;
+}
+
+- (id)removeRecent:(id)arg1
+{
+    return nil;
+}
 @end

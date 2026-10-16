@@ -7,4 +7,125 @@
 
 @implementation IKDVGrabber
 
+
+/* --- generated selector-parity stubs --- */
++ (id)cameraIsBusy
+{
+    return nil;
+}
+
++ (id)canPotentiallyHaveCameraAccess
+{
+    return nil;
+}
+
++ (id)captureDevice
+{
+    return nil;
+}
+
++ (id)hasCameraAccess
+{
+    return nil;
+}
+
++ (id)releaseSharedDVGrabber
+{
+    return nil;
+}
+
++ (id)sharedDVGrabber
+{
+    return nil;
+}
+
+- (id)QTKitErrorNotification:(id)arg1
+{
+    return nil;
+}
+
+- (id)addListener:(id)arg1
+{
+    return nil;
+}
+
+- (id)captureDidOutputVideoFrame:(id)arg1
+{
+    return nil;
+}
+
+- (id)captureOutput:(id)arg1 didOutputSampleBuffer:(id)arg2 fromConnection:(id)arg3
+{
+    return nil;
+}
+
+- (id)currentFrameAsCIImage
+{
+    return nil;
+}
+
+- (id)currentFrameAsCVBuffer
+{
+    return nil;
+}
+
+- (id)currentFrameAsNSImage
+{
+    return nil;
+}
+
+- (id)framesProvider
+{
+    return nil;
+}
+
+- (id)freeGrabberIfNeeded
+{
+    return nil;
+}
+
+- (id)initializeGrabberIfNeeded
+{
+    return nil;
+}
+
+- (id)isGrabbing
+{
+    return nil;
+}
+
+- (id)mirrorMode
+{
+    return nil;
+}
+
+- (id)notifyListenersForUpdate:(id)arg1
+{
+    return nil;
+}
+
+- (id)removeListener:(id)arg1
+{
+    return nil;
+}
+
+- (void)setFramesProvider:(id)arg1
+{
+
+}
+
+- (void)setMirrorMode:(id)arg1
+{
+
+}
+
+- (id)startCapture
+{
+    return nil;
+}
+
+- (id)videoProvider:(id)arg1 didOutputVideoFrame:(id)arg2
+{
+    return nil;
+}
 @end

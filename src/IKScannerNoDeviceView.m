@@ -7,4 +7,20 @@
 
 @implementation IKScannerNoDeviceView
 
+
+/* --- generated selector-parity stubs --- */
+- (void)setCanCancel:(id)arg1
+{
+
+}
+
+- (void)setStatusDelegate:(id)arg1
+{
+
+}
+
+- (void)setStatusText:(id)arg1
+{
+
+}
 @end

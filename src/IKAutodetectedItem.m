@@ -7,4 +7,25 @@
 
 @implementation IKAutodetectedItem
 
+
+/* --- generated selector-parity stubs --- */
+- (id)anchor
+{
+    return nil;
+}
+
+- (id)initWithScanArea:(id)arg1
+{
+    return nil;
+}
+
+- (id)rotationAngle
+{
+    return nil;
+}
+
+- (void)setupWithScanArea:(id)arg1
+{
+
+}
 @end

@@ -7,4 +7,10 @@
 
 @implementation IKPTImageGridView
 
+
+/* --- generated selector-parity stubs --- */
+- (id)startDragNDropWithEvent:(id)arg1 itemIndexes:(id)arg2
+{
+    return nil;
+}
 @end

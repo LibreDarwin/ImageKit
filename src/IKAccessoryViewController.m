@@ -7,4 +7,10 @@
 
 @implementation IKAccessoryViewController
 
+
+/* --- generated selector-parity stubs --- */
+- (id)initWithCamera:(id)arg1
+{
+    return nil;
+}
 @end

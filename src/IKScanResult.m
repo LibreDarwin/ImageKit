@@ -7,4 +7,20 @@
 
 @implementation IKScanResult
 
+
+/* --- generated selector-parity stubs --- */
+- (id)imageRepresentation
+{
+    return nil;
+}
+
+- (id)imageRepresentationType
+{
+    return nil;
+}
+
+- (id)imageUID
+{
+    return nil;
+}
 @end

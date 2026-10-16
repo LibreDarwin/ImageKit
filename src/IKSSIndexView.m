@@ -7,4 +7,15 @@
 
 @implementation IKSSIndexView
 
+
+/* --- generated selector-parity stubs --- */
+- (id)indexHandler
+{
+    return nil;
+}
+
+- (void)setIndexHandler:(id)arg1
+{
+
+}
 @end

@@ -7,4 +7,10 @@
 
 @implementation IKSliderCell
 
+
+/* --- generated selector-parity stubs --- */
+- (id)_positionForValue:(id)arg1
+{
+    return nil;
+}
 @end

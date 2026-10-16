@@ -7,4 +7,15 @@
 
 @implementation IKImageView2ScrollView
 
+
+/* --- generated selector-parity stubs --- */
+- (id)isElastic
+{
+    return nil;
+}
+
+- (void)setIsElastic:(id)arg1
+{
+
+}
 @end
