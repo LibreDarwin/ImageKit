@@ -5,8 +5,13 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import <CoreFoundation/CoreFoundation.h>
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKCacheDatabaseEntry : NSObject
+@interface IKCacheDatabaseEntry : NSObject {
+    NSMutableArray *_uids;
+    CFMutableDictionaryRef _nodes;
+    long _dbRetainCount;
+}
 
 @end

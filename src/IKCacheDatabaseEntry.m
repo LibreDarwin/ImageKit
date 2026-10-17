@@ -5,72 +5,116 @@
 
 #import "IKCacheDatabaseEntry.h"
 
+@interface NSObject (IKCacheDatabaseEntryNode)
+- (id)thumbnail;
+@end
+
+static void _fillSizes(const void *key, const void *value, void *context)
+{
+    (void)value;
+    [(__bridge NSMutableIndexSet *)context addIndex:(NSUInteger)key];
+}
+
+static IKCacheDatabaseEntry *_nullNode;
+
 @implementation IKCacheDatabaseEntry
 
-
-/* --- generated selector-parity stubs --- */
-- (id)addNode:(id)arg1 withSize:(id)arg2
++ (IKCacheDatabaseEntry *)nullNode
 {
+    if (_nullNode == nil)
+        _nullNode = [[IKCacheDatabaseEntry alloc] init];
+    return _nullNode;
+}
+
+- (void)dealloc
+{
+    if (self == _nullNode) {
+        NSLog(@"--ImageKit Error: %@", @"deallocating a null node");
+    } else {
+        if (_nodes != NULL)
+            CFRelease(_nodes);
+    }
+}
+
+- (NSMutableArray *)uids
+{
+    return _uids;
+}
+
+- (void)addUID:(id)uid
+{
+    if (_uids == nil)
+        _uids = [[NSMutableArray alloc] init];
+    [_uids addObject:uid];
+}
+
+- (void)removeUID:(id)uid
+{
+    [_uids removeObject:uid];
+}
+
+- (BOOL)isShared
+{
+    return [_uids count] > 1;
+}
+
+- (long)dbRetainCount
+{
+    return _dbRetainCount;
+}
+
+- (long)incrDBRetainCount
+{
+    return ++_dbRetainCount;
+}
+
+- (long)decrDBRetainCount
+{
+    return --_dbRetainCount;
+}
+
+- (id)nodeWithSize:(int)size
+{
+    if (_nodes != NULL)
+        return (__bridge id)CFDictionaryGetValue(_nodes, (const void *)(long)size);
     return nil;
 }
 
-- (id)addUID:(id)arg1
+- (void)addNode:(id)node withSize:(int)size
 {
-    return nil;
+    if (_nodes == NULL)
+        _nodes = CFDictionaryCreateMutable(kCFAllocatorDefault, 0, NULL,
+                                           &kCFTypeDictionaryValueCallBacks);
+    CFDictionaryRemoveValue(_nodes, (const void *)(long)size);
+    CFDictionaryAddValue(_nodes, (const void *)(long)size,
+                         (__bridge const void *)node);
 }
 
-- (id)dbRetainCount
+- (void)removeNodeWithSize:(int)size
 {
-    return nil;
+    if (_nodes != NULL)
+        CFDictionaryRemoveValue(_nodes, (const void *)(long)size);
 }
 
-- (id)decrDBRetainCount
+- (id)thumbnailWithSize:(int)size
 {
-    return nil;
+    return [[self nodeWithSize:size] thumbnail];
 }
 
-- (id)incrDBRetainCount
+- (NSUInteger)thumbnailCount
 {
-    return nil;
+    if (_nodes != NULL)
+        return (NSUInteger)CFDictionaryGetCount(_nodes);
+    return 0;
 }
 
-- (id)isShared
+- (NSIndexSet *)sizes
 {
-    return nil;
+    if (_nodes == NULL)
+        return [NSIndexSet indexSet];
+    NSMutableIndexSet *set = [[NSMutableIndexSet alloc] init];
+    CFDictionaryApplyFunction(_nodes, _fillSizes, (__bridge void *)set);
+    return set;
 }
 
-- (id)nodeWithSize:(id)arg1
-{
-    return nil;
-}
-
-- (id)removeNodeWithSize:(id)arg1
-{
-    return nil;
-}
-
-- (id)removeUID:(id)arg1
-{
-    return nil;
-}
-
-- (id)sizes
-{
-    return nil;
-}
-
-- (id)thumbnailCount
-{
-    return nil;
-}
-
-- (id)thumbnailWithSize:(id)arg1
-{
-    return nil;
-}
-
-- (id)uids
-{
-    return nil;
-}
 @end
