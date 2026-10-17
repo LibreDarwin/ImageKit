@@ -7,25 +7,25 @@
 
 @implementation IKLinkedListLink
 
-
-/* --- generated selector-parity stubs --- */
-- (id)next
-{
-    return nil;
+- (id)next {
+    return _next;
 }
 
-- (id)previous
-{
-    return nil;
+- (void)setNext:(id)arg1 {
+    if (_next != arg1) {
+        _next = arg1;
+    }
 }
 
-- (void)setNext:(id)arg1
-{
-
+- (id)previous {
+    return _previous;
 }
 
-- (void)setPrevious:(id)arg1
-{
-
+- (void)setPrevious:(id)arg1 {
+    _previous = arg1;
 }
+
+- (void)dealloc {
+}
+
 @end

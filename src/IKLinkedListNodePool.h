@@ -5,8 +5,12 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import "IKLinkedList.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKLinkedListNodePool : NSObject
+@interface IKLinkedListNodePool : NSObject {
+    IKLinkedList *_freeNodes;
+    NSMutableArray *_nodePool;
+}
 
 @end

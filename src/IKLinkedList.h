@@ -5,8 +5,13 @@
 
 #import <AppKit/AppKit.h>
 #import "ImageKitBase.h"
+#import "IKLinkedListLink.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKLinkedList : NSObject
+@interface IKLinkedList : NSObject {
+    id _first;
+    id _last;
+    NSUInteger _count;
+}
 
 @end

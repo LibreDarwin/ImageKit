@@ -8,6 +8,8 @@
 #import "IKLinkedListLink.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKLinkedListNode : IKLinkedListLink
+@interface IKLinkedListNode : IKLinkedListLink {
+    id _value;
+}
 
 @end
