@@ -7,65 +7,64 @@
 
 @implementation IKCacheVRamNode
 
-
-/* --- generated selector-parity stubs --- */
-- (id)memoryUsage
+- (IKCacheNode *)parent
 {
-    return nil;
+    return _parent;
 }
 
-- (id)packed
+- (void)setParent:(IKCacheNode *)parent
 {
-    return nil;
+    _parent = parent;
 }
 
-- (id)packerID
+- (unsigned int)session
 {
-    return nil;
+    return _session;
 }
 
-- (id)parent
+- (void)setSession:(unsigned int)session
 {
-    return nil;
+    _session = session;
 }
 
-- (id)session
+- (unsigned int)memoryUsage
 {
-    return nil;
+    return _memoryUsage;
 }
 
-- (void)setMemoryUsage:(id)arg1
+- (void)setMemoryUsage:(unsigned int)memoryUsage
 {
-
+    _memoryUsage = memoryUsage;
 }
 
-- (void)setPackerID:(id)arg1
+- (unsigned int)packerID
 {
-
+    return _packerID;
 }
 
-- (void)setParent:(id)arg1
+- (void)setPackerID:(unsigned int)packerID
 {
-
+    _packerID = packerID;
 }
 
-- (void)setSession:(id)arg1
+- (CGRect)textureRect
 {
-
+    return _textureRect;
 }
 
-- (void)setTextureRect:(id)arg1
+- (void)setTextureRect:(CGRect)textureRect
 {
-
+    _textureRect = textureRect;
 }
 
-- (id)textureRect
+- (BOOL)packed
 {
-    return nil;
+    return (int)_packerID != 0;
 }
 
-- (id)willDie
+- (void)willDie
 {
-    return nil;
+    [self setParent:nil];
 }
+
 @end
