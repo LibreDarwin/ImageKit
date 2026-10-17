@@ -5,67 +5,98 @@
 
 #import "IKCacheNode.h"
 
+@interface NSObject (IKCacheNodeCacheDatabase)
+- (id)database;
+- (void)retainIndex:(unsigned long long)index;
+- (void)releaseIndex:(unsigned long long)index;
+- (void)willDie;
+@end
+
 @implementation IKCacheNode
 
-
-/* --- generated selector-parity stubs --- */
-- (id)initWithParent:(id)arg1 uid:(id)arg2 database:(id)arg3 size:(id)arg4
+- (id)initWithParent:(id)parent uid:(unsigned long long)uid database:(id)database size:(int)size
 {
+    self = [super init];
+    if (self != nil) {
+        _uid = uid;
+        _parent = parent;
+        _size = size;
+        [database retainIndex:uid];
+    }
+    return self;
+}
+
+- (void)dealloc
+{
+}
+
+- (unsigned long long)uid
+{
+    return _uid;
+}
+
+- (int)size
+{
+    return _size;
+}
+
+- (void)setSize:(int)size
+{
+    _size = size;
+}
+
+- (IKImageWrapper *)thumbnail
+{
+    return _thumbnail;
+}
+
+- (void)setThumbnail:(IKImageWrapper *)thumbnail
+{
+    if (_thumbnail != thumbnail)
+        _thumbnail = thumbnail;
+}
+
+- (IKCacheData *)parent
+{
+    return _parent;
+}
+
+- (void)setParent:(IKCacheData *)parent
+{
+    _parent = parent;
+}
+
+- (id)objectForCacheKey:(int)cacheKey
+{
+    if (cacheKey < 2)
+        return _data[cacheKey];
     return nil;
 }
 
-- (id)objectForCacheKey:(id)arg1
+- (void)setObject:(id)object forCacheKey:(int)cacheKey
 {
-    return nil;
+    if (cacheKey < 2 && object != _data[cacheKey])
+        _data[cacheKey] = object;
 }
 
-- (id)parent
+- (void)removeObjectForCacheKey:(int)cacheKey
 {
-    return nil;
+    if (cacheKey < 2) {
+        [_data[cacheKey] willDie];
+        _data[cacheKey] = nil;
+    }
 }
 
-- (id)removeObjectForCacheKey:(id)arg1
+- (void)willDie
 {
-    return nil;
+    _thumbnail = nil;
+    [_data[0] willDie];
+    [_data[1] willDie];
+    if (_parent != nil) {
+        [[(id)_parent database] releaseIndex:_uid];
+        _uid = 0x7fffffffffffffffULL;
+        [self setParent:nil];
+    }
 }
 
-- (id)setObject:(id)arg1 forCacheKey:(id)arg2
-{
-    return nil;
-}
-
-- (void)setParent:(id)arg1
-{
-
-}
-
-- (void)setSize:(id)arg1
-{
-
-}
-
-- (void)setThumbnail:(id)arg1
-{
-
-}
-
-- (CGSize)size
-{
-    return (CGSize){0};
-}
-
-- (id)thumbnail
-{
-    return nil;
-}
-
-- (id)uid
-{
-    return nil;
-}
-
-- (id)willDie
-{
-    return nil;
-}
 @end
