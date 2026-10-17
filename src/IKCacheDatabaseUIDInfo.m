@@ -7,45 +7,49 @@
 
 @implementation IKCacheDatabaseUIDInfo
 
-
-/* --- generated selector-parity stubs --- */
-- (id)image
+- (IKImageWrapper *)image
 {
-    return nil;
+    return _image;
 }
 
-- (id)index
+- (void)setImage:(IKImageWrapper *)image
 {
-    return nil;
+    if (_image != image)
+        _image = image;
 }
 
-- (id)isValid
+- (unsigned long long)version
 {
-    return nil;
+    return _version;
 }
 
-- (void)setImage:(id)arg1
+- (void)setVersion:(unsigned long long)version
 {
-
+    _version = version;
 }
 
-- (void)setIndex:(id)arg1
+- (unsigned long long)index
 {
-
+    return _index;
 }
 
-- (void)setIsValid:(id)arg1
+- (void)setIndex:(unsigned long long)index
 {
-
+    _index = index;
 }
 
-- (void)setVersion:(NSInteger)arg1
+- (BOOL)isValid
 {
-
+    return _invalid ^ 1;
 }
 
-- (id)version
+- (void)setIsValid:(BOOL)valid
 {
-    return nil;
+    _invalid = valid ^ 1;
 }
+
+- (void)dealloc
+{
+}
+
 @end

@@ -8,8 +8,10 @@
 # Apple's ImageKit has no on-disk file (it lives in the dyld shared cache) so
 # the absolute path is only checked to exist logically, not with test -f.
 #
-# The fixture is compiled WITHOUT ARC so it can count retain/release traffic
-# and detect the same-value guard in the accessors.
+# The fixture is compiled WITHOUT ARC so it can count how many times each
+# stored object is released when the receiver deallocates. Absolute
+# retain/release counts are not compared (ARC emits different traffic than the
+# framework's original MRC code).
 #
 
 set -eu
