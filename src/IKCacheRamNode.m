@@ -4,138 +4,172 @@
  */
 
 #import "IKCacheRamNode.h"
+#import "IKImageWrapper.h"
+
+extern CGSize IKThumbSizeFromSize(int size);
+
+@interface IKImageWrapper (IKCacheRamNodeImage)
++ (id)imageWithNSBitmapImageRep:(NSBitmapImageRep *)rep;
++ (id)imageWithData:(NSData *)data;
+- (id)thumbnailWithSize:(double)size antialiased:(BOOL)antialiased quality:(int)quality;
+@end
 
 @implementation IKCacheRamNode
 
-
-/* --- generated selector-parity stubs --- */
-- (id)bitmap
+- (id)init
 {
-    return nil;
+    self = [super init];
+    if (self != nil)
+        _rawDataFormat = 0;
+    return self;
 }
 
-- (id)cacheUsedByBitmapRep
+- (void)dealloc
 {
-    return nil;
 }
 
-- (id)cacheUsedByJpegData
+- (IKCacheNode *)parent
 {
-    return nil;
+    return _parent;
 }
 
-- (id)data
+- (void)setParent:(IKCacheNode *)parent
 {
-    return nil;
+    _parent = parent;
 }
 
-- (id)isInPriorityList
+- (unsigned int)cacheUsedByBitmapRep
 {
-    return nil;
+    return _cacheUsedByBitmapRep;
 }
 
-- (id)isVectorial
+- (void)setCacheUsedByBitmapRep:(unsigned int)value
 {
-    return nil;
+    _cacheUsedByBitmapRep = value;
 }
 
-- (id)parent
+- (unsigned int)cacheUsedByJpegData
 {
-    return nil;
+    return _cacheUsedByJpegData;
+}
+
+- (void)setCacheUsedByJpegData:(unsigned int)value
+{
+    _cacheUsedByJpegData = value;
+}
+
+- (unsigned int)session
+{
+    return _session;
+}
+
+- (void)setSession:(unsigned int)session
+{
+    _session = session;
+}
+
+- (int)rawDataFormat
+{
+    return _rawDataFormat;
+}
+
+- (void)setRawDataFormat:(int)format
+{
+    _rawDataFormat = format;
+}
+
+- (BOOL)isInPriorityList
+{
+    return _isInPriorityList;
+}
+
+- (void)setIsInPriorityList:(BOOL)flag
+{
+    _isInPriorityList = flag;
+}
+
+- (unsigned int)totalCacheUsed
+{
+    return _cacheUsedByJpegData + _cacheUsedByBitmapRep;
+}
+
+- (NSBitmapImageRep *)bitmap
+{
+    return _bitmapRep;
+}
+
+- (void)setBitmap:(NSBitmapImageRep *)bitmap
+{
+    if (_bitmapRep != bitmap)
+        _bitmapRep = bitmap;
+}
+
+- (NSData *)data
+{
+    return _data;
+}
+
+- (void)setData:(NSData *)data
+{
+    if (_data != data)
+        _data = data;
+}
+
+- (void)willDie
+{
+    [self setParent:nil];
+}
+
+- (int)proxyDataFormat
+{
+    if (_bitmapRep != nil)
+        return 2;
+    return _data != nil;
 }
 
 - (id)proxyData
 {
-    return nil;
-}
-
-- (id)proxyDataFormat
-{
-    return nil;
+    if (_bitmapRep != nil)
+        return _bitmapRep;
+    return _data;
 }
 
 - (id)proxyImage
 {
+    if (_bitmapRep != nil)
+        return [IKImageWrapper imageWithNSBitmapImageRep:_bitmapRep];
+    if (_data != nil)
+        return [IKImageWrapper imageWithData:_data];
     return nil;
 }
 
 - (id)proxyReferenceInstance
 {
-    return nil;
+    return self;
 }
 
-- (id)proxySize
+- (CGSize)proxySize
 {
-    return nil;
+    return [[self proxyImage] size];
 }
 
-- (id)rawDataFormat
+- (BOOL)isVectorial
 {
-    return nil;
+    return NO;
 }
 
-- (id)session
+- (BOOL)supportConcurrentLoading
 {
-    return nil;
+    NSLog(@"--ImageKit Error: %@", [NSString stringWithFormat:@"supportConcurrentLoading should never be invoked on ram nodes"]);
+    return NO;
 }
 
-- (void)setBitmap:(id)arg1
+- (id)thumbnailWithSize:(double)size antialiased:(BOOL)antialiased quality:(int)quality
 {
-
+    id image = [self proxyImage];
+    (void)[image size];
+    CGSize thumbSize = IKThumbSizeFromSize((int)size);
+    return [image thumbnailWithSize:thumbSize.width antialiased:antialiased quality:quality];
 }
 
-- (void)setCacheUsedByBitmapRep:(id)arg1
-{
-
-}
-
-- (void)setCacheUsedByJpegData:(id)arg1
-{
-
-}
-
-- (void)setData:(id)arg1
-{
-
-}
-
-- (void)setIsInPriorityList:(id)arg1
-{
-
-}
-
-- (void)setParent:(id)arg1
-{
-
-}
-
-- (void)setRawDataFormat:(id)arg1
-{
-
-}
-
-- (void)setSession:(id)arg1
-{
-
-}
-
-- (id)supportConcurrentLoading
-{
-    return nil;
-}
-
-- (id)thumbnailWithSize:(id)arg1 antialiased:(id)arg2 quality:(id)arg3
-{
-    return nil;
-}
-
-- (id)totalCacheUsed
-{
-    return nil;
-}
-
-- (id)willDie
-{
-    return nil;
-}
 @end

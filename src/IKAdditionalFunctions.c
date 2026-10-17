@@ -632,7 +632,7 @@ extern id IKShowBacktrace(void) { return nil; }
 extern id IKSigmoide(void) { return nil; }
 extern id IKTextInvertColorsForRendering(void) { return nil; }
 extern id IKTextureRangeForAddress(void) { return nil; }
-extern CGSize IKThumbSizeFromSize(void) { return CGSizeZero; }
+extern CGSize IKThumbSizeFromSize(int size) { (void)size; return CGSizeZero; }
 extern id IKTimeDifference(void) { return nil; }
 extern id IKTimeSinceTime(void) { return nil; }
 extern id IKTimingFunctionSolve(void) { return nil; }
