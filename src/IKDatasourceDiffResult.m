@@ -5,62 +5,79 @@
 
 #import "IKDatasourceDiffResult.h"
 
+#include <stdlib.h>
+
 @implementation IKDatasourceDiffResult
 
-
-/* --- generated selector-parity stubs --- */
-- (id)addAddOperationWithIndex:(id)arg1
+- (id)init
 {
-    return nil;
+    self = [super init];
+    if (self) {
+        indexesToAdd = [[NSMutableIndexSet alloc] init];
+        indexesToRemove = [[NSMutableIndexSet alloc] init];
+    }
+    return self;
 }
 
-- (id)addMoveOperationFrom:(id)arg1 to:(id)arg2
+- (void)dealloc
 {
-    return nil;
+    if (_oldIndexToNewIndex != NULL)
+        free(_oldIndexToNewIndex);
+    if (_newIndexToOldIndex != NULL)
+        free(_newIndexToOldIndex);
 }
 
-- (id)addRemoveOperationWithIndex:(id)arg1
+- (void)finalize
 {
-    return nil;
+    if (_oldIndexToNewIndex != NULL)
+        free(_oldIndexToNewIndex);
+    if (_newIndexToOldIndex != NULL)
+        free(_newIndexToOldIndex);
+    [super finalize];
 }
 
-- (id)allocIndexesBuffers:(id)arg1
+- (NSMutableIndexSet *)indexesToAdd
 {
-    return nil;
+    return indexesToAdd;
 }
 
-- (id)indexesToAdd
+- (NSMutableIndexSet *)indexesToRemove
 {
-    return nil;
+    return indexesToRemove;
 }
 
-- (id)indexesToRemove
+- (BOOL)needToExchangeItems
 {
-    return nil;
+    return _needToExchangeItems;
 }
 
-- (id)needToExchangeItems
+- (BOOL)noDifference
 {
-    return nil;
+    if (_needToExchangeItems & 1)
+        return NO;
+    if ([indexesToAdd count] == 0)
+        return [indexesToRemove count] == 0;
+    return NO;
 }
 
-- (id)newIndexOfOldIndex:(id)arg1
+- (long)oldIndexOfNewIndex:(long)newIndex
 {
-    return nil;
+    if (_newIndexToOldIndex != NULL && newIndex >= 0 && newIndex < _indexBufferLength) {
+        unsigned long v = (unsigned long)_newIndexToOldIndex[newIndex];
+        if ((v & 0xffffffffUL) != 0)
+            newIndex = (long)((int)v - 1);
+    }
+    return newIndex;
 }
 
-- (id)noDifference
+- (long)newIndexOfOldIndex:(long)oldIndex
 {
-    return nil;
+    if (_oldIndexToNewIndex != NULL && oldIndex >= 0 && oldIndex < _indexBufferLength) {
+        unsigned long v = (unsigned long)_oldIndexToNewIndex[oldIndex];
+        if ((v & 0xffffffffUL) != 0)
+            oldIndex = (long)((int)v - 1);
+    }
+    return oldIndex;
 }
 
-- (id)oldIndexOfNewIndex:(id)arg1
-{
-    return nil;
-}
-
-- (void)setNeedToExchangeItems:(id)arg1
-{
-
-}
 @end

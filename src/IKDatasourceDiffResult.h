@@ -7,6 +7,13 @@
 #import "ImageKitBase.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKDatasourceDiffResult : NSObject
+@interface IKDatasourceDiffResult : NSObject {
+    NSMutableIndexSet *indexesToAdd;
+    NSMutableIndexSet *indexesToRemove;
+    BOOL _needToExchangeItems;
+    long *_oldIndexToNewIndex;
+    long *_newIndexToOldIndex;
+    int _indexBufferLength;
+}
 
 @end

@@ -9,6 +9,8 @@
 #import <CoreImage/CoreImage.h>
 #import <ImageCaptureCore/ImageCaptureCore.h>
 
+#include <stdlib.h>
+
 #import "IKCameraDeviceViewHandler.h"
 #import "IKDatasourceDiffResult.h"
 #import "IKHierarchicalDatasourceAdaptor.h"
@@ -880,29 +882,42 @@
 
 @implementation IKDatasourceDiffResult (internal)
 
-- (id)addAddOperationWithIndex:(id)arg1
+- (void)allocIndexesBuffers:(int)length
 {
-    return nil;
+    if (_indexBufferLength != length) {
+        if (_oldIndexToNewIndex != NULL)
+            free(_oldIndexToNewIndex);
+        if (_newIndexToOldIndex != NULL)
+            free(_newIndexToOldIndex);
+        _oldIndexToNewIndex = NULL;
+        _newIndexToOldIndex = NULL;
+    }
+    _indexBufferLength = length;
+    if (length != 0) {
+        _newIndexToOldIndex = calloc((long)length, sizeof(long));
+        _oldIndexToNewIndex = calloc((long)length, sizeof(long));
+    }
 }
 
-- (id)addMoveOperationFrom:(id)arg1 to:(id)arg2
+- (void)setNeedToExchangeItems:(BOOL)value
 {
-    return nil;
+    _needToExchangeItems = value;
 }
 
-- (id)addRemoveOperationWithIndex:(id)arg1
+- (void)addAddOperationWithIndex:(long)index
 {
-    return nil;
+    [indexesToAdd addIndex:(NSUInteger)index];
 }
 
-- (id)allocIndexesBuffers:(id)arg1
+- (void)addRemoveOperationWithIndex:(long)index
 {
-    return nil;
+    [indexesToRemove addIndex:(NSUInteger)index];
 }
 
-- (void)setNeedToExchangeItems:(id)arg1
+- (void)addMoveOperationFrom:(long)from to:(long)to
 {
-
+    _oldIndexToNewIndex[from] = to + 1;
+    _newIndexToOldIndex[to] = from + 1;
 }
 @end
 
