@@ -5,92 +5,166 @@
 
 #import "IKSegmentedRawDataBuffer.h"
 
+@interface IKCacheFragHandler (IKSegmentedRawDataBufferPrivate)
+- (void)clear;
+@end
+
 @implementation IKSegmentedRawDataBuffer
 
-
-/* --- generated selector-parity stubs --- */
-- (id)cacheFragHandler
+- (id)initWithMemorySize:(unsigned int)size
 {
-    return nil;
+    self = [super init];
+    if (self != nil) {
+        _totalSpace = size;
+        _totalSpacePlusOverhead = (unsigned int)((float)size + 0.1f * (float)size);
+        _fragHandler = [[IKCacheFragHandler alloc] init];
+        _fragments = [[NSMutableDictionary alloc] init];
+        _segmentedBuffer = NULL;
+        _estimatedItemCount = 0;
+    }
+    return self;
 }
 
-- (id)checkBufferSize
+- (void)dealloc
 {
-    return nil;
+    [self freeCache];
+    if (_segmentedBuffer != NULL)
+        free(_segmentedBuffer);
 }
 
-- (id)decrSize:(id)arg1
+- (void)finalize
 {
-    return nil;
+    [self freeCache];
+    if (_segmentedBuffer != NULL)
+        free(_segmentedBuffer);
+    _segmentedBuffer = NULL;
 }
 
-- (id)estimatedFragmentCount
+- (void)incrSize:(unsigned int)size
 {
-    return nil;
+    _usedSpace += size;
+    _estimatedItemCount += 1;
 }
 
-- (id)estimatedItemCount
+- (void)decrSize:(unsigned int)size
 {
-    return nil;
+    _usedSpace -= size;
+    _estimatedItemCount -= 1;
 }
 
-- (id)fragHandler
+- (void)checkBufferSize
 {
-    return nil;
+    unsigned int length = _totalSpacePlusOverhead;
+    if (_realBufferLength != length) {
+        if (_segmentedBuffer != NULL) {
+            free(_segmentedBuffer);
+            length = _totalSpacePlusOverhead;
+        }
+        _segmentedBuffer = NULL;
+        _realBufferLength = length;
+        if (length != 0)
+            _segmentedBuffer = malloc(length);
+        BOOL added = NO;
+        [_fragHandler clear];
+        [_fragHandler allocateSpaceForLen:_totalSpacePlusOverhead added:&added];
+        [_fragHandler allocateSpaceForLen:1 added:&added];
+        [_fragHandler releaseSpaceAtPos:0 withLen:_totalSpacePlusOverhead];
+    }
 }
 
-- (id)freeCache
+- (void *)newSegmentOfSize:(unsigned int)size
 {
-    return nil;
+    BOOL added = NO;
+    [self checkBufferSize];
+    unsigned long long pos = [_fragHandler allocateSpaceForLen:size added:&added];
+    void *segment;
+    if (added) {
+        segment = malloc(size);
+        [_fragments setObject:[NSNumber valueWithPointer:segment]
+                       forKey:[NSString stringWithFormat:@"%p", segment]];
+    } else {
+        segment = (char *)_segmentedBuffer + pos;
+    }
+    [self incrSize:size];
+    return segment;
 }
 
-- (id)freeSpace
+- (void)releaseSegment:(void *)segment ofSize:(unsigned int)size
 {
-    return nil;
+    void *base = _segmentedBuffer;
+    if (segment < base || (char *)base + _realBufferLength <= (char *)segment) {
+        free(segment);
+        [_fragments removeObjectForKey:[NSString stringWithFormat:@"%p", segment]];
+    } else {
+        [_fragHandler releaseSpaceAtPos:((char *)segment - (char *)base) withLen:size];
+    }
+    [self decrSize:size];
 }
 
-- (id)incrSize:(id)arg1
+- (unsigned int)totalSpace
 {
-    return nil;
+    if (_segmentedBuffer != NULL)
+        return _totalSpace;
+    return 0;
 }
 
-- (id)initWithMemorySize:(id)arg1
+- (unsigned int)usedSpace
 {
-    return nil;
+    return _usedSpace;
 }
 
-- (id)newSegmentOfSize:(id)arg1
+- (int)freeSpace
 {
-    return nil;
+    return (int)_totalSpace - (int)_usedSpace;
 }
 
-- (id)releaseSegment:(id)arg1 ofSize:(id)arg2
+- (void)setTotalSpace:(unsigned int)size
 {
-    return nil;
+    _totalSpace = size;
+    _totalSpacePlusOverhead = (unsigned int)((float)size + 0.1f * (float)size);
 }
 
-- (id)segmentedBufferLength
+- (int)estimatedItemCount
 {
-    return nil;
+    return _estimatedItemCount;
 }
 
-- (void)setTotalSpace:(id)arg1
+- (int)estimatedFragmentCount
 {
-
+    return (int)[_fragments count];
 }
 
-- (id)startAddress
+- (IKCacheFragHandler *)fragHandler
 {
-    return nil;
+    return _fragHandler;
 }
 
-- (id)totalSpace
+- (void)freeCache
 {
-    return nil;
+    if (_segmentedBuffer != NULL)
+        free(_segmentedBuffer);
+    NSArray *fragments = [_fragments allValues];
+    NSUInteger count = [fragments count];
+    for (NSUInteger i = 0; i < count; i++)
+        free([[fragments objectAtIndex:i] pointerValue]);
+    [_fragments removeAllObjects];
+    _segmentedBuffer = NULL;
+    _realBufferLength = 0;
 }
 
-- (id)usedSpace
+- (IKCacheFragHandler *)cacheFragHandler
 {
-    return nil;
+    return _fragHandler;
 }
+
+- (void *)startAddress
+{
+    return _segmentedBuffer;
+}
+
+- (unsigned int)segmentedBufferLength
+{
+    return _realBufferLength;
+}
+
 @end

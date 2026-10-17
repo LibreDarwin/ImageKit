@@ -7,6 +7,9 @@
 #import "ImageKitBase.h"
 
 IK_CLASS_AVAILABLE(10_6)
-@interface IKMultipleSegmentedRawDataBuffer : NSObject
+@interface IKMultipleSegmentedRawDataBuffer : NSObject {
+    NSMutableArray *_buffers;
+    unsigned int _blockSize;
+}
 
 @end
