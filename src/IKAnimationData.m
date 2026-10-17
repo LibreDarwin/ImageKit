@@ -7,35 +7,41 @@
 
 @implementation IKAnimationData
 
-
-/* --- generated selector-parity stubs --- */
-- (id)currentValue
+- (id)initialValue
 {
-    return nil;
+    return _initialValue;
+}
+
+- (void)setInitialValue:(id)value
+{
+    if (_initialValue != value)
+        _initialValue = value;
 }
 
 - (id)finalValue
 {
-    return nil;
+    return _finalValue;
 }
 
-- (id)initialValue
+- (void)setFinalValue:(id)value
 {
-    return nil;
+    if (_finalValue != value)
+        _finalValue = value;
 }
 
-- (void)setCurrentValue:(id)arg1
+- (id)currentValue
 {
-
+    return _currentValue;
 }
 
-- (void)setFinalValue:(id)arg1
+- (void)setCurrentValue:(id)value
 {
-
+    if (_currentValue != value)
+        _currentValue = value;
 }
 
-- (void)setInitialValue:(id)arg1
+- (void)dealloc
 {
-
 }
+
 @end
