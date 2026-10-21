@@ -4,143 +4,297 @@
  */
 
 #import "IKCacheDatabase.h"
+#import "IKCacheDatabaseEntry.h"
+#import "IKCacheDatabaseUIDInfo.h"
+#import "IKIconDatabase.h"
+
+@interface IKCacheDatabaseEntry (IKCacheDatabase)
++ (IKCacheDatabaseEntry *)nullNode;
+- (NSMutableArray *)uids;
+- (void)addUID:(id)uid;
+- (void)removeUID:(id)uid;
+- (long)dbRetainCount;
+- (long)incrDBRetainCount;
+- (long)decrDBRetainCount;
+- (id)nodeWithSize:(int)size;
+@end
+
+@interface IKCacheDatabaseUIDInfo (IKCacheDatabase)
+- (unsigned long long)index;
+- (void)setIndex:(unsigned long long)index;
+- (unsigned long long)version;
+- (void)setVersion:(unsigned long long)version;
+- (BOOL)isValid;
+- (void)setIsValid:(BOOL)valid;
+- (id)image;
+- (void)setImage:(id)image;
+@end
+
+@interface IKIconDatabase (IKCacheDatabase)
+- (void)removeIconCacheFromDatabaseIndex:(unsigned long long)index;
+@end
+
+@interface NSObject (IKCacheDatabaseMainLoop)
+- (id)ikInMainLoopWait:(BOOL)flag;
+@end
+
+@interface IKCacheDatabase () {
+    NSMutableArray *_indexedObjects;
+    NSMutableDictionary *_uids;
+    NSMutableIndexSet *_freeIndexes;
+    IKIconDatabase *_iconCache;
+}
+- (void)_releaseIndex:(unsigned long long)index;
+- (void)_removeEntryAtIndex:(unsigned long long)index;
+- (void)_retainIndex:(unsigned long long)index;
+@end
 
 @implementation IKCacheDatabase
 
-
-/* --- generated selector-parity stubs --- */
-- (id)_releaseIndex:(id)arg1
+- (id)init
 {
-    return nil;
+    self = [super init];
+    if (self != nil) {
+        _indexedObjects = [[NSMutableArray alloc] init];
+        _uids = [[NSMutableDictionary alloc] init];
+        _freeIndexes = [[NSMutableIndexSet alloc] init];
+    }
+    return self;
 }
 
-- (id)_removeEntryAtIndex:(id)arg1
+- (void)dealloc
 {
-    return nil;
 }
 
-- (id)_retainIndex:(id)arg1
+- (NSMutableArray *)entries
 {
-    return nil;
+    return _indexedObjects;
 }
 
-- (id)addReference:(id)arg1 atIndex:(id)arg2
+- (NSMutableIndexSet *)freeIndexes
 {
-    return nil;
+    return _freeIndexes;
 }
 
-- (id)addUID:(id)arg1
+- (unsigned long long)nextFreeIndex
 {
-    return nil;
+    unsigned long long index = [_freeIndexes firstIndex];
+    if (index != NSNotFound) {
+        [_freeIndexes removeIndex:index];
+        return index;
+    }
+    return (unsigned long long)[_indexedObjects count];
 }
 
-- (id)associateUID:(id)arg1 withIndex:(id)arg2
+- (unsigned long long)lastIndex
 {
-    return nil;
+    return (unsigned long long)[_indexedObjects count];
 }
 
-- (id)cacheVersionForUID:(id)arg1
+- (unsigned long long)indexForUID:(id)uid
 {
-    return nil;
+    IKCacheDatabaseUIDInfo *info = [_uids objectForKey:uid];
+    if (info == nil)
+        return NSNotFound;
+    return [info index];
 }
 
-- (id)entries
+- (unsigned long long)cacheVersionForUID:(id)uid
 {
-    return nil;
+    IKCacheDatabaseUIDInfo *info = [_uids objectForKey:uid];
+    if (info == nil)
+        return 0;
+    return [info version];
 }
 
-- (id)entryAtIndex:(id)arg1
+- (BOOL)entryAtUIDIsValid:(id)uid
 {
-    return nil;
+    IKCacheDatabaseUIDInfo *info = [_uids objectForKey:uid];
+    return [info isValid];
 }
 
-- (id)entryAtUIDIsValid:(id)arg1
+- (id)imageWithUID:(id)uid
 {
-    return nil;
+    IKCacheDatabaseUIDInfo *info = [_uids objectForKey:uid];
+    return [info image];
 }
 
-- (id)freeIndexes
+- (void)setImage:(id)image withUID:(id)uid
 {
-    return nil;
+    IKCacheDatabaseUIDInfo *info = [_uids objectForKey:uid];
+    [info setImage:image];
 }
 
-- (id)iconCache
+- (void)setCacheVersion:(unsigned long long)version forUID:(id)uid
 {
-    return nil;
+    IKCacheDatabaseUIDInfo *info = [_uids objectForKey:uid];
+    [info setVersion:version];
 }
 
-- (id)imageWithUID:(id)arg1
+- (void)validateEntryAtUID:(id)uid
 {
-    return nil;
+    IKCacheDatabaseUIDInfo *info = [_uids objectForKey:uid];
+    [info setIsValid:YES];
 }
 
-- (id)indexForUID:(id)arg1
+- (void)invalidateEntryAtUID:(id)uid
 {
-    return nil;
+    IKCacheDatabaseUIDInfo *info = [_uids objectForKey:uid];
+    [info setIsValid:NO];
 }
 
-- (id)invalidateEntryAtUID:(id)arg1
+- (void)resetInternalCacheVersionForUID:(id)uid
 {
-    return nil;
+    IKCacheDatabaseUIDInfo *info = [_uids objectForKey:uid];
+    [info setVersion:[info version] + 1];
 }
 
-- (id)lastIndex
+- (IKIconDatabase *)iconCache
 {
-    return nil;
+    if (_iconCache == nil)
+        _iconCache = [[IKIconDatabase alloc] init];
+    return _iconCache;
 }
 
-- (id)nextFreeIndex
+- (IKCacheDatabaseEntry *)entryAtIndex:(unsigned long long)index
 {
-    return nil;
+    if ([NSThread isMainThread]) {
+        if (index == NSNotFound) {
+            NSLog(@"--ImageKit Error: %@", [NSString stringWithFormat:@"IKCacheDatabase::entryAtIndex - bad index"]);
+            return nil;
+        }
+        id object = [_indexedObjects objectAtIndex:index];
+        if (object == [IKCacheDatabaseEntry nullNode])
+            return nil;
+        return object;
+    }
+    return [[self ikInMainLoopWait:YES] entryAtIndex:index];
 }
 
-- (id)nodeAtIndex:(id)arg1 withSize:(id)arg2
+- (void)addReference:(id)uid atIndex:(unsigned long long)index
 {
-    return nil;
+    if (index == NSNotFound)
+        return;
+    [[self entryAtIndex:index] addUID:uid];
 }
 
-- (id)referenceCountAtIndex:(id)arg1
+- (void)_retainIndex:(unsigned long long)index
 {
-    return nil;
+    if (index == NSNotFound)
+        return;
+    [[self entryAtIndex:index] incrDBRetainCount];
 }
 
-- (id)releaseIndex:(id)arg1
+- (void)retainIndex:(unsigned long long)index
 {
-    return nil;
+    [self _retainIndex:index];
 }
 
-- (id)removeReference:(id)arg1 atIndex:(id)arg2
+- (void)_releaseIndex:(unsigned long long)index
 {
-    return nil;
+    if (index == NSNotFound)
+        return;
+    IKCacheDatabaseEntry *entry = [self entryAtIndex:index];
+    if ([entry decrDBRetainCount] == 0) {
+        NSArray *uids = [entry uids];
+        NSUInteger count = [uids count];
+        for (NSUInteger i = 0; i < count; i++)
+            [_uids removeObjectForKey:[uids objectAtIndex:i]];
+        [_iconCache removeIconCacheFromDatabaseIndex:index];
+        [self _removeEntryAtIndex:index];
+    }
 }
 
-- (id)resetInternalCacheVersionForUID:(id)arg1
+- (void)releaseIndex:(unsigned long long)index
 {
-    return nil;
+    [self _releaseIndex:index];
 }
 
-- (id)retainIndex:(id)arg1
+- (void)_removeEntryAtIndex:(unsigned long long)index
 {
-    return nil;
+    [_indexedObjects replaceObjectAtIndex:index withObject:[IKCacheDatabaseEntry nullNode]];
+    [_freeIndexes addIndex:index];
 }
 
-- (id)setCacheVersion:(id)arg1 forUID:(id)arg2
+- (unsigned long long)addUID:(id)uid
 {
-    return nil;
+    unsigned long long index = [self nextFreeIndex];
+    IKCacheDatabaseUIDInfo *info = [[IKCacheDatabaseUIDInfo alloc] init];
+    [info setIndex:index];
+    [_uids setObject:info forKey:uid];
+    IKCacheDatabaseEntry *entry = [[IKCacheDatabaseEntry alloc] init];
+    if (index == (unsigned long long)[_indexedObjects count])
+        [_indexedObjects addObject:entry];
+    else
+        [_indexedObjects replaceObjectAtIndex:index withObject:entry];
+    [self addReference:uid atIndex:index];
+    return index;
 }
 
-- (id)setImage:(id)arg1 withUID:(id)arg2
+- (void)associateUID:(id)uid withIndex:(unsigned long long)index
 {
-    return nil;
+    IKCacheDatabaseUIDInfo *info = [_uids objectForKey:uid];
+    if (info == nil) {
+        NSLog(@"--ImageKit Error: %@", [NSString stringWithFormat:@"try to associate an index to an unexisting uid"]);
+        return;
+    }
+    unsigned long long oldIndex = [info index];
+    if (oldIndex != index) {
+        [self addReference:uid atIndex:index];
+        [self removeReference:uid atIndex:oldIndex];
+        [info setIndex:index];
+    }
 }
 
-- (id)unshareUID:(id)arg1
+- (long long)referenceCountAtIndex:(unsigned long long)index
 {
-    return nil;
+    if (index == NSNotFound)
+        return -1;
+    id entry = [self entryAtIndex:index];
+    if (entry == nil)
+        return -1;
+    return (long long)[[entry uids] count];
 }
 
-- (id)validateEntryAtUID:(id)arg1
+- (IKCacheNode *)nodeAtIndex:(unsigned long long)index withSize:(int)size
 {
-    return nil;
+    return [[self entryAtIndex:index] nodeWithSize:size];
 }
+
+- (void)removeReference:(id)uid atIndex:(unsigned long long)index
+{
+    if (index == NSNotFound)
+        return;
+    if (![NSThread isMainThread]) {
+        [[self ikInMainLoopWait:YES] removeReference:uid atIndex:index];
+        return;
+    }
+    IKCacheDatabaseEntry *entry = [self entryAtIndex:index];
+    [entry removeUID:uid];
+    if ([[entry uids] count] == 0 && [entry dbRetainCount] == 0) {
+        [_iconCache removeIconCacheFromDatabaseIndex:index];
+        [self _removeEntryAtIndex:index];
+    }
+}
+
+- (unsigned long long)unshareUID:(id)uid
+{
+    IKCacheDatabaseUIDInfo *info = [_uids objectForKey:uid];
+    if (info == nil) {
+        NSLog(@"--ImageKit Error: %@", [NSString stringWithFormat:@"unshareUID - unknown uid"]);
+        return NSNotFound;
+    }
+    unsigned long long oldIndex = [info index];
+    unsigned long long newIndex = [self nextFreeIndex];
+    IKCacheDatabaseEntry *entry = [[IKCacheDatabaseEntry alloc] init];
+    if (newIndex == (unsigned long long)[_indexedObjects count])
+        [_indexedObjects addObject:entry];
+    else
+        [_indexedObjects replaceObjectAtIndex:newIndex withObject:entry];
+    [info setIndex:newIndex];
+    [self addReference:uid atIndex:newIndex];
+    [self removeReference:uid atIndex:oldIndex];
+    return newIndex;
+}
+
 @end
