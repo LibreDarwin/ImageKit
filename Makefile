@@ -45,7 +45,8 @@ $(FW_DYLIB): $(OBJS)
 		-compatibility_version 1.0.0 -current_version 1.0.0 \
 		-framework AppKit -framework CoreGraphics -framework QuartzCore \
 		-framework CoreImage -framework MetalKit -framework PDFKit \
-		-framework ImageCaptureCore \
+		-framework ImageCaptureCore -framework CoreServices \
+		-framework OpenGL \
 		-framework Foundation -lz -lbz2
 
 $(OBJDIR)/%.o: src/%.m src/%.h
