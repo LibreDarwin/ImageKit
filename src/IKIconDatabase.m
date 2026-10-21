@@ -5,37 +5,89 @@
 
 #import "IKIconDatabase.h"
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
+static void _releaseIcons(const void *key, const void *value, void *context)
+{
+    (void)value;
+    (void)context;
+    ReleaseIconRef((IconRef)key);
+}
+
 @implementation IKIconDatabase
 
-
-/* --- generated selector-parity stubs --- */
-- (id)associateIconRef:(id)arg1 withIndex:(id)arg2
+- (id)init
 {
-    return nil;
+    self = [super init];
+    if (self != nil) {
+        _iconToIndex = CFDictionaryCreateMutable(kCFAllocatorDefault, 0, NULL, NULL);
+        _indexToIcon = CFDictionaryCreateMutable(kCFAllocatorDefault, 0, NULL, NULL);
+    }
+    return self;
 }
 
-- (id)cleanup
+- (void)dealloc
 {
-    return nil;
+    [self cleanup];
+    CFRelease(_iconToIndex);
+    CFRelease(_indexToIcon);
 }
 
-- (id)iconRefForIndex:(id)arg1
+- (void)finalize
 {
-    return nil;
+    [self cleanup];
+    CFRelease(_iconToIndex);
+    CFRelease(_indexToIcon);
+    [super finalize];
 }
 
-- (id)indexForIconRef:(id)arg1
+- (void)cleanup
 {
-    return nil;
+    CFDictionaryApplyFunction(_iconToIndex, _releaseIcons, NULL);
+    CFDictionaryRemoveAllValues(_iconToIndex);
+    CFDictionaryRemoveAllValues(_indexToIcon);
 }
 
-- (id)indexHasIconAssociated:(id)arg1
+- (void)associateIconRef:(IconRef)iconRef withIndex:(unsigned long long)index
 {
-    return nil;
+    if (index == NSNotFound) {
+        NSLog(@"--ImageKit Error: %@", [NSString stringWithFormat:@"IKIconDatabase - associateIconRef:withIndex: bad index"]);
+        return;
+    }
+    CFDictionarySetValue(_iconToIndex, iconRef, (const void *)(index + 1));
+    CFDictionarySetValue(_indexToIcon, (const void *)(index + 1), iconRef);
+    AcquireIconRef(iconRef);
 }
 
-- (id)removeIconCacheFromDatabaseIndex:(id)arg1
+- (IconRef)iconRefForIndex:(unsigned long long)index
 {
-    return nil;
+    return (IconRef)CFDictionaryGetValue(_indexToIcon, (const void *)(index + 1));
 }
+
+- (unsigned long long)indexForIconRef:(IconRef)iconRef
+{
+    const void *value = CFDictionaryGetValue(_iconToIndex, iconRef);
+    if (value == NULL)
+        return NSNotFound;
+    return (unsigned long long)value - 1;
+}
+
+- (BOOL)indexHasIconAssociated:(unsigned long long)index
+{
+    return CFDictionaryContainsKey(_indexToIcon, (const void *)(index + 1)) != 0;
+}
+
+- (void)removeIconCacheFromDatabaseIndex:(unsigned long long)index
+{
+    if (!CFDictionaryContainsKey(_indexToIcon, (const void *)(index + 1)))
+        return;
+    const void *iconRef = CFDictionaryGetValue(_indexToIcon, (const void *)(index + 1));
+    CFDictionaryRemoveValue(_indexToIcon, (const void *)(index + 1));
+    CFDictionaryRemoveValue(_iconToIndex, iconRef);
+    ReleaseIconRef((IconRef)iconRef);
+}
+
 @end
+
+#pragma clang diagnostic pop
